@@ -1,25 +1,25 @@
 {
   "chart": {
     "offset": {
-      "x": 116.85,
-      "y": 4.92
+      "x": 33.55,
+      "y": -5.39
     },
-    "scale": 0.637,
+    "scale": 0.679,
     "nodes": {
-      "663b23b5-3e4a-4aa4-83b3-9f859fa0576c": {
-        "id": "663b23b5-3e4a-4aa4-83b3-9f859fa0576c",
+      "718c0aa0-3a2e-476b-ae3b-a0b0fab0961e": {
+        "id": "718c0aa0-3a2e-476b-ae3b-a0b0fab0961e",
         "position": {
-          "x": 419.3999938964844,
-          "y": 197
+          "x": 559.0569438722563,
+          "y": 448.5583186661994
         },
         "orientation": 0,
         "type": "workflow-cell",
         "ports": {
-          "KNMI_datafile": {
-            "id": "KNMI_datafile",
+          "Initial_community_datafile": {
+            "id": "Initial_community_datafile",
             "type": "right",
             "properties": {
-              "color": "#d2672d",
+              "color": "#ac5375",
               "parentNodeType": "workflow-cell"
             },
             "position": {
@@ -30,7 +30,7 @@
         },
         "properties": {
           "cell": {
-            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/a8d40028-0367-48eb-b4a2-cc32922a02e4/",
+            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/2ad8e829-c3ed-403d-aa55-bb0e2a30c011/",
             "owner": "koen.greuell@lifewatch.eu",
             "virtual_lab": "veluwe-forest-model",
             "shared_with_scopes": [
@@ -45,21 +45,21 @@
             "inputs": [],
             "outputs": [
               {
-                "name": "KNMI_datafile",
+                "name": "Initial_community_datafile",
                 "type": "str"
               }
             ],
             "confs": [],
             "params": [],
             "secrets": [],
-            "title": "knmi-data-retriever-koen-greuell-lifewatch-eu",
-            "description": "knmi-data-retriever-koen-greuell-lifewatch-eu",
-            "created": "2025-12-08T09:31:48.979048Z",
-            "modified": "2025-12-08T09:38:47.057297Z",
+            "title": "initial-community-data-retriever-koen-greuell-lifewatch-eu",
+            "description": "initial-community-data-retriever-koen-greuell-lifewatch-eu",
+            "created": "2025-12-08T09:35:35.319793Z",
+            "modified": "2025-12-08T09:37:51.389712Z",
             "version": 1,
-            "container_image": "ghcr.io/naavre/cells-vl-veluwe-forest-model/knmi-data-retriever-koen-greuell-lifewatch-eu:74f78bf",
+            "container_image": "ghcr.io/naavre/cells-vl-veluwe-forest-model/initial-community-data-retriever-koen-greuell-lifewatch-eu:49ea310",
             "kernel": "IRkernel",
-            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/tree/32fb4c9ea8fcd7f3630abc6c4a2270bb484fa24d/knmi-data-retriever-koen-greuell-lifewatch-eu",
+            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/tree/266fb1558bed5e23b4559b30f715ef1362c8430c/initial-community-data-retriever-koen-greuell-lifewatch-eu",
             "next_version": null
           }
         },
@@ -68,231 +68,11 @@
           "height": 61
         }
       },
-      "075ea731-3760-4a80-abe0-c41c01403825": {
-        "id": "075ea731-3760-4a80-abe0-c41c01403825",
+      "b39b3778-1106-4f17-9156-fa8c2e99bbe3": {
+        "id": "b39b3778-1106-4f17-9156-fa8c2e99bbe3",
         "position": {
-          "x": 809.3999938964844,
-          "y": 198
-        },
-        "orientation": 0,
-        "type": "workflow-cell",
-        "ports": {
-          "KNMI_datafile": {
-            "id": "KNMI_datafile",
-            "type": "left",
-            "properties": {
-              "color": "#d2672d",
-              "parentNodeType": "workflow-cell"
-            },
-            "position": {
-              "x": -2,
-              "y": 30
-            }
-          },
-          "Preprocessed_KNMI_datafile": {
-            "id": "Preprocessed_KNMI_datafile",
-            "type": "right",
-            "properties": {
-              "color": "#bd87c5",
-              "parentNodeType": "workflow-cell"
-            },
-            "position": {
-              "x": 252,
-              "y": 30
-            }
-          }
-        },
-        "properties": {
-          "cell": {
-            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/7c1586b9-3304-4a4f-95f2-e2bbe257dcd5/",
-            "owner": "koen.greuell@lifewatch.eu",
-            "virtual_lab": "veluwe-forest-model",
-            "shared_with_scopes": [
-              "veluwe-forest-model"
-            ],
-            "shared_with_users": [],
-            "base_container_image": {
-              "build": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-build:v0.0.44",
-              "runtime": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-runtime:v0.0.44"
-            },
-            "dependencies": [],
-            "inputs": [
-              {
-                "name": "KNMI_datafile",
-                "type": "str"
-              }
-            ],
-            "outputs": [
-              {
-                "name": "Preprocessed_KNMI_datafile",
-                "type": "str"
-              }
-            ],
-            "confs": [],
-            "params": [],
-            "secrets": [],
-            "title": "knmi-data-preprocessor-koen-greuell-lifewatch-eu",
-            "description": "knmi-data-preprocessor-koen-greuell-lifewatch-eu",
-            "created": "2025-12-08T09:32:47.550431Z",
-            "modified": "2025-12-08T09:38:36.432068Z",
-            "version": 1,
-            "container_image": "ghcr.io/naavre/cells-vl-veluwe-forest-model/knmi-data-preprocessor-koen-greuell-lifewatch-eu:8942823",
-            "kernel": "IRkernel",
-            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/tree/c5454a82aaef7039ff2f903b801432740aeca5cd/knmi-data-preprocessor-koen-greuell-lifewatch-eu",
-            "next_version": null
-          }
-        },
-        "size": {
-          "width": 252,
-          "height": 61
-        }
-      },
-      "d2e96756-ef67-44bb-9bdf-086d6a63218d": {
-        "id": "d2e96756-ef67-44bb-9bdf-086d6a63218d",
-        "position": {
-          "x": 416.39793121180867,
-          "y": 366.1063464837051
-        },
-        "orientation": 0,
-        "type": "workflow-cell",
-        "ports": {
-          "Species_trait_datafile": {
-            "id": "Species_trait_datafile",
-            "type": "right",
-            "properties": {
-              "color": "#acac53",
-              "parentNodeType": "workflow-cell"
-            },
-            "position": {
-              "x": 252,
-              "y": 30
-            }
-          }
-        },
-        "properties": {
-          "cell": {
-            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/3f203af4-4d17-47dd-8220-92ea93ed059c/",
-            "owner": "koen.greuell@lifewatch.eu",
-            "virtual_lab": "veluwe-forest-model",
-            "shared_with_scopes": [
-              "veluwe-forest-model"
-            ],
-            "shared_with_users": [],
-            "base_container_image": {
-              "build": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-build:v0.0.44",
-              "runtime": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-runtime:v0.0.44"
-            },
-            "dependencies": [],
-            "inputs": [],
-            "outputs": [
-              {
-                "name": "Species_trait_datafile",
-                "type": "str"
-              }
-            ],
-            "confs": [],
-            "params": [],
-            "secrets": [],
-            "title": "species-trait-data-retriever-koen-greuell-lifewatch-eu",
-            "description": "species-trait-data-retriever-koen-greuell-lifewatch-eu",
-            "created": "2025-12-08T09:35:20.430197Z",
-            "modified": "2025-12-08T09:38:06.326163Z",
-            "version": 1,
-            "container_image": "ghcr.io/naavre/cells-vl-veluwe-forest-model/species-trait-data-retriever-koen-greuell-lifewatch-eu:579a8a3",
-            "kernel": "IRkernel",
-            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/tree/c7ad0d553897793a491c6f6751935b574245885b/species-trait-data-retriever-koen-greuell-lifewatch-eu",
-            "next_version": null
-          }
-        },
-        "size": {
-          "width": 252,
-          "height": 61
-        }
-      },
-      "d61b239b-9b09-488c-9fe5-5b636cfe8b69": {
-        "id": "d61b239b-9b09-488c-9fe5-5b636cfe8b69",
-        "position": {
-          "x": 822.9159415034037,
-          "y": 364.3910806174958
-        },
-        "orientation": 0,
-        "type": "workflow-cell",
-        "ports": {
-          "Species_trait_datafile": {
-            "id": "Species_trait_datafile",
-            "type": "left",
-            "properties": {
-              "color": "#acac53",
-              "parentNodeType": "workflow-cell"
-            },
-            "position": {
-              "x": -2,
-              "y": 30
-            }
-          },
-          "Preprocessed_species_trait_datafile": {
-            "id": "Preprocessed_species_trait_datafile",
-            "type": "right",
-            "properties": {
-              "color": "#c8d279",
-              "parentNodeType": "workflow-cell"
-            },
-            "position": {
-              "x": 252,
-              "y": 30
-            }
-          }
-        },
-        "properties": {
-          "cell": {
-            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/7f6c102f-fff5-41ea-885e-a71448e0026f/",
-            "owner": "koen.greuell@lifewatch.eu",
-            "virtual_lab": "veluwe-forest-model",
-            "shared_with_scopes": [
-              "veluwe-forest-model"
-            ],
-            "shared_with_users": [],
-            "base_container_image": {
-              "build": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-build:v0.0.44",
-              "runtime": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-runtime:v0.0.44"
-            },
-            "dependencies": [],
-            "inputs": [
-              {
-                "name": "Species_trait_datafile",
-                "type": "str"
-              }
-            ],
-            "outputs": [
-              {
-                "name": "Preprocessed_species_trait_datafile",
-                "type": "str"
-              }
-            ],
-            "confs": [],
-            "params": [],
-            "secrets": [],
-            "title": "species-trait-data-preprocessor-koen-greuell-lifewatch-eu",
-            "description": "species-trait-data-preprocessor-koen-greuell-lifewatch-eu",
-            "created": "2025-12-08T09:35:31.645482Z",
-            "modified": "2025-12-08T09:37:59.589551Z",
-            "version": 1,
-            "container_image": "ghcr.io/naavre/cells-vl-veluwe-forest-model/species-trait-data-preprocessor-koen-greuell-lifewatch-eu:ab705df",
-            "kernel": "IRkernel",
-            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/tree/ebb9f774d983b0cfea9c3122de8ac68bf59aacdd/species-trait-data-preprocessor-koen-greuell-lifewatch-eu",
-            "next_version": null
-          }
-        },
-        "size": {
-          "width": 252,
-          "height": 61
-        }
-      },
-      "d12ca49c-c000-4cb3-8f32-6d1700a688ed": {
-        "id": "d12ca49c-c000-4cb3-8f32-6d1700a688ed",
-        "position": {
-          "x": 802.3327511088926,
-          "y": 547.9245283018865
+          "x": 1028.6453647181254,
+          "y": 449.117245424197
         },
         "orientation": 0,
         "type": "workflow-cell",
@@ -367,20 +147,20 @@
           "height": 61
         }
       },
-      "8eb94e67-ad25-48c0-a1e9-ec55dc6928d8": {
-        "id": "8eb94e67-ad25-48c0-a1e9-ec55dc6928d8",
+      "9d3be46b-0f06-4ece-bfc7-0e3bf87320cb": {
+        "id": "9d3be46b-0f06-4ece-bfc7-0e3bf87320cb",
         "position": {
-          "x": 418.80044900002065,
-          "y": 553.1595697614734
+          "x": 565.383607147574,
+          "y": 585.9070295120433
         },
         "orientation": 0,
         "type": "workflow-cell",
         "ports": {
-          "Initial_community_datafile": {
-            "id": "Initial_community_datafile",
+          "Species_trait_datafile": {
+            "id": "Species_trait_datafile",
             "type": "right",
             "properties": {
-              "color": "#ac5375",
+              "color": "#acac53",
               "parentNodeType": "workflow-cell"
             },
             "position": {
@@ -391,7 +171,7 @@
         },
         "properties": {
           "cell": {
-            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/2ad8e829-c3ed-403d-aa55-bb0e2a30c011/",
+            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/3f203af4-4d17-47dd-8220-92ea93ed059c/",
             "owner": "koen.greuell@lifewatch.eu",
             "virtual_lab": "veluwe-forest-model",
             "shared_with_scopes": [
@@ -406,21 +186,21 @@
             "inputs": [],
             "outputs": [
               {
-                "name": "Initial_community_datafile",
+                "name": "Species_trait_datafile",
                 "type": "str"
               }
             ],
             "confs": [],
             "params": [],
             "secrets": [],
-            "title": "initial-community-data-retriever-koen-greuell-lifewatch-eu",
-            "description": "initial-community-data-retriever-koen-greuell-lifewatch-eu",
-            "created": "2025-12-08T09:35:35.319793Z",
-            "modified": "2025-12-08T09:37:51.389712Z",
+            "title": "species-trait-data-retriever-koen-greuell-lifewatch-eu",
+            "description": "species-trait-data-retriever-koen-greuell-lifewatch-eu",
+            "created": "2025-12-08T09:35:20.430197Z",
+            "modified": "2025-12-08T09:38:06.326163Z",
             "version": 1,
-            "container_image": "ghcr.io/naavre/cells-vl-veluwe-forest-model/initial-community-data-retriever-koen-greuell-lifewatch-eu:49ea310",
+            "container_image": "ghcr.io/naavre/cells-vl-veluwe-forest-model/species-trait-data-retriever-koen-greuell-lifewatch-eu:579a8a3",
             "kernel": "IRkernel",
-            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/tree/266fb1558bed5e23b4559b30f715ef1362c8430c/initial-community-data-retriever-koen-greuell-lifewatch-eu",
+            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/tree/c7ad0d553897793a491c6f6751935b574245885b/species-trait-data-retriever-koen-greuell-lifewatch-eu",
             "next_version": null
           }
         },
@@ -429,11 +209,169 @@
           "height": 61
         }
       },
-      "7c1ae979-febe-4548-8338-f29fb3e43c2a": {
-        "id": "7c1ae979-febe-4548-8338-f29fb3e43c2a",
+      "94149b93-a209-4cf7-bb50-55785e0ad2a8": {
+        "id": "94149b93-a209-4cf7-bb50-55785e0ad2a8",
         "position": {
-          "x": 1411.2521336131808,
-          "y": 398.69639794168097
+          "x": 1028.8991351983882,
+          "y": 586.1185759431526
+        },
+        "orientation": 0,
+        "type": "workflow-cell",
+        "ports": {
+          "Species_trait_datafile": {
+            "id": "Species_trait_datafile",
+            "type": "left",
+            "properties": {
+              "color": "#acac53",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 30
+            }
+          },
+          "Preprocessed_species_trait_datafile": {
+            "id": "Preprocessed_species_trait_datafile",
+            "type": "right",
+            "properties": {
+              "color": "#c8d279",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 252,
+              "y": 30
+            }
+          }
+        },
+        "properties": {
+          "cell": {
+            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/7f6c102f-fff5-41ea-885e-a71448e0026f/",
+            "owner": "koen.greuell@lifewatch.eu",
+            "virtual_lab": "veluwe-forest-model",
+            "shared_with_scopes": [
+              "veluwe-forest-model"
+            ],
+            "shared_with_users": [],
+            "base_container_image": {
+              "build": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-build:v0.0.44",
+              "runtime": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-runtime:v0.0.44"
+            },
+            "dependencies": [],
+            "inputs": [
+              {
+                "name": "Species_trait_datafile",
+                "type": "str"
+              }
+            ],
+            "outputs": [
+              {
+                "name": "Preprocessed_species_trait_datafile",
+                "type": "str"
+              }
+            ],
+            "confs": [],
+            "params": [],
+            "secrets": [],
+            "title": "species-trait-data-preprocessor-koen-greuell-lifewatch-eu",
+            "description": "species-trait-data-preprocessor-koen-greuell-lifewatch-eu",
+            "created": "2025-12-08T09:35:31.645482Z",
+            "modified": "2025-12-08T09:37:59.589551Z",
+            "version": 1,
+            "container_image": "ghcr.io/naavre/cells-vl-veluwe-forest-model/species-trait-data-preprocessor-koen-greuell-lifewatch-eu:ab705df",
+            "kernel": "IRkernel",
+            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/tree/ebb9f774d983b0cfea9c3122de8ac68bf59aacdd/species-trait-data-preprocessor-koen-greuell-lifewatch-eu",
+            "next_version": null
+          }
+        },
+        "size": {
+          "width": 252,
+          "height": 61
+        }
+      },
+      "f3dbb063-37bd-4e58-8b0f-21f80d4a7868": {
+        "id": "f3dbb063-37bd-4e58-8b0f-21f80d4a7868",
+        "position": {
+          "x": 1026.0556970028313,
+          "y": 307.0694113505556
+        },
+        "orientation": 0,
+        "type": "workflow-cell",
+        "ports": {
+          "KNMI_datafile": {
+            "id": "KNMI_datafile",
+            "type": "left",
+            "properties": {
+              "color": "#d2672d",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 30
+            }
+          },
+          "Preprocessed_KNMI_datafile": {
+            "id": "Preprocessed_KNMI_datafile",
+            "type": "right",
+            "properties": {
+              "color": "#bd87c5",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 252,
+              "y": 30
+            }
+          }
+        },
+        "properties": {
+          "cell": {
+            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/7c1586b9-3304-4a4f-95f2-e2bbe257dcd5/",
+            "owner": "koen.greuell@lifewatch.eu",
+            "virtual_lab": "veluwe-forest-model",
+            "shared_with_scopes": [
+              "veluwe-forest-model"
+            ],
+            "shared_with_users": [],
+            "base_container_image": {
+              "build": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-build:v0.0.44",
+              "runtime": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-runtime:v0.0.44"
+            },
+            "dependencies": [],
+            "inputs": [
+              {
+                "name": "KNMI_datafile",
+                "type": "str"
+              }
+            ],
+            "outputs": [
+              {
+                "name": "Preprocessed_KNMI_datafile",
+                "type": "str"
+              }
+            ],
+            "confs": [],
+            "params": [],
+            "secrets": [],
+            "title": "knmi-data-preprocessor-koen-greuell-lifewatch-eu",
+            "description": "knmi-data-preprocessor-koen-greuell-lifewatch-eu",
+            "created": "2025-12-08T09:32:47.550431Z",
+            "modified": "2025-12-08T09:38:36.432068Z",
+            "version": 1,
+            "container_image": "ghcr.io/naavre/cells-vl-veluwe-forest-model/knmi-data-preprocessor-koen-greuell-lifewatch-eu:8942823",
+            "kernel": "IRkernel",
+            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/tree/c5454a82aaef7039ff2f903b801432740aeca5cd/knmi-data-preprocessor-koen-greuell-lifewatch-eu",
+            "next_version": null
+          }
+        },
+        "size": {
+          "width": 252,
+          "height": 61
+        }
+      },
+      "8e0b919c-f8e6-4acc-b4f1-e8856f95d1d3": {
+        "id": "8e0b919c-f8e6-4acc-b4f1-e8856f95d1d3",
+        "position": {
+          "x": 1439.9004041000992,
+          "y": 439.1702977863746
         },
         "orientation": 0,
         "type": "workflow-cell",
@@ -540,11 +478,11 @@
           "height": 79
         }
       },
-      "c573de6f-65f4-4efe-9f49-250d9f043c9a": {
-        "id": "c573de6f-65f4-4efe-9f49-250d9f043c9a",
+      "9e77c08e-d3f9-4986-9e72-b79b8a9f5b17": {
+        "id": "9e77c08e-d3f9-4986-9e72-b79b8a9f5b17",
         "position": {
-          "x": 1848.7976373718338,
-          "y": 411.15626301062144
+          "x": 1826.5699439951848,
+          "y": 447.78367496339655
         },
         "orientation": 0,
         "type": "workflow-cell",
@@ -601,84 +539,191 @@
           "width": 252,
           "height": 61
         }
+      },
+      "cb999d08-cdaf-44ab-9504-01fea4b0d401": {
+        "id": "cb999d08-cdaf-44ab-9504-01fea4b0d401",
+        "position": {
+          "x": 550.5890926310522,
+          "y": 308.37997054491916
+        },
+        "orientation": 0,
+        "type": "workflow-cell",
+        "ports": {
+          "KNMI_datafile": {
+            "id": "KNMI_datafile",
+            "type": "right",
+            "properties": {
+              "color": "#d2672d",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 252,
+              "y": 30
+            }
+          }
+        },
+        "properties": {
+          "cell": {
+            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/7954e34b-8d1e-4e62-8152-ae77b95a3ce0/",
+            "owner": "liekewiersum@gmail.com",
+            "virtual_lab": "veluwe-forest-model",
+            "shared_with_scopes": [],
+            "shared_with_users": [],
+            "base_container_image": {
+              "build": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-build:v0.0.45",
+              "runtime": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-runtime:v0.0.45"
+            },
+            "dependencies": [
+              {
+                "name": "dplyr",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "lubridate",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "readr",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "stringr",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "tidyr",
+                "module": "",
+                "asname": ""
+              }
+            ],
+            "inputs": [],
+            "outputs": [
+              {
+                "name": "KNMI_datafile",
+                "type": "str"
+              }
+            ],
+            "confs": [],
+            "params": [
+              {
+                "name": "param_stationID",
+                "type": "str",
+                "default_value": "260"
+              },
+              {
+                "name": "param_to_date",
+                "type": "str",
+                "default_value": "2023"
+              },
+              {
+                "name": "param_vars",
+                "type": "str",
+                "default_value": "RH"
+              },
+              {
+                "name": "param_from_date",
+                "type": "str",
+                "default_value": "2022"
+              }
+            ],
+            "secrets": [],
+            "title": "retrieving-knmi-data-liekewiersum-gmail-com",
+            "description": "retrieving-knmi-data-liekewiersum-gmail-com",
+            "created": "2025-12-24T10:13:03.396338Z",
+            "modified": "2025-12-24T10:13:03.642106Z",
+            "version": 1,
+            "container_image": "ghcr.io/naavre/cells-vl-veluwe-forest-model/retrieving-knmi-data-liekewiersum-gmail-com:6c5ec8e",
+            "kernel": "IRkernel",
+            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/tree/b83232f0face3787795f9bfbe9264b006b73406b/retrieving-knmi-data-liekewiersum-gmail-com",
+            "next_version": null
+          }
+        },
+        "size": {
+          "width": 252,
+          "height": 61
+        }
       }
     },
     "links": {
-      "cbbc2d2a-73a4-45a1-9fdd-6bd1fec3f15a": {
-        "id": "cbbc2d2a-73a4-45a1-9fdd-6bd1fec3f15a",
+      "42682bd2-dfc3-4ec6-8095-269295d85c72": {
+        "id": "42682bd2-dfc3-4ec6-8095-269295d85c72",
         "from": {
-          "nodeId": "663b23b5-3e4a-4aa4-83b3-9f859fa0576c",
-          "portId": "KNMI_datafile"
-        },
-        "to": {
-          "nodeId": "075ea731-3760-4a80-abe0-c41c01403825",
-          "portId": "KNMI_datafile"
-        }
-      },
-      "1b3d2794-30a3-437e-8190-f02baa0a9046": {
-        "id": "1b3d2794-30a3-437e-8190-f02baa0a9046",
-        "from": {
-          "nodeId": "075ea731-3760-4a80-abe0-c41c01403825",
-          "portId": "Preprocessed_KNMI_datafile"
-        },
-        "to": {
-          "nodeId": "7c1ae979-febe-4548-8338-f29fb3e43c2a",
-          "portId": "Preprocessed_KNMI_datafile"
-        }
-      },
-      "e6ff13e7-f1b3-462e-91cd-5b12c989bad3": {
-        "id": "e6ff13e7-f1b3-462e-91cd-5b12c989bad3",
-        "from": {
-          "nodeId": "d2e96756-ef67-44bb-9bdf-086d6a63218d",
-          "portId": "Species_trait_datafile"
-        },
-        "to": {
-          "nodeId": "d61b239b-9b09-488c-9fe5-5b636cfe8b69",
-          "portId": "Species_trait_datafile"
-        }
-      },
-      "5f2399fa-ad07-4389-beb5-e6956af68662": {
-        "id": "5f2399fa-ad07-4389-beb5-e6956af68662",
-        "from": {
-          "nodeId": "8eb94e67-ad25-48c0-a1e9-ec55dc6928d8",
+          "nodeId": "718c0aa0-3a2e-476b-ae3b-a0b0fab0961e",
           "portId": "Initial_community_datafile"
         },
         "to": {
-          "nodeId": "d12ca49c-c000-4cb3-8f32-6d1700a688ed",
+          "nodeId": "b39b3778-1106-4f17-9156-fa8c2e99bbe3",
           "portId": "Initial_community_datafile"
         }
       },
-      "d683ee2f-0a04-4879-b2b7-82a0e4a61b91": {
-        "id": "d683ee2f-0a04-4879-b2b7-82a0e4a61b91",
+      "865b2e20-d2c7-4fd1-a99e-e1e9fce20ba9": {
+        "id": "865b2e20-d2c7-4fd1-a99e-e1e9fce20ba9",
         "from": {
-          "nodeId": "d61b239b-9b09-488c-9fe5-5b636cfe8b69",
+          "nodeId": "9d3be46b-0f06-4ece-bfc7-0e3bf87320cb",
+          "portId": "Species_trait_datafile"
+        },
+        "to": {
+          "nodeId": "94149b93-a209-4cf7-bb50-55785e0ad2a8",
+          "portId": "Species_trait_datafile"
+        }
+      },
+      "0e9ba9e6-4c3b-4805-9456-182d485e7afd": {
+        "id": "0e9ba9e6-4c3b-4805-9456-182d485e7afd",
+        "from": {
+          "nodeId": "f3dbb063-37bd-4e58-8b0f-21f80d4a7868",
+          "portId": "Preprocessed_KNMI_datafile"
+        },
+        "to": {
+          "nodeId": "8e0b919c-f8e6-4acc-b4f1-e8856f95d1d3",
+          "portId": "Preprocessed_KNMI_datafile"
+        }
+      },
+      "3361f7bf-32b2-4fe5-984f-e532d0ec61d4": {
+        "id": "3361f7bf-32b2-4fe5-984f-e532d0ec61d4",
+        "from": {
+          "nodeId": "94149b93-a209-4cf7-bb50-55785e0ad2a8",
           "portId": "Preprocessed_species_trait_datafile"
         },
         "to": {
-          "nodeId": "7c1ae979-febe-4548-8338-f29fb3e43c2a",
+          "nodeId": "8e0b919c-f8e6-4acc-b4f1-e8856f95d1d3",
           "portId": "Preprocessed_species_trait_datafile"
         }
       },
-      "d9a05d32-21c3-441f-8cc2-319bcf3a8177": {
-        "id": "d9a05d32-21c3-441f-8cc2-319bcf3a8177",
+      "f5f0e5a0-390f-4f82-b973-3ca06e731278": {
+        "id": "f5f0e5a0-390f-4f82-b973-3ca06e731278",
         "from": {
-          "nodeId": "d12ca49c-c000-4cb3-8f32-6d1700a688ed",
+          "nodeId": "b39b3778-1106-4f17-9156-fa8c2e99bbe3",
           "portId": "Preprocessed_initial_community_datafile"
         },
         "to": {
-          "nodeId": "7c1ae979-febe-4548-8338-f29fb3e43c2a",
+          "nodeId": "8e0b919c-f8e6-4acc-b4f1-e8856f95d1d3",
           "portId": "Preprocessed_initial_community_datafile"
         }
       },
-      "2bad76bc-7bac-4c5f-a8d9-000eb3e20e61": {
-        "id": "2bad76bc-7bac-4c5f-a8d9-000eb3e20e61",
+      "e4935ada-f2a5-473c-9650-dfa108c83dcb": {
+        "id": "e4935ada-f2a5-473c-9650-dfa108c83dcb",
         "from": {
-          "nodeId": "7c1ae979-febe-4548-8338-f29fb3e43c2a",
+          "nodeId": "8e0b919c-f8e6-4acc-b4f1-e8856f95d1d3",
           "portId": "Scenario_file"
         },
         "to": {
-          "nodeId": "c573de6f-65f4-4efe-9f49-250d9f043c9a",
+          "nodeId": "9e77c08e-d3f9-4986-9e72-b79b8a9f5b17",
           "portId": "Scenario_file"
+        }
+      },
+      "117618b3-cd27-4d9a-9f2b-b8a87486f44b": {
+        "id": "117618b3-cd27-4d9a-9f2b-b8a87486f44b",
+        "from": {
+          "nodeId": "cb999d08-cdaf-44ab-9504-01fea4b0d401",
+          "portId": "KNMI_datafile"
+        },
+        "to": {
+          "nodeId": "f3dbb063-37bd-4e58-8b0f-21f80d4a7868",
+          "portId": "KNMI_datafile"
         }
       }
     },
