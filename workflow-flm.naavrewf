@@ -1,10 +1,10 @@
 {
   "chart": {
     "offset": {
-      "x": 89.66,
-      "y": 123.57
+      "x": -52.32,
+      "y": 24.14
     },
-    "scale": 0.446,
+    "scale": 0.713,
     "nodes": {
       "718c0aa0-3a2e-476b-ae3b-a0b0fab0961e": {
         "id": "718c0aa0-3a2e-476b-ae3b-a0b0fab0961e",
@@ -501,129 +501,6 @@
           "height": 105
         }
       },
-      "d80845e5-2a38-49ab-b5d5-9a1dcc43d4e9": {
-        "id": "d80845e5-2a38-49ab-b5d5-9a1dcc43d4e9",
-        "position": {
-          "x": 555.115102691038,
-          "y": 285.1774286824865
-        },
-        "orientation": 0,
-        "type": "workflow-cell",
-        "ports": {
-          "KNMI_datafile": {
-            "id": "KNMI_datafile",
-            "type": "right",
-            "properties": {
-              "color": "#d2672d",
-              "parentNodeType": "workflow-cell"
-            },
-            "position": {
-              "x": 252,
-              "y": 17
-            }
-          },
-          "KNMI_spinup_datafile": {
-            "id": "KNMI_spinup_datafile",
-            "type": "right",
-            "properties": {
-              "color": "#c587bc",
-              "parentNodeType": "workflow-cell"
-            },
-            "position": {
-              "x": 252,
-              "y": 43
-            }
-          }
-        },
-        "properties": {
-          "cell": {
-            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/9f99a21b-2c82-4ace-aeee-154c7dbb1c3a/",
-            "owner": "liekewiersum@gmail.com",
-            "virtual_lab": "veluwe-forest-model",
-            "shared_with_scopes": [],
-            "shared_with_users": [],
-            "base_container_image": {
-              "build": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-build:v0.0.45",
-              "runtime": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-runtime:v0.0.45"
-            },
-            "dependencies": [
-              {
-                "name": "dplyr",
-                "module": "",
-                "asname": ""
-              },
-              {
-                "name": "lubridate",
-                "module": "",
-                "asname": ""
-              },
-              {
-                "name": "readr",
-                "module": "",
-                "asname": ""
-              },
-              {
-                "name": "stringr",
-                "module": "",
-                "asname": ""
-              },
-              {
-                "name": "tidyr",
-                "module": "",
-                "asname": ""
-              }
-            ],
-            "inputs": [],
-            "outputs": [
-              {
-                "name": "KNMI_datafile",
-                "type": "str"
-              },
-              {
-                "name": "KNMI_spinup_datafile",
-                "type": "str"
-              }
-            ],
-            "confs": [],
-            "params": [
-              {
-                "name": "param_from_date",
-                "type": "str",
-                "default_value": "2022"
-              },
-              {
-                "name": "param_stationID",
-                "type": "str",
-                "default_value": "270"
-              },
-              {
-                "name": "param_to_date",
-                "type": "str",
-                "default_value": "2023"
-              },
-              {
-                "name": "param_vars",
-                "type": "str",
-                "default_value": "R"
-              }
-            ],
-            "secrets": [],
-            "title": "knmi-data-retriever-liekewiersum-gmail-com",
-            "description": "knmi-data-retriever-liekewiersum-gmail-com",
-            "created": "2025-12-24T13:38:29.370509Z",
-            "modified": "2025-12-24T13:38:29.679216Z",
-            "version": 2,
-            "container_image": "ghcr.io/naavre/cells-vl-veluwe-forest-model/knmi-data-retriever-liekewiersum-gmail-com:0de88be",
-            "kernel": "IRkernel",
-            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/tree/f431c458db7159bcdab388076f2a51ef0d8cfb33/knmi-data-retriever-liekewiersum-gmail-com",
-            "next_version": null
-          }
-        },
-        "size": {
-          "width": 252,
-          "height": 61
-        }
-      },
       "dbadb539-2a7b-4d73-a37a-90919f340104": {
         "id": "dbadb539-2a7b-4d73-a37a-90919f340104",
         "position": {
@@ -758,6 +635,149 @@
           "width": 252,
           "height": 61
         }
+      },
+      "5cfb0918-242d-4a9f-8e0b-7d8efc19c523": {
+        "id": "5cfb0918-242d-4a9f-8e0b-7d8efc19c523",
+        "position": {
+          "x": 560.4580269151063,
+          "y": 287.1183206106871
+        },
+        "orientation": 0,
+        "type": "workflow-cell",
+        "ports": {
+          "KNMI_datafile": {
+            "id": "KNMI_datafile",
+            "type": "right",
+            "properties": {
+              "color": "#d2672d",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 252,
+              "y": 17
+            }
+          },
+          "KNMI_spinup_datafile": {
+            "id": "KNMI_spinup_datafile",
+            "type": "right",
+            "properties": {
+              "color": "#c587bc",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 252,
+              "y": 43
+            }
+          }
+        },
+        "properties": {
+          "cell": {
+            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/8c475c03-e7d0-4955-a72c-a13ffd95e154/",
+            "owner": "liekewiersum@gmail.com",
+            "virtual_lab": "veluwe-forest-model",
+            "shared_with_scopes": [],
+            "shared_with_users": [],
+            "base_container_image": {
+              "build": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-build:v0.0.46",
+              "runtime": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-runtime:v0.0.46"
+            },
+            "dependencies": [
+              {
+                "name": "dplyr",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "lubridate",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "readr",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "stringr",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "tidyr",
+                "module": "",
+                "asname": ""
+              }
+            ],
+            "inputs": [],
+            "outputs": [
+              {
+                "name": "KNMI_datafile",
+                "type": "str"
+              },
+              {
+                "name": "KNMI_spinup_datafile",
+                "type": "str"
+              }
+            ],
+            "confs": [],
+            "params": [
+              {
+                "name": "param_from_date",
+                "type": "str",
+                "default_value": "2006"
+              },
+              {
+                "name": "param_from_date_spinup",
+                "type": "str",
+                "default_value": "1995"
+              },
+              {
+                "name": "param_stationID",
+                "type": "str",
+                "default_value": "260"
+              },
+              {
+                "name": "param_stationID_spinup",
+                "type": "str",
+                "default_value": "260"
+              },
+              {
+                "name": "param_to_date",
+                "type": "str",
+                "default_value": "2024"
+              },
+              {
+                "name": "param_to_date_spinup",
+                "type": "str",
+                "default_value": "2005"
+              },
+              {
+                "name": "param_vars",
+                "type": "str",
+                "default_value": "TN, TX, RH"
+              },
+              {
+                "name": "param_vars_spinup",
+                "type": "str",
+                "default_value": "TN, TX, RH"
+              }
+            ],
+            "secrets": [],
+            "title": "knmi-data-retriever-liekewiersum-gmail-com",
+            "description": "knmi-data-retriever-liekewiersum-gmail-com",
+            "created": "2026-01-05T09:48:55.295115Z",
+            "modified": "2026-01-05T09:48:55.905894Z",
+            "version": 3,
+            "container_image": "ghcr.io/naavre/cells-vl-veluwe-forest-model/knmi-data-retriever-liekewiersum-gmail-com:f485e51",
+            "kernel": "IRkernel",
+            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/tree/e8cd2f3decd59504d99e3cd049c6bd6dedcbb505/knmi-data-retriever-liekewiersum-gmail-com",
+            "next_version": null
+          }
+        },
+        "size": {
+          "width": 252,
+          "height": 61
+        }
       }
     },
     "links": {
@@ -816,28 +836,6 @@
           "portId": "Scenario_file"
         }
       },
-      "ff1e9d44-a193-41eb-b071-e618d3db92a1": {
-        "id": "ff1e9d44-a193-41eb-b071-e618d3db92a1",
-        "from": {
-          "nodeId": "d80845e5-2a38-49ab-b5d5-9a1dcc43d4e9",
-          "portId": "KNMI_datafile"
-        },
-        "to": {
-          "nodeId": "dbadb539-2a7b-4d73-a37a-90919f340104",
-          "portId": "KNMI_datafile"
-        }
-      },
-      "d5133df6-c26f-4a46-8483-0ffa7cb3236e": {
-        "id": "d5133df6-c26f-4a46-8483-0ffa7cb3236e",
-        "from": {
-          "nodeId": "d80845e5-2a38-49ab-b5d5-9a1dcc43d4e9",
-          "portId": "KNMI_spinup_datafile"
-        },
-        "to": {
-          "nodeId": "dbadb539-2a7b-4d73-a37a-90919f340104",
-          "portId": "KNMI_spinup_datafile"
-        }
-      },
       "1aab0f0e-aa4f-427c-a36e-a1dcf67bb455": {
         "id": "1aab0f0e-aa4f-427c-a36e-a1dcf67bb455",
         "from": {
@@ -858,6 +856,28 @@
         "to": {
           "nodeId": "25da6bec-ab34-438f-bf43-d59ee8104200",
           "portId": "Preprocessed_KNMI_spinup_datafile"
+        }
+      },
+      "809a1210-803d-4463-8a45-889acfc12ada": {
+        "id": "809a1210-803d-4463-8a45-889acfc12ada",
+        "from": {
+          "nodeId": "5cfb0918-242d-4a9f-8e0b-7d8efc19c523",
+          "portId": "KNMI_datafile"
+        },
+        "to": {
+          "nodeId": "dbadb539-2a7b-4d73-a37a-90919f340104",
+          "portId": "KNMI_datafile"
+        }
+      },
+      "21088f62-0d1d-48e1-808c-6847d2bdac1b": {
+        "id": "21088f62-0d1d-48e1-808c-6847d2bdac1b",
+        "from": {
+          "nodeId": "5cfb0918-242d-4a9f-8e0b-7d8efc19c523",
+          "portId": "KNMI_spinup_datafile"
+        },
+        "to": {
+          "nodeId": "dbadb539-2a7b-4d73-a37a-90919f340104",
+          "portId": "KNMI_spinup_datafile"
         }
       }
     },
