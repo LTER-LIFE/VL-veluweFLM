@@ -8,10 +8,12 @@ library(readr)
 #block for landis extension in flowchart for which extensions to include
 extension_vector <- c("Biomass_succession", "Output_biomass") #etc
 
+# Location data sources
+input_path <- file.path("/home/jovyan/Cloud Storage/naa-vre-user-data/")
 
 #retrieve species trait data
 #load and prepare TRY database for biomass succession
-TRY_biomass <- read.delim("path\to\your\TRY_database.txt", fileEncoding = "latin1", dec = ".", quote = "", stringsAsFactors = FALSE)
+TRY_biomass <- read.delim(paste0(input_path, "try-data.txt"), fileEncoding = "latin1", dec = ".", quote = "", stringsAsFactors = FALSE)
 TRY_biomass <- TRY_biomass %>%
   select(-`X`) %>%
   mutate(
@@ -247,7 +249,7 @@ writeLines(output_lines, "Core_species_data.txt")
 if ("Biomass_succession" %in% extension_vector) {
   
 #also read in establishment values from Probos, Probos misses Querrubr
-df_prob_establish <- read_csv("establishmentTreeVeluwe.csv") %>%
+df_prob_establish <- read_csv(paste0(input_path, "establishmentTreeVeluwe.csv")) %>%
   select(-1) %>%              # Remove first column if it's row names
   summarise(across(everything(), sum, na.rm = TRUE)) %>%
   pivot_longer(cols = everything(), names_to = "SpeciesCode", values_to = "ProbEstablish") %>%
@@ -272,10 +274,12 @@ df_prob_establish_missing <- tibble(
 df_prob_establish <- bind_rows(df_prob_establish, df_prob_establish_missing)
 
 #read in vitality scores from NBI 7
-mortality <- read.csv("probMortality_biomass.txt")
+mortality <- read.csv(paste0(input_path, "probMortality_biomass.txt"))
 
 #make dataframe for Probmortality
-df_prob_mortality <- mortality
+df_prob_mortality <- mortality %>%
+    dplyr::mutate(EcoregionName = 101,
+                  Year = 0)
 
 #prepare ANPPmax, comes from training algorythm, but for now default values
 Pseumenz_anpp_max <- 7.12 #ANPPmax_pseumenz 
