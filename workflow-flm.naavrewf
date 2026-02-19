@@ -1,10 +1,10 @@
 {
   "chart": {
     "offset": {
-      "x": -1.7,
-      "y": 30.72
+      "x": 300.37,
+      "y": 27.53
     },
-    "scale": 0.548,
+    "scale": 0.861,
     "nodes": {
       "bad8399b-8a3d-4203-91cd-a5f8c5ae7158": {
         "id": "bad8399b-8a3d-4203-91cd-a5f8c5ae7158",
@@ -475,257 +475,6 @@
           "height": 79
         }
       },
-      "e734bd99-138d-4a5d-8e5c-ea5af4384e47": {
-        "id": "e734bd99-138d-4a5d-8e5c-ea5af4384e47",
-        "position": {
-          "x": 738.8577454665613,
-          "y": 596.7456896551723
-        },
-        "orientation": 0,
-        "type": "workflow-cell",
-        "ports": {
-          "nbi5_forestdata": {
-            "id": "nbi5_forestdata",
-            "type": "left",
-            "properties": {
-              "color": "#e0b36c",
-              "parentNodeType": "workflow-cell"
-            },
-            "position": {
-              "x": -2,
-              "y": 13
-            }
-          },
-          "nbi5_plotdefinitie": {
-            "id": "nbi5_plotdefinitie",
-            "type": "left",
-            "properties": {
-              "color": "#c2d279",
-              "parentNodeType": "workflow-cell"
-            },
-            "position": {
-              "x": -2,
-              "y": 39
-            }
-          },
-          "nbi5_sampletrees": {
-            "id": "nbi5_sampletrees",
-            "type": "left",
-            "properties": {
-              "color": "#6853ac",
-              "parentNodeType": "workflow-cell"
-            },
-            "position": {
-              "x": -2,
-              "y": 65
-            }
-          },
-          "initial_communities_datafile": {
-            "id": "initial_communities_datafile",
-            "type": "right",
-            "properties": {
-              "color": "#86772d",
-              "parentNodeType": "workflow-cell"
-            },
-            "position": {
-              "x": 252,
-              "y": 26
-            }
-          },
-          "veluwe_sf": {
-            "id": "veluwe_sf",
-            "type": "right",
-            "properties": {
-              "color": "#93521f",
-              "parentNodeType": "workflow-cell"
-            },
-            "position": {
-              "x": 252,
-              "y": 52
-            }
-          }
-        },
-        "properties": {
-          "cell": {
-            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/674aa2c6-f5e3-451d-9591-f8680a93c441/",
-            "owner": "liekewiersum@gmail.com",
-            "virtual_lab": "veluwe-forest-model",
-            "shared_with_scopes": [],
-            "shared_with_users": [],
-            "base_container_image": {
-              "build": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-build:v0.1.9",
-              "runtime": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-runtime:v0.1.9"
-            },
-            "dependencies": [
-              {
-                "name": "dplyr",
-                "module": "",
-                "asname": null
-              },
-              {
-                "name": "tidyr",
-                "module": "",
-                "asname": null
-              },
-              {
-                "name": "stringr",
-                "module": "",
-                "asname": null
-              },
-              {
-                "name": "sf",
-                "module": "",
-                "asname": null
-              },
-              {
-                "name": "terra",
-                "module": "",
-                "asname": null
-              }
-            ],
-            "inputs": [
-              {
-                "name": "nbi5_forestdata",
-                "type": "str"
-              },
-              {
-                "name": "nbi5_plotdefinitie",
-                "type": "str"
-              },
-              {
-                "name": "nbi5_sampletrees",
-                "type": "str"
-              }
-            ],
-            "outputs": [
-              {
-                "name": "initial_communities_datafile",
-                "type": "str"
-              },
-              {
-                "name": "veluwe_sf",
-                "type": "str"
-              }
-            ],
-            "confs": [],
-            "params": [],
-            "secrets": [],
-            "title": "initial-communities-data-preprocessor-liekewiersum-gmail-com",
-            "description": "initial-communities-data-preprocessor-liekewiersum-gmail-com",
-            "created": "2026-02-10T12:17:42.830227Z",
-            "modified": "2026-02-10T12:17:43.125058Z",
-            "version": 3,
-            "container_image": "ghcr.io/naavre/cells-vl-veluwe-forest-model/initial-communities-data-preprocessor-liekewiersum-gmail-com:290fa91",
-            "kernel": "IRkernel",
-            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/tree/a88ecc47d3fa58634e6cecfcd11049a264cf3f0c/initial-communities-data-preprocessor-liekewiersum-gmail-com",
-            "is_draft": false,
-            "next_version": null
-          }
-        },
-        "size": {
-          "width": 252,
-          "height": 79
-        }
-      },
-      "4c4361e5-797e-461e-9493-70f4f23eeac3": {
-        "id": "4c4361e5-797e-461e-9493-70f4f23eeac3",
-        "position": {
-          "x": 370.3232627079405,
-          "y": 594.5905172413793
-        },
-        "orientation": 0,
-        "type": "workflow-cell",
-        "ports": {
-          "nbi5_forestdata": {
-            "id": "nbi5_forestdata",
-            "type": "right",
-            "properties": {
-              "color": "#e0b36c",
-              "parentNodeType": "workflow-cell"
-            },
-            "position": {
-              "x": 252,
-              "y": 13
-            }
-          },
-          "nbi5_plotdefinitie": {
-            "id": "nbi5_plotdefinitie",
-            "type": "right",
-            "properties": {
-              "color": "#c2d279",
-              "parentNodeType": "workflow-cell"
-            },
-            "position": {
-              "x": 252,
-              "y": 39
-            }
-          },
-          "nbi5_sampletrees": {
-            "id": "nbi5_sampletrees",
-            "type": "right",
-            "properties": {
-              "color": "#6853ac",
-              "parentNodeType": "workflow-cell"
-            },
-            "position": {
-              "x": 252,
-              "y": 65
-            }
-          }
-        },
-        "properties": {
-          "cell": {
-            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/42b6e611-4adf-4fce-b90f-3d94a3192ce4/",
-            "owner": "liekewiersum@gmail.com",
-            "virtual_lab": "veluwe-forest-model",
-            "shared_with_scopes": [],
-            "shared_with_users": [],
-            "base_container_image": {
-              "build": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-build:v0.1.6",
-              "runtime": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-runtime:v0.1.6"
-            },
-            "dependencies": [
-              {
-                "name": "Hmisc",
-                "module": "",
-                "asname": null
-              }
-            ],
-            "inputs": [],
-            "outputs": [
-              {
-                "name": "nbi5_forestdata",
-                "type": "str"
-              },
-              {
-                "name": "nbi5_plotdefinitie",
-                "type": "str"
-              },
-              {
-                "name": "nbi5_sampletrees",
-                "type": "str"
-              }
-            ],
-            "confs": [],
-            "params": [],
-            "secrets": [],
-            "title": "initial-communities-data-retriever-liekewiersum-gmail-com",
-            "description": "initial-communities-data-retriever-liekewiersum-gmail-com",
-            "created": "2026-02-06T13:55:39.093684Z",
-            "modified": "2026-02-06T13:55:39.416974Z",
-            "version": 1,
-            "container_image": "ghcr.io/naavre/cells-vl-veluwe-forest-model/initial-communities-data-retriever-liekewiersum-gmail-com:286e1df",
-            "kernel": "IRkernel",
-            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/tree/7f2b65f423c04df218ef89fd1cf749d4a1f8bb81/initial-communities-data-retriever-liekewiersum-gmail-com",
-            "is_draft": false,
-            "next_version": null
-          }
-        },
-        "size": {
-          "width": 252,
-          "height": 79
-        }
-      },
       "a20717e2-d05f-4512-9f6d-8be7cec8179b": {
         "id": "a20717e2-d05f-4512-9f6d-8be7cec8179b",
         "position": {
@@ -845,8 +594,8 @@
       "dfac3c59-c828-4feb-9169-56425f10ea9d": {
         "id": "dfac3c59-c828-4feb-9169-56425f10ea9d",
         "position": {
-          "x": 2255.605853824889,
-          "y": 587.8640041751872
+          "x": 2256.7672940107195,
+          "y": 616.900008820948
         },
         "orientation": 0,
         "type": "workflow-cell",
@@ -1097,132 +846,11 @@
           "height": 131
         }
       },
-      "fc84a09b-fe42-45c9-a75f-d0e1b0460cc3": {
-        "id": "fc84a09b-fe42-45c9-a75f-d0e1b0460cc3",
-        "position": {
-          "x": 1176.2920770226258,
-          "y": 604.1086697222372
-        },
-        "orientation": 0,
-        "type": "workflow-cell",
-        "ports": {
-          "initial_communities_datafile": {
-            "id": "initial_communities_datafile",
-            "type": "left",
-            "properties": {
-              "color": "#86772d",
-              "parentNodeType": "workflow-cell"
-            },
-            "position": {
-              "x": -2,
-              "y": 17
-            }
-          },
-          "veluwe_sf": {
-            "id": "veluwe_sf",
-            "type": "left",
-            "properties": {
-              "color": "#93521f",
-              "parentNodeType": "workflow-cell"
-            },
-            "position": {
-              "x": -2,
-              "y": 43
-            }
-          },
-          "ecoregions_tif": {
-            "id": "ecoregions_tif",
-            "type": "right",
-            "properties": {
-              "color": "#6c7de0",
-              "parentNodeType": "workflow-cell"
-            },
-            "position": {
-              "x": 252,
-              "y": 17
-            }
-          },
-          "initial_communities_tif": {
-            "id": "initial_communities_tif",
-            "type": "right",
-            "properties": {
-              "color": "#4093bf",
-              "parentNodeType": "workflow-cell"
-            },
-            "position": {
-              "x": 252,
-              "y": 43
-            }
-          }
-        },
-        "properties": {
-          "cell": {
-            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/8e6d2b42-1b84-4fd5-b6b2-c00e5048e11c/",
-            "owner": "liekewiersum@gmail.com",
-            "virtual_lab": "veluwe-forest-model",
-            "shared_with_scopes": [],
-            "shared_with_users": [],
-            "base_container_image": {
-              "build": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-build:v0.1.6",
-              "runtime": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-runtime:v0.1.6"
-            },
-            "dependencies": [
-              {
-                "name": "sf",
-                "module": "",
-                "asname": null
-              },
-              {
-                "name": "terra",
-                "module": "",
-                "asname": null
-              }
-            ],
-            "inputs": [
-              {
-                "name": "initial_communities_datafile",
-                "type": "str"
-              },
-              {
-                "name": "veluwe_sf",
-                "type": "str"
-              }
-            ],
-            "outputs": [
-              {
-                "name": "ecoregions_tif",
-                "type": "str"
-              },
-              {
-                "name": "initial_communities_tif",
-                "type": "str"
-              }
-            ],
-            "confs": [],
-            "params": [],
-            "secrets": [],
-            "title": "ecoregionsmap-and-initialcommunitiesmap-liekewiersum-gmail-com",
-            "description": "ecoregionsmap-and-initialcommunitiesmap-liekewiersum-gmail-com",
-            "created": "2026-02-09T13:08:46.582485Z",
-            "modified": "2026-02-09T13:08:46.805051Z",
-            "version": 3,
-            "container_image": "ghcr.io/naavre/cells-vl-veluwe-forest-model/ecoregionsmap-and-initialcommunitiesmap-liekewiersum-gmail-com:4d88ba0",
-            "kernel": "IRkernel",
-            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/tree/40c5cadec366ef2fb7563cbd157dceeccded5c15/ecoregionsmap-and-initialcommunitiesmap-liekewiersum-gmail-com",
-            "is_draft": false,
-            "next_version": null
-          }
-        },
-        "size": {
-          "width": 252,
-          "height": 61
-        }
-      },
       "ce9209ae-2369-4703-bd46-50bca9f1f614": {
         "id": "ce9209ae-2369-4703-bd46-50bca9f1f614",
         "position": {
           "x": 1946.656398630667,
-          "y": 565.3417582417583
+          "y": 593.2163227016886
         },
         "orientation": 0,
         "type": "workflow-cell",
@@ -1349,6 +977,501 @@
           "width": 252,
           "height": 105
         }
+      },
+      "439d5f6e-2863-433d-aa78-4010e69461a2": {
+        "id": "439d5f6e-2863-433d-aa78-4010e69461a2",
+        "position": {
+          "x": 412.7090973013184,
+          "y": 854.5656577127161
+        },
+        "orientation": 0,
+        "type": "workflow-cell",
+        "ports": {
+          "veluwe_sf_datafile": {
+            "id": "veluwe_sf_datafile",
+            "type": "right",
+            "properties": {
+              "color": "#8979d2",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 252,
+              "y": 30
+            }
+          }
+        },
+        "properties": {
+          "cell": {
+            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/df39ed65-5cbc-4405-965d-7aaa04e7b014/",
+            "owner": "liekewiersum@gmail.com",
+            "virtual_lab": "veluwe-forest-model",
+            "shared_with_scopes": [],
+            "shared_with_users": [],
+            "base_container_image": {
+              "build": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-build:v0.1.9",
+              "runtime": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-runtime:v0.1.9"
+            },
+            "dependencies": [
+              {
+                "name": "sf",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "terra",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "processx",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "dplyr",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "lubridate",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "readr",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "stringr",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "tidyr",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "Hmisc",
+                "module": "",
+                "asname": ""
+              }
+            ],
+            "inputs": [],
+            "outputs": [
+              {
+                "name": "veluwe_sf_datafile",
+                "type": "str"
+              }
+            ],
+            "confs": [],
+            "params": [],
+            "secrets": [],
+            "title": "veluwe-map-liekewiersum-gmail-com",
+            "description": "veluwe-map-liekewiersum-gmail-com",
+            "created": "2026-02-13T09:11:38.280906Z",
+            "modified": "2026-02-13T09:11:38.499273Z",
+            "version": 1,
+            "container_image": "ghcr.io/naavre/cells-vl-veluwe-forest-model/veluwe-map-liekewiersum-gmail-com:231e855",
+            "kernel": "IRkernel",
+            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/tree/03980455b34c690466fd3cdeee80a654b6c167c5/veluwe-map-liekewiersum-gmail-com",
+            "is_draft": false,
+            "next_version": null
+          }
+        },
+        "size": {
+          "width": 252,
+          "height": 61
+        }
+      },
+      "b8c489a1-0618-4b9f-a59b-58cdcf0cdc13": {
+        "id": "b8c489a1-0618-4b9f-a59b-58cdcf0cdc13",
+        "position": {
+          "x": 363.17644665288,
+          "y": 593.5294117647055
+        },
+        "orientation": 0,
+        "type": "workflow-cell",
+        "ports": {
+          "nbi5_forestdata": {
+            "id": "nbi5_forestdata",
+            "type": "right",
+            "properties": {
+              "color": "#e0b36c",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 252,
+              "y": 13
+            }
+          },
+          "nbi5_plotdefinition": {
+            "id": "nbi5_plotdefinition",
+            "type": "right",
+            "properties": {
+              "color": "#1f9357",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 252,
+              "y": 39
+            }
+          },
+          "nbi5_sampletrees": {
+            "id": "nbi5_sampletrees",
+            "type": "right",
+            "properties": {
+              "color": "#6853ac",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 252,
+              "y": 65
+            }
+          }
+        },
+        "properties": {
+          "cell": {
+            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/1870a275-da28-46c3-9654-e78bf597e7c5/",
+            "owner": "liekewiersum@gmail.com",
+            "virtual_lab": "veluwe-forest-model",
+            "shared_with_scopes": [],
+            "shared_with_users": [],
+            "base_container_image": {
+              "build": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-build:v0.1.9",
+              "runtime": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-runtime:v0.1.9"
+            },
+            "dependencies": [
+              {
+                "name": "Hmisc",
+                "module": "",
+                "asname": null
+              }
+            ],
+            "inputs": [],
+            "outputs": [
+              {
+                "name": "nbi5_forestdata",
+                "type": "str"
+              },
+              {
+                "name": "nbi5_plotdefinition",
+                "type": "str"
+              },
+              {
+                "name": "nbi5_sampletrees",
+                "type": "str"
+              }
+            ],
+            "confs": [],
+            "params": [],
+            "secrets": [],
+            "title": "initial-communities-data-retriever-liekewiersum-gmail-com",
+            "description": "initial-communities-data-retriever-liekewiersum-gmail-com",
+            "created": "2026-02-13T09:42:13.993611Z",
+            "modified": "2026-02-13T09:42:14.216441Z",
+            "version": 2,
+            "container_image": "ghcr.io/naavre/cells-vl-veluwe-forest-model/initial-communities-data-retriever-liekewiersum-gmail-com:bd72cd0",
+            "kernel": "IRkernel",
+            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/tree/4b8523b6f8ec3276dbccb839737d2e832a086ed0/initial-communities-data-retriever-liekewiersum-gmail-com",
+            "is_draft": false,
+            "next_version": null
+          }
+        },
+        "size": {
+          "width": 252,
+          "height": 79
+        }
+      },
+      "b8e23085-2c3e-477e-9f44-cba9b1044ea1": {
+        "id": "b8e23085-2c3e-477e-9f44-cba9b1044ea1",
+        "position": {
+          "x": 737.0847851335657,
+          "y": 594.0418118466898
+        },
+        "orientation": 0,
+        "type": "workflow-cell",
+        "ports": {
+          "nbi5_forestdata": {
+            "id": "nbi5_forestdata",
+            "type": "left",
+            "properties": {
+              "color": "#e0b36c",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 13
+            }
+          },
+          "nbi5_plotdefinition": {
+            "id": "nbi5_plotdefinition",
+            "type": "left",
+            "properties": {
+              "color": "#1f9357",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 39
+            }
+          },
+          "nbi5_sampletrees": {
+            "id": "nbi5_sampletrees",
+            "type": "left",
+            "properties": {
+              "color": "#6853ac",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 65
+            }
+          },
+          "veluwe_sf_datafile": {
+            "id": "veluwe_sf_datafile",
+            "type": "left",
+            "properties": {
+              "color": "#8979d2",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 91
+            }
+          },
+          "initial_communities_datafile": {
+            "id": "initial_communities_datafile",
+            "type": "right",
+            "properties": {
+              "color": "#86772d",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 252,
+              "y": 39
+            }
+          },
+          "plots_and_communities_datafile": {
+            "id": "plots_and_communities_datafile",
+            "type": "right",
+            "properties": {
+              "color": "#b040bf",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 252,
+              "y": 65
+            }
+          }
+        },
+        "properties": {
+          "cell": {
+            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/3fd157c3-c4d6-46fd-ba4d-c27083709ed5/",
+            "owner": "liekewiersum@gmail.com",
+            "virtual_lab": "veluwe-forest-model",
+            "shared_with_scopes": [],
+            "shared_with_users": [],
+            "base_container_image": {
+              "build": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-build:v0.1.9",
+              "runtime": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-runtime:v0.1.9"
+            },
+            "dependencies": [
+              {
+                "name": "terra",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "dplyr",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "tidyr",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "stringr",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "sf",
+                "module": "",
+                "asname": null
+              }
+            ],
+            "inputs": [
+              {
+                "name": "nbi5_forestdata",
+                "type": "str"
+              },
+              {
+                "name": "nbi5_plotdefinition",
+                "type": "str"
+              },
+              {
+                "name": "nbi5_sampletrees",
+                "type": "str"
+              },
+              {
+                "name": "veluwe_sf_datafile",
+                "type": "str"
+              }
+            ],
+            "outputs": [
+              {
+                "name": "initial_communities_datafile",
+                "type": "str"
+              },
+              {
+                "name": "plots_and_communities_datafile",
+                "type": "str"
+              }
+            ],
+            "confs": [],
+            "params": [],
+            "secrets": [],
+            "title": "initial-communities-data-preprocessor-liekewiersum-gmail-com",
+            "description": "initial-communities-data-preprocessor-liekewiersum-gmail-com",
+            "created": "2026-02-19T13:50:47.530986Z",
+            "modified": "2026-02-19T13:50:47.888678Z",
+            "version": 7,
+            "container_image": "ghcr.io/naavre/cells-vl-veluwe-forest-model/initial-communities-data-preprocessor-liekewiersum-gmail-com:8e3cea8",
+            "kernel": "IRkernel",
+            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/tree/2e1543ee60ce76ab66a07bdcd6abd268bee9612f/initial-communities-data-preprocessor-liekewiersum-gmail-com",
+            "is_draft": false,
+            "next_version": null
+          }
+        },
+        "size": {
+          "width": 252,
+          "height": 105
+        }
+      },
+      "d1292607-7258-44c3-b53a-d8f9256c8c79": {
+        "id": "d1292607-7258-44c3-b53a-d8f9256c8c79",
+        "position": {
+          "x": 1179.5934959349586,
+          "y": 640.4994192799072
+        },
+        "orientation": 0,
+        "type": "workflow-cell",
+        "ports": {
+          "plots_and_communities_datafile": {
+            "id": "plots_and_communities_datafile",
+            "type": "left",
+            "properties": {
+              "color": "#b040bf",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 17
+            }
+          },
+          "veluwe_sf_datafile": {
+            "id": "veluwe_sf_datafile",
+            "type": "left",
+            "properties": {
+              "color": "#8979d2",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 43
+            }
+          },
+          "ecoregions_tif": {
+            "id": "ecoregions_tif",
+            "type": "right",
+            "properties": {
+              "color": "#6c7de0",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 252,
+              "y": 17
+            }
+          },
+          "initial_communities_tif": {
+            "id": "initial_communities_tif",
+            "type": "right",
+            "properties": {
+              "color": "#4093bf",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 252,
+              "y": 43
+            }
+          }
+        },
+        "properties": {
+          "cell": {
+            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/afd56091-f797-4227-a93d-e3e10f69e515/",
+            "owner": "liekewiersum@gmail.com",
+            "virtual_lab": "veluwe-forest-model",
+            "shared_with_scopes": [],
+            "shared_with_users": [],
+            "base_container_image": {
+              "build": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-build:v0.1.9",
+              "runtime": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-runtime:v0.1.9"
+            },
+            "dependencies": [
+              {
+                "name": "sf",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "terra",
+                "module": "",
+                "asname": null
+              }
+            ],
+            "inputs": [
+              {
+                "name": "plots_and_communities_datafile",
+                "type": "str"
+              },
+              {
+                "name": "veluwe_sf_datafile",
+                "type": "str"
+              }
+            ],
+            "outputs": [
+              {
+                "name": "ecoregions_tif",
+                "type": "str"
+              },
+              {
+                "name": "initial_communities_tif",
+                "type": "str"
+              }
+            ],
+            "confs": [],
+            "params": [],
+            "secrets": [],
+            "title": "ecoregionsmap-and-initialcommunitiesmap-liekewiersum-gmail-com",
+            "description": "ecoregionsmap-and-initialcommunitiesmap-liekewiersum-gmail-com",
+            "created": "2026-02-19T14:26:12.855710Z",
+            "modified": "2026-02-19T14:26:13.066753Z",
+            "version": 5,
+            "container_image": "ghcr.io/naavre/cells-vl-veluwe-forest-model/ecoregionsmap-and-initialcommunitiesmap-liekewiersum-gmail-com:78f10e4",
+            "kernel": "IRkernel",
+            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/tree/38eb98ca66effced358a6257dfefa5a4983254de/ecoregionsmap-and-initialcommunitiesmap-liekewiersum-gmail-com",
+            "is_draft": false,
+            "next_version": null
+          }
+        },
+        "size": {
+          "width": 252,
+          "height": 61
+        }
       }
     },
     "links": {
@@ -1383,39 +1506,6 @@
         "to": {
           "nodeId": "090896c4-acd5-4331-bd82-f2c4b62aaca0",
           "portId": "species_traits_datafile"
-        }
-      },
-      "beaeaf1d-bc1f-44db-8eac-a2989e2ae0d7": {
-        "id": "beaeaf1d-bc1f-44db-8eac-a2989e2ae0d7",
-        "from": {
-          "nodeId": "4c4361e5-797e-461e-9493-70f4f23eeac3",
-          "portId": "nbi5_forestdata"
-        },
-        "to": {
-          "nodeId": "e734bd99-138d-4a5d-8e5c-ea5af4384e47",
-          "portId": "nbi5_forestdata"
-        }
-      },
-      "75528ab4-24f6-4c2c-9311-bd8da2666346": {
-        "id": "75528ab4-24f6-4c2c-9311-bd8da2666346",
-        "from": {
-          "nodeId": "4c4361e5-797e-461e-9493-70f4f23eeac3",
-          "portId": "nbi5_plotdefinitie"
-        },
-        "to": {
-          "nodeId": "e734bd99-138d-4a5d-8e5c-ea5af4384e47",
-          "portId": "nbi5_plotdefinitie"
-        }
-      },
-      "46efb08c-bfff-41db-9dcb-5f86c50d0cb5": {
-        "id": "46efb08c-bfff-41db-9dcb-5f86c50d0cb5",
-        "from": {
-          "nodeId": "4c4361e5-797e-461e-9493-70f4f23eeac3",
-          "portId": "nbi5_sampletrees"
-        },
-        "to": {
-          "nodeId": "e734bd99-138d-4a5d-8e5c-ea5af4384e47",
-          "portId": "nbi5_sampletrees"
         }
       },
       "32c605d4-1abb-4756-9eef-be5fb009ebde": {
@@ -1484,50 +1574,6 @@
           "portId": "spp_ecoregion_datafile"
         }
       },
-      "b9c78562-4732-421b-987c-d22982d8ba68": {
-        "id": "b9c78562-4732-421b-987c-d22982d8ba68",
-        "from": {
-          "nodeId": "e734bd99-138d-4a5d-8e5c-ea5af4384e47",
-          "portId": "initial_communities_datafile"
-        },
-        "to": {
-          "nodeId": "fc84a09b-fe42-45c9-a75f-d0e1b0460cc3",
-          "portId": "initial_communities_datafile"
-        }
-      },
-      "6bf79d15-7a41-4a3c-a42c-255a25c95bbf": {
-        "id": "6bf79d15-7a41-4a3c-a42c-255a25c95bbf",
-        "from": {
-          "nodeId": "e734bd99-138d-4a5d-8e5c-ea5af4384e47",
-          "portId": "veluwe_sf"
-        },
-        "to": {
-          "nodeId": "fc84a09b-fe42-45c9-a75f-d0e1b0460cc3",
-          "portId": "veluwe_sf"
-        }
-      },
-      "3f3b6b01-1df1-47b6-8255-b38059616a76": {
-        "id": "3f3b6b01-1df1-47b6-8255-b38059616a76",
-        "from": {
-          "nodeId": "fc84a09b-fe42-45c9-a75f-d0e1b0460cc3",
-          "portId": "initial_communities_tif"
-        },
-        "to": {
-          "nodeId": "6d55054d-73e7-462d-9796-9fa98373eeb8",
-          "portId": "initial_communities_tif"
-        }
-      },
-      "5bfdaebe-e313-49b9-9dfc-e29daee81f90": {
-        "id": "5bfdaebe-e313-49b9-9dfc-e29daee81f90",
-        "from": {
-          "nodeId": "fc84a09b-fe42-45c9-a75f-d0e1b0460cc3",
-          "portId": "ecoregions_tif"
-        },
-        "to": {
-          "nodeId": "ce9209ae-2369-4703-bd46-50bca9f1f614",
-          "portId": "ecoregions_tif"
-        }
-      },
       "e62bb759-adc6-44df-b6c4-be4c5d9e7887": {
         "id": "e62bb759-adc6-44df-b6c4-be4c5d9e7887",
         "from": {
@@ -1561,15 +1607,103 @@
           "portId": "climategenerator_txt"
         }
       },
-      "cf7bcf8f-76e1-4f97-a3ff-470cb20a094a": {
-        "id": "cf7bcf8f-76e1-4f97-a3ff-470cb20a094a",
+      "c49c51ec-f4ba-4566-8342-3e29bd34ec05": {
+        "id": "c49c51ec-f4ba-4566-8342-3e29bd34ec05",
         "from": {
-          "nodeId": "e734bd99-138d-4a5d-8e5c-ea5af4384e47",
+          "nodeId": "b8c489a1-0618-4b9f-a59b-58cdcf0cdc13",
+          "portId": "nbi5_forestdata"
+        },
+        "to": {
+          "nodeId": "b8e23085-2c3e-477e-9f44-cba9b1044ea1",
+          "portId": "nbi5_forestdata"
+        }
+      },
+      "da6d632d-a82c-4869-b58f-8021a91dfdb5": {
+        "id": "da6d632d-a82c-4869-b58f-8021a91dfdb5",
+        "from": {
+          "nodeId": "b8c489a1-0618-4b9f-a59b-58cdcf0cdc13",
+          "portId": "nbi5_plotdefinition"
+        },
+        "to": {
+          "nodeId": "b8e23085-2c3e-477e-9f44-cba9b1044ea1",
+          "portId": "nbi5_plotdefinition"
+        }
+      },
+      "c3e31625-bba1-45ce-bd50-d0faaebf7396": {
+        "id": "c3e31625-bba1-45ce-bd50-d0faaebf7396",
+        "from": {
+          "nodeId": "b8c489a1-0618-4b9f-a59b-58cdcf0cdc13",
+          "portId": "nbi5_sampletrees"
+        },
+        "to": {
+          "nodeId": "b8e23085-2c3e-477e-9f44-cba9b1044ea1",
+          "portId": "nbi5_sampletrees"
+        }
+      },
+      "a4c4b959-60a5-49f5-8e33-f8fbe0262ef9": {
+        "id": "a4c4b959-60a5-49f5-8e33-f8fbe0262ef9",
+        "from": {
+          "nodeId": "439d5f6e-2863-433d-aa78-4010e69461a2",
+          "portId": "veluwe_sf_datafile"
+        },
+        "to": {
+          "nodeId": "b8e23085-2c3e-477e-9f44-cba9b1044ea1",
+          "portId": "veluwe_sf_datafile"
+        }
+      },
+      "85c32234-bf09-41e3-97fe-d6c2bfd95a2a": {
+        "id": "85c32234-bf09-41e3-97fe-d6c2bfd95a2a",
+        "from": {
+          "nodeId": "b8e23085-2c3e-477e-9f44-cba9b1044ea1",
           "portId": "initial_communities_datafile"
         },
         "to": {
           "nodeId": "6d55054d-73e7-462d-9796-9fa98373eeb8",
           "portId": "initial_communities_datafile"
+        }
+      },
+      "8b73afad-b1ff-4343-8253-574eed8f01ab": {
+        "id": "8b73afad-b1ff-4343-8253-574eed8f01ab",
+        "from": {
+          "nodeId": "b8e23085-2c3e-477e-9f44-cba9b1044ea1",
+          "portId": "plots_and_communities_datafile"
+        },
+        "to": {
+          "nodeId": "d1292607-7258-44c3-b53a-d8f9256c8c79",
+          "portId": "plots_and_communities_datafile"
+        }
+      },
+      "2c5c08b3-214e-4e76-8c81-d0bc8bb0e629": {
+        "id": "2c5c08b3-214e-4e76-8c81-d0bc8bb0e629",
+        "from": {
+          "nodeId": "439d5f6e-2863-433d-aa78-4010e69461a2",
+          "portId": "veluwe_sf_datafile"
+        },
+        "to": {
+          "nodeId": "d1292607-7258-44c3-b53a-d8f9256c8c79",
+          "portId": "veluwe_sf_datafile"
+        }
+      },
+      "769e5dc4-f414-424f-871d-947b740418b1": {
+        "id": "769e5dc4-f414-424f-871d-947b740418b1",
+        "from": {
+          "nodeId": "d1292607-7258-44c3-b53a-d8f9256c8c79",
+          "portId": "ecoregions_tif"
+        },
+        "to": {
+          "nodeId": "ce9209ae-2369-4703-bd46-50bca9f1f614",
+          "portId": "ecoregions_tif"
+        }
+      },
+      "c0cc6f87-e631-4d93-af61-c2d2a5e52a52": {
+        "id": "c0cc6f87-e631-4d93-af61-c2d2a5e52a52",
+        "from": {
+          "nodeId": "d1292607-7258-44c3-b53a-d8f9256c8c79",
+          "portId": "initial_communities_tif"
+        },
+        "to": {
+          "nodeId": "6d55054d-73e7-462d-9796-9fa98373eeb8",
+          "portId": "initial_communities_tif"
         }
       }
     },
