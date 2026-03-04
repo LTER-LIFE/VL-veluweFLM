@@ -14,3 +14,7 @@ come together.
 With this goal and scope in mind the LTER-LIFE Veluwe team is
 developing a forest landscape model of the Veluwe. Since February 2025 it serves as a
 LTER-LIFE Veluwe use case.
+
+### Keywords
+- Forest Biodiversity Dynamics
+- Anthropogenic Drivers
