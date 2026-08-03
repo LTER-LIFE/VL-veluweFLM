@@ -1,16 +1,211 @@
 {
   "chart": {
     "offset": {
-      "x": -112.57,
-      "y": 6.44
+      "x": -259.33,
+      "y": -21.24
     },
-    "scale": 0.746,
+    "scale": 0.463,
     "nodes": {
-      "885be6f4-4e78-4e96-9753-10bf14718656": {
-        "id": "885be6f4-4e78-4e96-9753-10bf14718656",
+      "928aa683-94ee-4685-a7a5-4f814e812c19": {
+        "id": "928aa683-94ee-4685-a7a5-4f814e812c19",
         "position": {
-          "x": 1352.3108444850404,
-          "y": 611.4174912099257
+          "x": 991.9020172910664,
+          "y": 246.94524495677234
+        },
+        "orientation": 0,
+        "type": "workflow-cell",
+        "ports": {
+          "KNMI_daily_datafile": {
+            "id": "KNMI_daily_datafile",
+            "type": "right",
+            "properties": {
+              "color": "#40bdbf",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 252,
+              "y": 17
+            }
+          },
+          "KNMI_spinup_datafile": {
+            "id": "KNMI_spinup_datafile",
+            "type": "right",
+            "properties": {
+              "color": "#c587bc",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 252,
+              "y": 43
+            }
+          }
+        },
+        "properties": {
+          "cell": {
+            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/9d9b062d-b8e6-42ef-8cb5-49b5e76dcef6/",
+            "owner": "justinet",
+            "virtual_lab": "veluwe-forest-model",
+            "shared_with_scopes": [],
+            "shared_with_users": [],
+            "versions": [
+              {
+                "version": 1,
+                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/9d9b062d-b8e6-42ef-8cb5-49b5e76dcef6/"
+              }
+            ],
+            "base_container_image": {
+              "build": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-build:v0.3.13",
+              "runtime": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-runtime:v0.3.13"
+            },
+            "dependencies": [
+              {
+                "name": "dplyr",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "haven",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "Hmisc",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "lubridate",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "pacman",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "processx",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "raster",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "readr",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "sf",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "stringr",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "terra",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "tidyr",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "tibble",
+                "module": "",
+                "asname": ""
+              }
+            ],
+            "inputs": [],
+            "outputs": [
+              {
+                "name": "KNMI_daily_datafile",
+                "type": "str"
+              },
+              {
+                "name": "KNMI_spinup_datafile",
+                "type": "str"
+              }
+            ],
+            "confs": [
+              {
+                "name": "conf_tmp_data",
+                "assignation": "conf_tmp_data=\"/tmp/data/\""
+              }
+            ],
+            "params": [
+              {
+                "name": "param_from_date",
+                "type": "str",
+                "default_value": "1960"
+              },
+              {
+                "name": "param_from_date_spinup",
+                "type": "str",
+                "default_value": "1901"
+              },
+              {
+                "name": "param_stationID",
+                "type": "str",
+                "default_value": "260"
+              },
+              {
+                "name": "param_stationID_spinup",
+                "type": "str",
+                "default_value": "260"
+              },
+              {
+                "name": "param_to_date",
+                "type": "str",
+                "default_value": "2025"
+              },
+              {
+                "name": "param_to_date_spinup",
+                "type": "str",
+                "default_value": "1960"
+              },
+              {
+                "name": "param_vars",
+                "type": "str",
+                "default_value": "average_temperature, minimum_temperature, maximum_temperature, total_precipitation, average_windspeed, average_winddirection, relative_humidity, minimum_humidity, maximum_humidity"
+              },
+              {
+                "name": "param_vars_spinup",
+                "type": "str",
+                "default_value": "average_temperature, minimum_temperature, maximum_temperature, total_precipitation, average_windspeed, average_winddirection, relative_humidity, minimum_humidity, maximum_humidity"
+              }
+            ],
+            "secrets": [],
+            "title": "knmi-data-retriever-justinet",
+            "description": "knmi-data-retriever-justinet",
+            "created": "2026-07-30T12:14:57.397097Z",
+            "modified": "2026-07-30T12:15:00.059434Z",
+            "version": 1,
+            "template_format": "v1",
+            "container_image": "ghcr.io/naavre/cells-vl-veluwe-forest-model/knmi-data-retriever-justinet:6ad6f7e",
+            "kernel": "IRkernel",
+            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/tree/42fdc2d603c788cff046899c3f01baa4c38db16b/knmi-data-retriever-justinet",
+            "is_draft": false
+          }
+        },
+        "size": {
+          "width": 252,
+          "height": 61
+        }
+      },
+      "5af578ea-c6e4-461a-86b3-347dc970bbe5": {
+        "id": "5af578ea-c6e4-461a-86b3-347dc970bbe5",
+        "position": {
+          "x": 1219.8563130696634,
+          "y": 429.3678160919541
         },
         "orientation": 0,
         "type": "workflow-cell",
@@ -54,7 +249,7 @@
         },
         "properties": {
           "cell": {
-            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/5981a184-4a1c-4939-a3db-1dab4313a514/",
+            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/38ac95a1-7331-4660-a2b0-c096f999addc/",
             "owner": "justinet",
             "virtual_lab": "veluwe-forest-model",
             "shared_with_scopes": [],
@@ -62,24 +257,21 @@
             "versions": [
               {
                 "version": 1,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/33dbc965-0b75-4438-bbb3-17ed2a3bbdd9/"
-              },
-              {
-                "version": 2,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/8282bd94-ce44-41af-8a11-6b6881b27468/"
-              },
-              {
-                "version": 3,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/5981a184-4a1c-4939-a3db-1dab4313a514/"
+                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/38ac95a1-7331-4660-a2b0-c096f999addc/"
               }
             ],
             "base_container_image": {
-              "build": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-build:v0.3.5",
-              "runtime": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-runtime:v0.3.5"
+              "build": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-build:v0.3.13",
+              "runtime": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-runtime:v0.3.13"
             },
             "dependencies": [
               {
                 "name": "dplyr",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "haven",
                 "module": "",
                 "asname": ""
               },
@@ -155,16 +347,28 @@
               }
             ],
             "confs": [],
-            "params": [],
+            "params": [
+              {
+                "name": "param_ecoregion_name",
+                "type": "str",
+                "default_value": "101"
+              },
+              {
+                "name": "param_use_loobos_subset",
+                "type": "str",
+                "default_value": "yes"
+              }
+            ],
             "secrets": [],
-            "title": "species-trait-data-outputs-justinet",
-            "description": "species-trait-data-outputs-justinet",
-            "created": "2026-06-09T14:53:13.877129Z",
-            "modified": "2026-06-09T14:53:14.322246Z",
-            "version": 3,
-            "container_image": "ghcr.io/naavre/cells-vl-veluwe-forest-model/species-trait-data-outputs-justinet:46a5bad",
+            "title": "species-trait-data-retriever-preprocessor-justinet",
+            "description": "species-trait-data-retriever-preprocessor-justinet",
+            "created": "2026-07-30T12:15:30.087996Z",
+            "modified": "2026-07-30T12:15:31.314524Z",
+            "version": 1,
+            "template_format": "v1",
+            "container_image": "ghcr.io/naavre/cells-vl-veluwe-forest-model/species-trait-data-retriever-preprocessor-justinet:2c37b2f",
             "kernel": "IRkernel",
-            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/tree/73e4f5f9b0cff516824b59e3b9dc04e98cb186de/species-trait-data-outputs-justinet",
+            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/tree/9098d6279852108d5f0d1f865ea0e5833639251e/species-trait-data-retriever-preprocessor-justinet",
             "is_draft": false
           }
         },
@@ -173,528 +377,11 @@
           "height": 79
         }
       },
-      "327fdd8c-f7f7-4971-b673-b25e537d962a": {
-        "id": "327fdd8c-f7f7-4971-b673-b25e537d962a",
+      "d402bece-2879-498c-9011-2b5cfed8f97c": {
+        "id": "d402bece-2879-498c-9011-2b5cfed8f97c",
         "position": {
-          "x": 1202.9985745288984,
-          "y": 197.80818209940182
-        },
-        "orientation": 0,
-        "type": "splitter",
-        "ports": {
-          "splitter_source": {
-            "id": "splitter_source",
-            "type": "left",
-            "properties": {
-              "color": "#86642d",
-              "parentNodeType": "splitter"
-            },
-            "position": {
-              "x": -2,
-              "y": 30
-            }
-          },
-          "splitter_target": {
-            "id": "splitter_target",
-            "type": "right",
-            "properties": {
-              "color": "#5940bf",
-              "parentNodeType": "splitter"
-            },
-            "position": {
-              "x": 202,
-              "y": 30
-            }
-          }
-        },
-        "properties": {
-          "cell": {
-            "url": "splitter",
-            "title": "Splitter",
-            "description": "Split the input list and distribute its items to multiple containers that run in parallel.",
-            "type": "splitter",
-            "shared_with_scopes": [],
-            "shared_with_users": [],
-            "version": 1,
-            "versions": [],
-            "container_image": "",
-            "base_container_image": {
-              "build": "",
-              "runtime": ""
-            },
-            "dependencies": [],
-            "inputs": [
-              {
-                "name": "splitter_source",
-                "type": "list"
-              }
-            ],
-            "outputs": [
-              {
-                "name": "splitter_target",
-                "type": "list"
-              }
-            ],
-            "confs": [],
-            "params": [],
-            "secrets": []
-          }
-        },
-        "size": {
-          "width": 202,
-          "height": 61
-        }
-      },
-      "7ca51a0b-6781-4110-bbd1-8fa386aed315": {
-        "id": "7ca51a0b-6781-4110-bbd1-8fa386aed315",
-        "position": {
-          "x": 593.075334347873,
-          "y": 195.73031220271565
-        },
-        "orientation": 0,
-        "type": "workflow-cell",
-        "ports": {
-          "parameter_set_numbers": {
-            "id": "parameter_set_numbers",
-            "type": "right",
-            "properties": {
-              "color": "#bf4240",
-              "parentNodeType": "workflow-cell"
-            },
-            "position": {
-              "x": 252,
-              "y": 30
-            }
-          }
-        },
-        "properties": {
-          "cell": {
-            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/466e75c1-ea5d-4547-90eb-de0032026ee9/",
-            "owner": "justinet",
-            "virtual_lab": "veluwe-forest-model",
-            "shared_with_scopes": [],
-            "shared_with_users": [],
-            "versions": [
-              {
-                "version": 1,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/840104d1-4bb4-4d50-810e-b69853231fd1/"
-              },
-              {
-                "version": 2,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/03236922-23fa-41d3-aede-3e8ce6e428f7/"
-              },
-              {
-                "version": 3,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/1662dc41-1dc8-456a-a3c3-a08c1b64e508/"
-              },
-              {
-                "version": 4,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/98607e7d-3a8f-4f0a-9571-48c0e8598f8e/"
-              },
-              {
-                "version": 5,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/9db4014e-76f8-4ca4-b434-586eaab7c4ba/"
-              },
-              {
-                "version": 6,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/4679cd73-7f30-4b00-9994-a2f027051809/"
-              },
-              {
-                "version": 7,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/5cf78e37-730d-4298-8286-b4de37f76f7d/"
-              },
-              {
-                "version": 8,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/a9f49523-333c-4719-bd32-ce408840533e/"
-              },
-              {
-                "version": 9,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/9d2f7d6c-5989-4e99-a924-aafc584a2855/"
-              },
-              {
-                "version": 10,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/a71dd7a9-fa1a-4463-9889-be2714dcde2d/"
-              },
-              {
-                "version": 11,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/24a6a15e-df9f-49fd-93ac-65a3c9553526/"
-              },
-              {
-                "version": 12,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/e607c83d-d47d-4edd-9983-1deccf37261c/"
-              },
-              {
-                "version": 13,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/642bf77f-6fb2-470f-bf91-c3f64c12048d/"
-              },
-              {
-                "version": 14,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/466e75c1-ea5d-4547-90eb-de0032026ee9/"
-              }
-            ],
-            "base_container_image": {
-              "build": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-build:v0.3.5",
-              "runtime": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-runtime:v0.3.5"
-            },
-            "dependencies": [
-              {
-                "name": "dplyr",
-                "module": "",
-                "asname": ""
-              },
-              {
-                "name": "Hmisc",
-                "module": "",
-                "asname": ""
-              },
-              {
-                "name": "lubridate",
-                "module": "",
-                "asname": ""
-              },
-              {
-                "name": "pacman",
-                "module": "",
-                "asname": ""
-              },
-              {
-                "name": "processx",
-                "module": "",
-                "asname": ""
-              },
-              {
-                "name": "raster",
-                "module": "",
-                "asname": ""
-              },
-              {
-                "name": "readr",
-                "module": "",
-                "asname": ""
-              },
-              {
-                "name": "sf",
-                "module": "",
-                "asname": ""
-              },
-              {
-                "name": "stringr",
-                "module": "",
-                "asname": ""
-              },
-              {
-                "name": "terra",
-                "module": "",
-                "asname": ""
-              },
-              {
-                "name": "tidyr",
-                "module": "",
-                "asname": ""
-              },
-              {
-                "name": "tibble",
-                "module": "",
-                "asname": ""
-              }
-            ],
-            "inputs": [],
-            "outputs": [
-              {
-                "name": "parameter_set_numbers",
-                "type": "list"
-              }
-            ],
-            "confs": [
-              {
-                "name": "conf_tmp_data",
-                "assignation": "conf_tmp_data=\"/tmp/data/\""
-              }
-            ],
-            "params": [
-              {
-                "name": "param_intermediate_location",
-                "type": "str",
-                "default_value": "/home/jovyan/Cloud Storage/naa-vre-user-data/"
-              },
-              {
-                "name": "param_number_of_runs",
-                "type": "int",
-                "default_value": "3"
-              }
-            ],
-            "secrets": [],
-            "title": "model-run-generator-justinet",
-            "description": "model-run-generator-justinet",
-            "created": "2026-06-11T14:23:06.234008Z",
-            "modified": "2026-06-11T14:23:06.865875Z",
-            "version": 14,
-            "container_image": "ghcr.io/naavre/cells-vl-veluwe-forest-model/model-run-generator-justinet:4099071",
-            "kernel": "IRkernel",
-            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/tree/2bdc33cab1bc317702b0b4519ef5b865871dc9ac/model-run-generator-justinet",
-            "is_draft": false
-          }
-        },
-        "size": {
-          "width": 252,
-          "height": 61
-        }
-      },
-      "23272fb5-f81b-416b-8b2a-bcd26d55730b": {
-        "id": "23272fb5-f81b-416b-8b2a-bcd26d55730b",
-        "position": {
-          "x": 870.2010805677155,
-          "y": 401.5549597855228
-        },
-        "orientation": 0,
-        "type": "workflow-cell",
-        "ports": {
-          "parameter_set_numbers": {
-            "id": "parameter_set_numbers",
-            "type": "left",
-            "properties": {
-              "color": "#bf4240",
-              "parentNodeType": "workflow-cell"
-            },
-            "position": {
-              "x": -2,
-              "y": 30
-            }
-          },
-          "KNMI_daily_datafile": {
-            "id": "KNMI_daily_datafile",
-            "type": "right",
-            "properties": {
-              "color": "#40bdbf",
-              "parentNodeType": "workflow-cell"
-            },
-            "position": {
-              "x": 252,
-              "y": 17
-            }
-          },
-          "KNMI_spinup_datafile": {
-            "id": "KNMI_spinup_datafile",
-            "type": "right",
-            "properties": {
-              "color": "#c587bc",
-              "parentNodeType": "workflow-cell"
-            },
-            "position": {
-              "x": 252,
-              "y": 43
-            }
-          }
-        },
-        "properties": {
-          "cell": {
-            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/5c967a56-15c6-4807-9429-7f96f7946e1b/",
-            "owner": "justinet",
-            "virtual_lab": "veluwe-forest-model",
-            "shared_with_scopes": [],
-            "shared_with_users": [],
-            "versions": [
-              {
-                "version": 4,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/ddad7241-0c9b-4a09-9e2d-8b6098875547/"
-              },
-              {
-                "version": 5,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/d32c5a6f-95a1-432d-816b-49be9b73fc95/"
-              },
-              {
-                "version": 6,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/5a8ed9ad-d9e8-48fa-bbad-b143fd993148/"
-              },
-              {
-                "version": 7,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/9e0cc47b-a828-4836-8d2b-bb87dd6e144f/"
-              },
-              {
-                "version": 8,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/99d1cdc2-8108-46e2-92fd-6f18fa20ac03/"
-              },
-              {
-                "version": 9,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/93fb489f-5a84-4e54-826a-a460cec5b6b6/"
-              },
-              {
-                "version": 10,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/ee7aa2f6-15f5-489f-b521-547c824b98a5/"
-              },
-              {
-                "version": 11,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/8d10cbe1-37b6-47e8-b664-6584aeb951b6/"
-              },
-              {
-                "version": 12,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/fc5f006e-a13c-4039-a92f-033bf006a7a4/"
-              },
-              {
-                "version": 13,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/5b69b768-c359-4b21-9dc9-b3b58981eb11/"
-              },
-              {
-                "version": 14,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/2ca2d77e-adba-4e03-ae7e-c49c0c2123cd/"
-              },
-              {
-                "version": 15,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/5c967a56-15c6-4807-9429-7f96f7946e1b/"
-              }
-            ],
-            "base_container_image": {
-              "build": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-build:v0.3.5",
-              "runtime": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-runtime:v0.3.5"
-            },
-            "dependencies": [
-              {
-                "name": "dplyr",
-                "module": "",
-                "asname": ""
-              },
-              {
-                "name": "Hmisc",
-                "module": "",
-                "asname": ""
-              },
-              {
-                "name": "lubridate",
-                "module": "",
-                "asname": ""
-              },
-              {
-                "name": "pacman",
-                "module": "",
-                "asname": ""
-              },
-              {
-                "name": "processx",
-                "module": "",
-                "asname": ""
-              },
-              {
-                "name": "raster",
-                "module": "",
-                "asname": ""
-              },
-              {
-                "name": "readr",
-                "module": "",
-                "asname": ""
-              },
-              {
-                "name": "sf",
-                "module": "",
-                "asname": ""
-              },
-              {
-                "name": "stringr",
-                "module": "",
-                "asname": ""
-              },
-              {
-                "name": "terra",
-                "module": "",
-                "asname": ""
-              },
-              {
-                "name": "tidyr",
-                "module": "",
-                "asname": ""
-              },
-              {
-                "name": "tibble",
-                "module": "",
-                "asname": ""
-              }
-            ],
-            "inputs": [
-              {
-                "name": "parameter_set_numbers",
-                "type": "list"
-              }
-            ],
-            "outputs": [
-              {
-                "name": "KNMI_daily_datafile",
-                "type": "str"
-              },
-              {
-                "name": "KNMI_spinup_datafile",
-                "type": "str"
-              }
-            ],
-            "confs": [
-              {
-                "name": "conf_tmp_data",
-                "assignation": "conf_tmp_data=\"/tmp/data/\""
-              }
-            ],
-            "params": [
-              {
-                "name": "param_from_date",
-                "type": "str",
-                "default_value": "1960"
-              },
-              {
-                "name": "param_from_date_spinup",
-                "type": "str",
-                "default_value": "1901"
-              },
-              {
-                "name": "param_stationID",
-                "type": "str",
-                "default_value": "260"
-              },
-              {
-                "name": "param_stationID_spinup",
-                "type": "str",
-                "default_value": "260"
-              },
-              {
-                "name": "param_to_date",
-                "type": "str",
-                "default_value": "2000"
-              },
-              {
-                "name": "param_to_date_spinup",
-                "type": "str",
-                "default_value": "1960"
-              },
-              {
-                "name": "param_vars",
-                "type": "str",
-                "default_value": "average_temperature, minimum_temperature, maximum_temperature, total_precipitation, average_windspeed, average_winddirection, relative_humidity, minimum_humidity, maximum_humidity"
-              },
-              {
-                "name": "param_vars_spinup",
-                "type": "str",
-                "default_value": "average_temperature, minimum_temperature, maximum_temperature, total_precipitation, average_windspeed, average_winddirection, relative_humidity, minimum_humidity, maximum_humidity"
-              }
-            ],
-            "secrets": [],
-            "title": "knmi-data-retriever-justinet",
-            "description": "knmi-data-retriever-justinet",
-            "created": "2026-06-11T14:25:49.321605Z",
-            "modified": "2026-06-11T14:25:50.681069Z",
-            "version": 15,
-            "container_image": "ghcr.io/naavre/cells-vl-veluwe-forest-model/knmi-data-retriever-justinet:7b1dca3",
-            "kernel": "IRkernel",
-            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/tree/e92ddd7f055af3de33d2adcfd64735cd674c81c4/knmi-data-retriever-justinet",
-            "is_draft": false
-          }
-        },
-        "size": {
-          "width": 252,
-          "height": 61
-        }
-      },
-      "3965c4c6-0676-4716-860d-2d623f071d9d": {
-        "id": "3965c4c6-0676-4716-860d-2d623f071d9d",
-        "position": {
-          "x": 1241.514753489967,
-          "y": 400.21447721179624
+          "x": 1367.844818816788,
+          "y": 248.33333333333331
         },
         "orientation": 0,
         "type": "workflow-cell",
@@ -750,64 +437,29 @@
         },
         "properties": {
           "cell": {
-            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/9bf77bca-9e89-48ab-b583-932967fd474e/",
+            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/20bca192-5286-4932-8276-a8f3263f87de/",
             "owner": "justinet",
             "virtual_lab": "veluwe-forest-model",
             "shared_with_scopes": [],
             "shared_with_users": [],
             "versions": [
               {
-                "version": 3,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/b123a00e-ab7b-4b31-bba1-ab43447992e7/"
-              },
-              {
-                "version": 4,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/3483b8c9-206c-44cc-8f91-afffa5d31383/"
-              },
-              {
-                "version": 5,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/213e7e0a-ddea-4fe2-bf02-ff6ce0004e22/"
-              },
-              {
-                "version": 6,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/71f1cfab-de07-4f6d-8ad3-d367ecfd4bfc/"
-              },
-              {
-                "version": 7,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/38760eca-5869-4fef-b449-8d68882e90f9/"
-              },
-              {
-                "version": 8,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/222af863-81d3-46a4-b86e-f4e96ae401fc/"
-              },
-              {
-                "version": 9,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/3351be87-db2f-4254-a91f-64346ac4048b/"
-              },
-              {
-                "version": 10,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/d156ee60-60bd-406b-8dfb-a65d2d86fd1f/"
-              },
-              {
-                "version": 11,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/23b39223-abd6-4169-a841-a2bcc38b0f1e/"
-              },
-              {
-                "version": 12,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/c1371891-be4b-40f7-93c6-971dc0b03230/"
-              },
-              {
-                "version": 13,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/9bf77bca-9e89-48ab-b583-932967fd474e/"
+                "version": 1,
+                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/20bca192-5286-4932-8276-a8f3263f87de/"
               }
             ],
             "base_container_image": {
-              "build": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-build:v0.3.5",
-              "runtime": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-runtime:v0.3.5"
+              "build": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-build:v0.3.13",
+              "runtime": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-runtime:v0.3.13"
             },
             "dependencies": [
               {
                 "name": "dplyr",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "haven",
                 "module": "",
                 "asname": ""
               },
@@ -887,33 +539,24 @@
                 "type": "str"
               }
             ],
-            "confs": [
-              {
-                "name": "conf_tmp_data",
-                "assignation": "conf_tmp_data=\"/tmp/data/\""
-              }
-            ],
+            "confs": [],
             "params": [
               {
                 "name": "param_ecoregion_name",
                 "type": "str",
                 "default_value": "101"
-              },
-              {
-                "name": "param_intermediate_location",
-                "type": "str",
-                "default_value": "/home/jovyan/Cloud Storage/naa-vre-user-data/"
               }
             ],
             "secrets": [],
             "title": "knmi-data-preprocessor-justinet",
             "description": "knmi-data-preprocessor-justinet",
-            "created": "2026-06-11T14:26:51.767275Z",
-            "modified": "2026-06-11T14:26:53.885507Z",
-            "version": 13,
-            "container_image": "ghcr.io/naavre/cells-vl-veluwe-forest-model/knmi-data-preprocessor-justinet:0927a59",
+            "created": "2026-07-30T12:18:34.766352Z",
+            "modified": "2026-07-30T12:18:35.337177Z",
+            "version": 1,
+            "template_format": "v1",
+            "container_image": "ghcr.io/naavre/cells-vl-veluwe-forest-model/knmi-data-preprocessor-justinet:8bf454b",
             "kernel": "IRkernel",
-            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/tree/82a910f94b0fcf9af5aed944b7ddc2bf765eb925/knmi-data-preprocessor-justinet",
+            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/tree/f10b3917373876b29d301008397ae90d8966c621/knmi-data-preprocessor-justinet",
             "is_draft": false
           }
         },
@@ -922,27 +565,15 @@
           "height": 61
         }
       },
-      "7b830b86-1866-4a0b-a6a2-e28da228be2f": {
-        "id": "7b830b86-1866-4a0b-a6a2-e28da228be2f",
+      "05aa41ac-1fdd-402c-b4ad-dc5b4abfcb1f": {
+        "id": "05aa41ac-1fdd-402c-b4ad-dc5b4abfcb1f",
         "position": {
-          "x": 1098.0831181012275,
-          "y": 794.3163538873995
+          "x": 991.4080372075949,
+          "y": 634.827586206897
         },
         "orientation": 0,
         "type": "workflow-cell",
         "ports": {
-          "parameter_set_numbers": {
-            "id": "parameter_set_numbers",
-            "type": "left",
-            "properties": {
-              "color": "#bf4240",
-              "parentNodeType": "workflow-cell"
-            },
-            "position": {
-              "x": -2,
-              "y": 30
-            }
-          },
           "loobos_initial_communities_datafile": {
             "id": "loobos_initial_communities_datafile",
             "type": "right",
@@ -970,68 +601,184 @@
         },
         "properties": {
           "cell": {
-            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/3554d108-19cc-4b2c-9ec8-ebaf99732985/",
+            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/129905d6-0c90-45d6-b728-88b367406499/",
             "owner": "justinet",
             "virtual_lab": "veluwe-forest-model",
             "shared_with_scopes": [],
             "shared_with_users": [],
             "versions": [
               {
-                "version": 2,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/63447d3e-69b2-41c3-85bf-836f91ef7785/"
-              },
-              {
-                "version": 3,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/b899e951-cedf-498e-80b4-3ee8981d0e17/"
-              },
-              {
-                "version": 4,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/f5660cce-85f8-4e7d-9c4b-5899537f3296/"
-              },
-              {
-                "version": 5,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/27ecff89-0fac-4ded-9307-f29abad01652/"
-              },
-              {
-                "version": 6,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/5d8e6e22-57fd-407f-b737-8ce73e181ccf/"
-              },
-              {
-                "version": 7,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/47f470c3-07de-4754-8cdc-a3bf456367eb/"
-              },
-              {
-                "version": 8,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/85e0bd17-0f23-48b0-94c0-375144c06978/"
-              },
-              {
-                "version": 9,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/8f47c23d-3183-4ab6-a8ee-8f8b596483d9/"
-              },
-              {
-                "version": 10,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/110bcb46-efd6-46de-adc2-b392d14fac60/"
-              },
-              {
-                "version": 11,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/749a61ea-7d42-49bc-9f33-00213fff1dde/"
-              },
-              {
-                "version": 12,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/134a4e3e-ade3-4d14-b2a3-23865c823614/"
-              },
-              {
-                "version": 13,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/3554d108-19cc-4b2c-9ec8-ebaf99732985/"
+                "version": 1,
+                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/129905d6-0c90-45d6-b728-88b367406499/"
               }
             ],
             "base_container_image": {
-              "build": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-build:v0.3.5",
-              "runtime": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-runtime:v0.3.5"
+              "build": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-build:v0.3.13",
+              "runtime": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-runtime:v0.3.13"
             },
             "dependencies": [
               {
                 "name": "dplyr",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "haven",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "Hmisc",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "lubridate",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "pacman",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "processx",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "raster",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "readr",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "sf",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "stringr",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "terra",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "tidyr",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "tibble",
+                "module": "",
+                "asname": ""
+              }
+            ],
+            "inputs": [],
+            "outputs": [
+              {
+                "name": "loobos_initial_communities_datafile",
+                "type": "str"
+              },
+              {
+                "name": "loobos_initial_communities_tif",
+                "type": "str"
+              }
+            ],
+            "confs": [],
+            "params": [
+              {
+                "name": "param_timestep",
+                "type": "str",
+                "default_value": "1"
+              }
+            ],
+            "secrets": [],
+            "title": "loobos-initial-community-generator-justinet",
+            "description": "loobos-initial-community-generator-justinet",
+            "created": "2026-07-30T12:26:13.103596Z",
+            "modified": "2026-07-30T12:26:13.739249Z",
+            "version": 1,
+            "template_format": "v1",
+            "container_image": "ghcr.io/naavre/cells-vl-veluwe-forest-model/loobos-initial-community-generator-justinet:767e434",
+            "kernel": "IRkernel",
+            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/tree/6ea7a38d7bdf31cf859025274cc3128feaee9c22/loobos-initial-community-generator-justinet",
+            "is_draft": false
+          }
+        },
+        "size": {
+          "width": 252,
+          "height": 61
+        }
+      },
+      "f46027f2-5fad-4453-9d80-92e9a0907638": {
+        "id": "f46027f2-5fad-4453-9d80-92e9a0907638",
+        "position": {
+          "x": 1586.3626857336715,
+          "y": 641.7866916881696
+        },
+        "orientation": 0,
+        "type": "workflow-cell",
+        "ports": {
+          "loobos_initial_communities_tif": {
+            "id": "loobos_initial_communities_tif",
+            "type": "left",
+            "properties": {
+              "color": "#406abf",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 30
+            }
+          },
+          "loobos_ecoregions_tif": {
+            "id": "loobos_ecoregions_tif",
+            "type": "right",
+            "properties": {
+              "color": "#b087c5",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 252,
+              "y": 30
+            }
+          }
+        },
+        "properties": {
+          "cell": {
+            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/9367145c-2bf8-4332-8e84-d5ce95376157/",
+            "owner": "justinet",
+            "virtual_lab": "veluwe-forest-model",
+            "shared_with_scopes": [],
+            "shared_with_users": [],
+            "versions": [
+              {
+                "version": 1,
+                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/9367145c-2bf8-4332-8e84-d5ce95376157/"
+              }
+            ],
+            "base_container_image": {
+              "build": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-build:v0.3.13",
+              "runtime": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-runtime:v0.3.13"
+            },
+            "dependencies": [
+              {
+                "name": "dplyr",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "haven",
                 "module": "",
                 "asname": ""
               },
@@ -1093,42 +840,28 @@
             ],
             "inputs": [
               {
-                "name": "parameter_set_numbers",
-                "type": "list"
-              }
-            ],
-            "outputs": [
-              {
-                "name": "loobos_initial_communities_datafile",
-                "type": "str"
-              },
-              {
                 "name": "loobos_initial_communities_tif",
                 "type": "str"
               }
             ],
-            "confs": [
+            "outputs": [
               {
-                "name": "conf_tmp_data",
-                "assignation": "conf_tmp_data=\"/tmp/data/\""
+                "name": "loobos_ecoregions_tif",
+                "type": "str"
               }
             ],
-            "params": [
-              {
-                "name": "param_intermediate_location",
-                "type": "str",
-                "default_value": "/home/jovyan/Cloud Storage/naa-vre-user-data/"
-              }
-            ],
+            "confs": [],
+            "params": [],
             "secrets": [],
-            "title": "loobos-initial-community-generator-justinet",
-            "description": "loobos-initial-community-generator-justinet",
-            "created": "2026-06-11T14:27:31.998135Z",
-            "modified": "2026-06-11T14:27:33.088867Z",
-            "version": 13,
-            "container_image": "ghcr.io/naavre/cells-vl-veluwe-forest-model/loobos-initial-community-generator-justinet:9d0a23b",
+            "title": "ecoregionsmap-creator-justinet",
+            "description": "ecoregionsmap-creator-justinet",
+            "created": "2026-07-30T12:27:09.243819Z",
+            "modified": "2026-07-30T12:27:10.092238Z",
+            "version": 1,
+            "template_format": "v1",
+            "container_image": "ghcr.io/naavre/cells-vl-veluwe-forest-model/ecoregionsmap-creator-justinet:e150219",
             "kernel": "IRkernel",
-            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/tree/c422fdf114623595a3e9f374b246cc860eb10524/loobos-initial-community-generator-justinet",
+            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/tree/e0d92dfa5be348cc3a3154e4764dd58f61252d37/ecoregionsmap-creator-justinet",
             "is_draft": false
           }
         },
@@ -1137,11 +870,11 @@
           "height": 61
         }
       },
-      "7055078d-a4e5-4a8f-b8d9-d0970bc01916": {
-        "id": "7055078d-a4e5-4a8f-b8d9-d0970bc01916",
+      "f7467f8b-b43c-46f9-bdc8-d7a5ac7b4d86": {
+        "id": "f7467f8b-b43c-46f9-bdc8-d7a5ac7b4d86",
         "position": {
-          "x": 1764.0432305630025,
-          "y": 404.2359249329758
+          "x": 1791.3743108435538,
+          "y": 248.75226039782996
         },
         "orientation": 0,
         "type": "workflow-cell",
@@ -1197,40 +930,29 @@
         },
         "properties": {
           "cell": {
-            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/a54a739b-4ab4-4efb-940e-a2806fcda058/",
+            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/ef82d496-f704-42d7-aa74-98fbfd60d3f2/",
             "owner": "justinet",
             "virtual_lab": "veluwe-forest-model",
             "shared_with_scopes": [],
             "shared_with_users": [],
             "versions": [
               {
-                "version": 2,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/fed67f54-20e2-41a2-8c68-27369fc4ede7/"
-              },
-              {
-                "version": 3,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/2a77140d-bacb-4ed7-8c63-4f0377d57a49/"
-              },
-              {
-                "version": 4,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/85c8ddcb-f7e4-4a17-a7e6-9786828bea35/"
-              },
-              {
-                "version": 5,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/dd37e763-df98-4e0f-a403-ba31eccf6276/"
-              },
-              {
-                "version": 6,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/a54a739b-4ab4-4efb-940e-a2806fcda058/"
+                "version": 1,
+                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/ef82d496-f704-42d7-aa74-98fbfd60d3f2/"
               }
             ],
             "base_container_image": {
-              "build": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-build:v0.3.5",
-              "runtime": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-runtime:v0.3.5"
+              "build": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-build:v0.3.13",
+              "runtime": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-runtime:v0.3.13"
             },
             "dependencies": [
               {
                 "name": "dplyr",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "haven",
                 "module": "",
                 "asname": ""
               },
@@ -1310,12 +1032,7 @@
                 "type": "str"
               }
             ],
-            "confs": [
-              {
-                "name": "conf_tmp_data",
-                "assignation": "conf_tmp_data=\"/tmp/data/\""
-              }
-            ],
+            "confs": [],
             "params": [
               {
                 "name": "param_climate_time_series",
@@ -1328,11 +1045,6 @@
                 "default_value": "101"
               },
               {
-                "name": "param_intermediate_location",
-                "type": "str",
-                "default_value": "/home/jovyan/Cloud Storage/naa-vre-user-data/"
-              },
-              {
                 "name": "param_spinup_climate_time_series",
                 "type": "str",
                 "default_value": "Monthly_SequencedYears"
@@ -1341,12 +1053,13 @@
             "secrets": [],
             "title": "configuration-files-creator-justinet",
             "description": "configuration-files-creator-justinet",
-            "created": "2026-06-11T14:35:03.560584Z",
-            "modified": "2026-06-11T14:35:04.578850Z",
-            "version": 6,
-            "container_image": "ghcr.io/naavre/cells-vl-veluwe-forest-model/configuration-files-creator-justinet:3ce319a",
+            "created": "2026-08-03T08:29:00.034034Z",
+            "modified": "2026-08-03T08:29:00.600129Z",
+            "version": 1,
+            "template_format": "v1",
+            "container_image": "ghcr.io/naavre/cells-vl-veluwe-forest-model/configuration-files-creator-justinet:38b2c1b",
             "kernel": "IRkernel",
-            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/tree/cb357371c099dc44f103e66ba87c4ed734ffc9cb/configuration-files-creator-justinet",
+            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/tree/6171bf8e8df5790c04bb6161a3db206115702aca/configuration-files-creator-justinet",
             "is_draft": false
           }
         },
@@ -1355,244 +1068,11 @@
           "height": 61
         }
       },
-      "a40df086-77cf-4661-8133-0f25f11c2657": {
-        "id": "a40df086-77cf-4661-8133-0f25f11c2657",
+      "de02d87d-35b2-43c0-9dcc-d8901bb146b2": {
+        "id": "de02d87d-35b2-43c0-9dcc-d8901bb146b2",
         "position": {
-          "x": 2635.3569034852544,
-          "y": 759.4638069705096
-        },
-        "orientation": 0,
-        "type": "workflow-cell",
-        "ports": {
-          "loobos_biomass_succession_datafile": {
-            "id": "loobos_biomass_succession_datafile",
-            "type": "left",
-            "properties": {
-              "color": "#78523a",
-              "parentNodeType": "workflow-cell"
-            },
-            "position": {
-              "x": -2,
-              "y": 13
-            }
-          },
-          "loobos_core_species_datafile": {
-            "id": "loobos_core_species_datafile",
-            "type": "left",
-            "properties": {
-              "color": "#6ce06c",
-              "parentNodeType": "workflow-cell"
-            },
-            "position": {
-              "x": -2,
-              "y": 39
-            }
-          },
-          "loobos_ecoregions_datafile": {
-            "id": "loobos_ecoregions_datafile",
-            "type": "left",
-            "properties": {
-              "color": "#5368ac",
-              "parentNodeType": "workflow-cell"
-            },
-            "position": {
-              "x": -2,
-              "y": 65
-            }
-          },
-          "loobos_ecoregions_tif": {
-            "id": "loobos_ecoregions_tif",
-            "type": "left",
-            "properties": {
-              "color": "#b087c5",
-              "parentNodeType": "workflow-cell"
-            },
-            "position": {
-              "x": -2,
-              "y": 91
-            }
-          },
-          "loobos_scenario_datafile": {
-            "id": "loobos_scenario_datafile",
-            "type": "right",
-            "properties": {
-              "color": "#862d77",
-              "parentNodeType": "workflow-cell"
-            },
-            "position": {
-              "x": 252,
-              "y": 52
-            }
-          }
-        },
-        "properties": {
-          "cell": {
-            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/7235b088-7f10-45b2-bc0f-64237ddc1d50/",
-            "owner": "justinet",
-            "virtual_lab": "veluwe-forest-model",
-            "shared_with_scopes": [],
-            "shared_with_users": [],
-            "versions": [
-              {
-                "version": 1,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/9143bdcc-e865-4cd1-ab9b-5b35623af459/"
-              },
-              {
-                "version": 2,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/51e5b3ff-ad29-48bf-b466-e4ac236cd5e6/"
-              },
-              {
-                "version": 3,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/b0648c65-42de-4d60-ba85-7277d3d87dc9/"
-              },
-              {
-                "version": 4,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/b48c10dd-4d79-49cf-ab03-54bbfe81738b/"
-              },
-              {
-                "version": 5,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/904fbeee-66ea-4d49-a34f-09230073f05c/"
-              },
-              {
-                "version": 6,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/7235b088-7f10-45b2-bc0f-64237ddc1d50/"
-              }
-            ],
-            "base_container_image": {
-              "build": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-build:v0.3.5",
-              "runtime": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-runtime:v0.3.5"
-            },
-            "dependencies": [
-              {
-                "name": "dplyr",
-                "module": "",
-                "asname": ""
-              },
-              {
-                "name": "Hmisc",
-                "module": "",
-                "asname": ""
-              },
-              {
-                "name": "lubridate",
-                "module": "",
-                "asname": ""
-              },
-              {
-                "name": "pacman",
-                "module": "",
-                "asname": ""
-              },
-              {
-                "name": "processx",
-                "module": "",
-                "asname": ""
-              },
-              {
-                "name": "raster",
-                "module": "",
-                "asname": ""
-              },
-              {
-                "name": "readr",
-                "module": "",
-                "asname": ""
-              },
-              {
-                "name": "sf",
-                "module": "",
-                "asname": ""
-              },
-              {
-                "name": "stringr",
-                "module": "",
-                "asname": ""
-              },
-              {
-                "name": "terra",
-                "module": "",
-                "asname": ""
-              },
-              {
-                "name": "tidyr",
-                "module": "",
-                "asname": ""
-              },
-              {
-                "name": "tibble",
-                "module": "",
-                "asname": ""
-              }
-            ],
-            "inputs": [
-              {
-                "name": "loobos_biomass_succession_datafile",
-                "type": "str"
-              },
-              {
-                "name": "loobos_core_species_datafile",
-                "type": "str"
-              },
-              {
-                "name": "loobos_ecoregions_datafile",
-                "type": "str"
-              },
-              {
-                "name": "loobos_ecoregions_tif",
-                "type": "str"
-              }
-            ],
-            "outputs": [
-              {
-                "name": "loobos_scenario_datafile",
-                "type": "str"
-              }
-            ],
-            "confs": [
-              {
-                "name": "conf_tmp_data",
-                "assignation": "conf_tmp_data=\"/tmp/data/\""
-              }
-            ],
-            "params": [
-              {
-                "name": "param_cell_length",
-                "type": "str",
-                "default_value": "100"
-              },
-              {
-                "name": "param_duration",
-                "type": "str",
-                "default_value": "100"
-              },
-              {
-                "name": "param_intermediate_location",
-                "type": "str",
-                "default_value": "/home/jovyan/Cloud Storage/naa-vre-user-data/"
-              }
-            ],
-            "secrets": [],
-            "title": "scenario-file-creator-justinet",
-            "description": "scenario-file-creator-justinet",
-            "created": "2026-06-11T14:36:35.371961Z",
-            "modified": "2026-06-11T14:36:36.613867Z",
-            "version": 6,
-            "container_image": "ghcr.io/naavre/cells-vl-veluwe-forest-model/scenario-file-creator-justinet:993dbca",
-            "kernel": "IRkernel",
-            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/tree/9503dc734fd87a4e4e39ee1a649bf9803f303bf1/scenario-file-creator-justinet",
-            "is_draft": false
-          }
-        },
-        "size": {
-          "width": 252,
-          "height": 105
-        }
-      },
-      "d05459f0-866b-49bc-adea-c5d02d930cda": {
-        "id": "d05459f0-866b-49bc-adea-c5d02d930cda",
-        "position": {
-          "x": 2351.1745978552276,
-          "y": 502.0911528150134
+          "x": 2267.650897427548,
+          "y": 255.09572605413456
         },
         "orientation": 0,
         "type": "workflow-cell",
@@ -1672,40 +1152,29 @@
         },
         "properties": {
           "cell": {
-            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/222c1eda-52e3-4c68-bbc9-c3e1005a27c3/",
+            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/6e46b629-af51-49db-b9d8-1561e929a7bc/",
             "owner": "justinet",
             "virtual_lab": "veluwe-forest-model",
             "shared_with_scopes": [],
             "shared_with_users": [],
             "versions": [
               {
-                "version": 2,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/d68603b2-1f10-444f-9eb7-670eabc0b781/"
-              },
-              {
-                "version": 3,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/5817363c-cd5a-4e09-8e4f-78af944727e0/"
-              },
-              {
-                "version": 4,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/a4664720-2c86-44cf-96ea-30bdcbbb463e/"
-              },
-              {
-                "version": 5,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/d672349e-3ea1-4ad4-8788-f4f2a9a1b798/"
-              },
-              {
-                "version": 6,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/222c1eda-52e3-4c68-bbc9-c3e1005a27c3/"
+                "version": 1,
+                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/6e46b629-af51-49db-b9d8-1561e929a7bc/"
               }
             ],
             "base_container_image": {
-              "build": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-build:v0.3.5",
-              "runtime": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-runtime:v0.3.5"
+              "build": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-build:v0.3.13",
+              "runtime": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-runtime:v0.3.13"
             },
             "dependencies": [
               {
                 "name": "dplyr",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "haven",
                 "module": "",
                 "asname": ""
               },
@@ -1793,12 +1262,7 @@
                 "type": "str"
               }
             ],
-            "confs": [
-              {
-                "name": "conf_tmp_data",
-                "assignation": "conf_tmp_data=\"/tmp/data/\""
-              }
-            ],
+            "confs": [],
             "params": [
               {
                 "name": "param_ecoregion_name",
@@ -1806,25 +1270,21 @@
                 "default_value": "101"
               },
               {
-                "name": "param_intermediate_location",
-                "type": "str",
-                "default_value": "/home/jovyan/Cloud Storage/naa-vre-user-data/"
-              },
-              {
                 "name": "param_timestep",
                 "type": "str",
-                "default_value": "10"
+                "default_value": "1"
               }
             ],
             "secrets": [],
             "title": "biomass-succession-initialization-file-creator-justinet",
             "description": "biomass-succession-initialization-file-creator-justinet",
-            "created": "2026-06-11T14:36:41.525236Z",
-            "modified": "2026-06-11T14:36:42.579992Z",
-            "version": 6,
-            "container_image": "ghcr.io/naavre/cells-vl-veluwe-forest-model/biomass-succession-initialization-file-creator-justinet:43cd6b3",
+            "created": "2026-08-03T08:30:00.702386Z",
+            "modified": "2026-08-03T08:30:01.294461Z",
+            "version": 1,
+            "template_format": "v1",
+            "container_image": "ghcr.io/naavre/cells-vl-veluwe-forest-model/biomass-succession-initialization-file-creator-justinet:ab86e4e",
             "kernel": "IRkernel",
-            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/tree/ed0857d83b87a29dfaea899e9c62a81da4ca6843/biomass-succession-initialization-file-creator-justinet",
+            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/tree/bbe9f5b8b379f66de48b00bf9bd53de984917510/biomass-succession-initialization-file-creator-justinet",
             "is_draft": false
           }
         },
@@ -1833,11 +1293,341 @@
           "height": 131
         }
       },
-      "422bafc2-dcd7-475c-8f64-876a12db1247": {
-        "id": "422bafc2-dcd7-475c-8f64-876a12db1247",
+      "ca73efd5-7f71-4d5a-9836-a7776146444d": {
+        "id": "ca73efd5-7f71-4d5a-9836-a7776146444d",
         "position": {
-          "x": 2912.8367962466486,
-          "y": 188.41823056300268
+          "x": 2588.4408167708166,
+          "y": 589.6920118258276
+        },
+        "orientation": 0,
+        "type": "workflow-cell",
+        "ports": {
+          "loobos_biomass_succession_datafile": {
+            "id": "loobos_biomass_succession_datafile",
+            "type": "left",
+            "properties": {
+              "color": "#78523a",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 13
+            }
+          },
+          "loobos_core_species_datafile": {
+            "id": "loobos_core_species_datafile",
+            "type": "left",
+            "properties": {
+              "color": "#6ce06c",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 39
+            }
+          },
+          "loobos_ecoregions_datafile": {
+            "id": "loobos_ecoregions_datafile",
+            "type": "left",
+            "properties": {
+              "color": "#5368ac",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 65
+            }
+          },
+          "loobos_ecoregions_tif": {
+            "id": "loobos_ecoregions_tif",
+            "type": "left",
+            "properties": {
+              "color": "#b087c5",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 91
+            }
+          },
+          "loobos_scenario_datafile": {
+            "id": "loobos_scenario_datafile",
+            "type": "right",
+            "properties": {
+              "color": "#862d77",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 252,
+              "y": 52
+            }
+          }
+        },
+        "properties": {
+          "cell": {
+            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/70c026fb-ac14-4ee8-95fd-6d738b768966/",
+            "owner": "justinet",
+            "virtual_lab": "veluwe-forest-model",
+            "shared_with_scopes": [],
+            "shared_with_users": [],
+            "versions": [
+              {
+                "version": 1,
+                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/70c026fb-ac14-4ee8-95fd-6d738b768966/"
+              }
+            ],
+            "base_container_image": {
+              "build": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-build:v0.3.13",
+              "runtime": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-runtime:v0.3.13"
+            },
+            "dependencies": [
+              {
+                "name": "dplyr",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "haven",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "Hmisc",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "lubridate",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "pacman",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "processx",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "raster",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "readr",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "sf",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "stringr",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "terra",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "tidyr",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "tibble",
+                "module": "",
+                "asname": ""
+              }
+            ],
+            "inputs": [
+              {
+                "name": "loobos_biomass_succession_datafile",
+                "type": "str"
+              },
+              {
+                "name": "loobos_core_species_datafile",
+                "type": "str"
+              },
+              {
+                "name": "loobos_ecoregions_datafile",
+                "type": "str"
+              },
+              {
+                "name": "loobos_ecoregions_tif",
+                "type": "str"
+              }
+            ],
+            "outputs": [
+              {
+                "name": "loobos_scenario_datafile",
+                "type": "str"
+              }
+            ],
+            "confs": [],
+            "params": [
+              {
+                "name": "param_cell_length",
+                "type": "str",
+                "default_value": "100"
+              },
+              {
+                "name": "param_duration",
+                "type": "str",
+                "default_value": "100"
+              }
+            ],
+            "secrets": [],
+            "title": "scenario-file-creator-justinet",
+            "description": "scenario-file-creator-justinet",
+            "created": "2026-08-03T08:32:09.021040Z",
+            "modified": "2026-08-03T08:32:09.702311Z",
+            "version": 1,
+            "template_format": "v1",
+            "container_image": "ghcr.io/naavre/cells-vl-veluwe-forest-model/scenario-file-creator-justinet:ca31626",
+            "kernel": "IRkernel",
+            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/tree/25cb55ac39faadfdfcec964014d36f5dc7bfa0b7/scenario-file-creator-justinet",
+            "is_draft": false
+          }
+        },
+        "size": {
+          "width": 252,
+          "height": 105
+        }
+      },
+      "b0745236-0d6c-4832-b25e-3df944193426": {
+        "id": "b0745236-0d6c-4832-b25e-3df944193426",
+        "position": {
+          "x": 3014.2403489716175,
+          "y": 615.6009070294785
+        },
+        "orientation": 0,
+        "type": "workflow-cell",
+        "ports": {
+          "loobos_scenario_datafile": {
+            "id": "loobos_scenario_datafile",
+            "type": "left",
+            "properties": {
+              "color": "#862d77",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 30
+            }
+          },
+          "parameter_set_numbers": {
+            "id": "parameter_set_numbers",
+            "type": "right",
+            "properties": {
+              "color": "#bf4240",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 252,
+              "y": 30
+            }
+          }
+        },
+        "properties": {
+          "cell": {
+            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/caf07897-0d0a-4fe7-b9c3-ea6f2ae1e814/",
+            "owner": "justinet",
+            "virtual_lab": "veluwe-forest-model",
+            "shared_with_scopes": [],
+            "shared_with_users": [],
+            "versions": [
+              {
+                "version": 1,
+                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/caf07897-0d0a-4fe7-b9c3-ea6f2ae1e814/"
+              }
+            ],
+            "base_container_image": {
+              "build": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-build:v0.3.13",
+              "runtime": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-runtime:v0.3.13"
+            },
+            "dependencies": [
+              {
+                "name": "dplyr",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "glue",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "readr",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "tibble",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "tidyr",
+                "module": "",
+                "asname": ""
+              }
+            ],
+            "inputs": [
+              {
+                "name": "loobos_scenario_datafile",
+                "type": "str"
+              }
+            ],
+            "outputs": [
+              {
+                "name": "parameter_set_numbers",
+                "type": "list"
+              }
+            ],
+            "confs": [],
+            "params": [
+              {
+                "name": "param_intermediate_location",
+                "type": "str",
+                "default_value": "/home/jovyan/Cloud Storage/naa-vre-user-data/"
+              },
+              {
+                "name": "param_model_type",
+                "type": "str",
+                "default_value": "calibrated"
+              }
+            ],
+            "secrets": [],
+            "title": "parameter-sweep-justinet",
+            "description": "parameter-sweep-justinet",
+            "created": "2026-07-30T12:03:49.355174Z",
+            "modified": "2026-07-30T12:03:51.157971Z",
+            "version": 1,
+            "template_format": "v1",
+            "container_image": "ghcr.io/naavre/cells-vl-veluwe-forest-model/parameter-sweep-justinet:b920939",
+            "kernel": "IRkernel",
+            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/tree/b551108384cdf011dfd50a90248b8148c2c15145/parameter-sweep-justinet",
+            "is_draft": false
+          }
+        },
+        "size": {
+          "width": 252,
+          "height": 61
+        }
+      },
+      "a38c6464-c177-4157-8049-04e5574262d5": {
+        "id": "a38c6464-c177-4157-8049-04e5574262d5",
+        "position": {
+          "x": 3635.555541715384,
+          "y": 958.0045351473941
         },
         "orientation": 0,
         "type": "workflow-cell",
@@ -1869,7 +1659,7 @@
         },
         "properties": {
           "cell": {
-            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/3dda2195-b9c3-434d-a471-ab0314f5047d/",
+            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/8bd0aeb2-ecfd-436c-ad62-b9ab107dc228/",
             "owner": "justinet",
             "virtual_lab": "veluwe-forest-model",
             "shared_with_scopes": [],
@@ -1877,48 +1667,21 @@
             "versions": [
               {
                 "version": 1,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/5c8bb07d-8145-455c-80cc-650b9ab4fb48/"
-              },
-              {
-                "version": 2,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/09cb8b5a-0bd8-4550-955d-87c1c80fc2cc/"
-              },
-              {
-                "version": 3,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/56229d62-e1c0-40e2-a536-09153444f1bd/"
-              },
-              {
-                "version": 4,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/aeb1bce8-28d3-4ed8-9405-3faade213440/"
-              },
-              {
-                "version": 5,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/6120a21b-db59-46c8-8ad9-0155c0d297a1/"
-              },
-              {
-                "version": 6,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/37d2ab77-ced8-44c1-8f52-b2f9d559e880/"
-              },
-              {
-                "version": 7,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/7bfa058a-bbe6-4554-b095-e482af832237/"
-              },
-              {
-                "version": 8,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/82052b0f-52c6-450b-8355-7854326f4036/"
-              },
-              {
-                "version": 9,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/3dda2195-b9c3-434d-a471-ab0314f5047d/"
+                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/8bd0aeb2-ecfd-436c-ad62-b9ab107dc228/"
               }
             ],
             "base_container_image": {
-              "build": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-build:v0.3.5",
-              "runtime": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-runtime:v0.3.5"
+              "build": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-build:v0.3.13",
+              "runtime": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-runtime:v0.3.13"
             },
             "dependencies": [
               {
                 "name": "dplyr",
+                "module": "",
+                "asname": ""
+              },
+              {
+                "name": "haven",
                 "module": "",
                 "asname": ""
               },
@@ -1985,32 +1748,22 @@
               },
               {
                 "name": "parameter_set_numbers",
-                "type": "list"
+                "type": "str"
               }
             ],
             "outputs": [],
-            "confs": [
-              {
-                "name": "conf_tmp_data",
-                "assignation": "conf_tmp_data=\"/tmp/data/\""
-              }
-            ],
-            "params": [
-              {
-                "name": "param_intermediate_location",
-                "type": "str",
-                "default_value": "/home/jovyan/Cloud Storage/naa-vre-user-data/"
-              }
-            ],
+            "confs": [],
+            "params": [],
             "secrets": [],
             "title": "landis-ii-runner-justinet",
             "description": "landis-ii-runner-justinet",
-            "created": "2026-06-11T14:37:05.075300Z",
-            "modified": "2026-06-11T14:37:05.674326Z",
-            "version": 9,
-            "container_image": "ghcr.io/naavre/cells-vl-veluwe-forest-model/landis-ii-runner-justinet:4d65267",
+            "created": "2026-08-03T08:32:40.456367Z",
+            "modified": "2026-08-03T08:32:40.860733Z",
+            "version": 1,
+            "template_format": "v1",
+            "container_image": "ghcr.io/naavre/cells-vl-veluwe-forest-model/landis-ii-runner-justinet:81b9fab",
             "kernel": "IRkernel",
-            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/tree/4120944f96b02c8fa307929384fe0ff75ce33fbc/landis-ii-runner-justinet",
+            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/tree/3f29acee853f92949a14099f9b49cba76bcd0478/landis-ii-runner-justinet",
             "is_draft": false
           }
         },
@@ -2019,390 +1772,292 @@
           "height": 61
         }
       },
-      "2590067b-8150-4cd3-9071-64791c0894cc": {
-        "id": "2590067b-8150-4cd3-9071-64791c0894cc",
+      "8cc10e73-0c75-4746-97ee-b252e6abb588": {
+        "id": "8cc10e73-0c75-4746-97ee-b252e6abb588",
         "position": {
-          "x": 1792.1933646112598,
-          "y": 802.3592493297585
+          "x": 3399.7278773162884,
+          "y": 617.868480725622
         },
         "orientation": 0,
-        "type": "workflow-cell",
+        "type": "splitter",
         "ports": {
-          "loobos_initial_communities_tif": {
-            "id": "loobos_initial_communities_tif",
+          "splitter_source": {
+            "id": "splitter_source",
             "type": "left",
             "properties": {
-              "color": "#406abf",
-              "parentNodeType": "workflow-cell"
+              "color": "#86642d",
+              "parentNodeType": "splitter"
             },
             "position": {
               "x": -2,
               "y": 30
             }
           },
-          "loobos_ecoregions_tif": {
-            "id": "loobos_ecoregions_tif",
+          "splitter_target": {
+            "id": "splitter_target",
             "type": "right",
             "properties": {
-              "color": "#b087c5",
-              "parentNodeType": "workflow-cell"
+              "color": "#5940bf",
+              "parentNodeType": "splitter"
             },
             "position": {
-              "x": 252,
+              "x": 202,
               "y": 30
             }
           }
         },
         "properties": {
           "cell": {
-            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/cebf5832-959e-4318-b6de-81c1b8be162c/",
-            "owner": "justinet",
-            "virtual_lab": "veluwe-forest-model",
+            "url": "splitter",
+            "title": "Splitter",
+            "description": "Split the input list and distribute its items to multiple containers that run in parallel.",
+            "type": "splitter",
             "shared_with_scopes": [],
             "shared_with_users": [],
-            "versions": [
-              {
-                "version": 2,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/b6c04b0e-7e59-4741-80d1-2c6ca02a9bf5/"
-              },
-              {
-                "version": 3,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/6c69d0c8-07d3-4847-b369-ba24507738ab/"
-              },
-              {
-                "version": 4,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/31ab86ef-c011-41b2-afe8-b322cf7d301a/"
-              },
-              {
-                "version": 5,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/aa15dd5b-0bf9-42f5-947b-dcb44241bf63/"
-              },
-              {
-                "version": 6,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/cebf5832-959e-4318-b6de-81c1b8be162c/"
-              }
-            ],
+            "version": 1,
+            "versions": [],
+            "container_image": "",
             "base_container_image": {
-              "build": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-build:v0.3.5",
-              "runtime": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-runtime:v0.3.5"
+              "build": "",
+              "runtime": ""
             },
-            "dependencies": [
-              {
-                "name": "dplyr",
-                "module": "",
-                "asname": ""
-              },
-              {
-                "name": "Hmisc",
-                "module": "",
-                "asname": ""
-              },
-              {
-                "name": "lubridate",
-                "module": "",
-                "asname": ""
-              },
-              {
-                "name": "pacman",
-                "module": "",
-                "asname": ""
-              },
-              {
-                "name": "processx",
-                "module": "",
-                "asname": ""
-              },
-              {
-                "name": "raster",
-                "module": "",
-                "asname": ""
-              },
-              {
-                "name": "readr",
-                "module": "",
-                "asname": ""
-              },
-              {
-                "name": "sf",
-                "module": "",
-                "asname": ""
-              },
-              {
-                "name": "stringr",
-                "module": "",
-                "asname": ""
-              },
-              {
-                "name": "terra",
-                "module": "",
-                "asname": ""
-              },
-              {
-                "name": "tidyr",
-                "module": "",
-                "asname": ""
-              },
-              {
-                "name": "tibble",
-                "module": "",
-                "asname": ""
-              }
-            ],
+            "dependencies": [],
             "inputs": [
               {
-                "name": "loobos_initial_communities_tif",
-                "type": "str"
+                "name": "splitter_source",
+                "type": "list"
               }
             ],
             "outputs": [
               {
-                "name": "loobos_ecoregions_tif",
-                "type": "str"
+                "name": "splitter_target",
+                "type": "list"
               }
             ],
-            "confs": [
-              {
-                "name": "conf_tmp_data",
-                "assignation": "conf_tmp_data=\"/tmp/data/\""
-              }
-            ],
+            "confs": [],
             "params": [
               {
-                "name": "param_intermediate_location",
-                "type": "str",
-                "default_value": "/home/jovyan/Cloud Storage/naa-vre-user-data/"
+                "name": "param_max_branches",
+                "type": "int",
+                "default_value": ""
               }
             ],
-            "secrets": [],
-            "title": "ecoregionsmap-creator-justinet",
-            "description": "ecoregionsmap-creator-justinet",
-            "created": "2026-06-11T14:37:29.192588Z",
-            "modified": "2026-06-11T14:37:30.110354Z",
-            "version": 6,
-            "container_image": "ghcr.io/naavre/cells-vl-veluwe-forest-model/ecoregionsmap-creator-justinet:ac518c7",
-            "kernel": "IRkernel",
-            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/tree/ac8b56596251d3ed20c2e970d9948f9fd248cc50/ecoregionsmap-creator-justinet",
-            "is_draft": false
+            "secrets": []
           }
         },
         "size": {
-          "width": 252,
+          "width": 202,
           "height": 61
         }
       }
     },
     "links": {
-      "6583c9e5-a4eb-4584-b39a-f2d4da340479": {
-        "id": "6583c9e5-a4eb-4584-b39a-f2d4da340479",
+      "c7bedcf6-b8d1-4e0b-a50d-62192755d18b": {
+        "id": "c7bedcf6-b8d1-4e0b-a50d-62192755d18b",
         "from": {
-          "nodeId": "7ca51a0b-6781-4110-bbd1-8fa386aed315",
-          "portId": "parameter_set_numbers"
+          "nodeId": "928aa683-94ee-4685-a7a5-4f814e812c19",
+          "portId": "KNMI_daily_datafile"
         },
         "to": {
-          "nodeId": "23272fb5-f81b-416b-8b2a-bcd26d55730b",
-          "portId": "parameter_set_numbers"
+          "nodeId": "d402bece-2879-498c-9011-2b5cfed8f97c",
+          "portId": "KNMI_daily_datafile"
         }
       },
-      "b6e84296-1f3b-46dd-8f2d-a86ffe112afb": {
-        "id": "b6e84296-1f3b-46dd-8f2d-a86ffe112afb",
+      "a8e9c5e9-a8ad-4909-8d05-c682b1c4a86e": {
+        "id": "a8e9c5e9-a8ad-4909-8d05-c682b1c4a86e",
         "from": {
-          "nodeId": "7ca51a0b-6781-4110-bbd1-8fa386aed315",
+          "nodeId": "928aa683-94ee-4685-a7a5-4f814e812c19",
+          "portId": "KNMI_spinup_datafile"
+        },
+        "to": {
+          "nodeId": "d402bece-2879-498c-9011-2b5cfed8f97c",
+          "portId": "KNMI_spinup_datafile"
+        }
+      },
+      "03236884-eefb-434b-8c3e-ce94d044e3db": {
+        "id": "03236884-eefb-434b-8c3e-ce94d044e3db",
+        "from": {
+          "nodeId": "05aa41ac-1fdd-402c-b4ad-dc5b4abfcb1f",
+          "portId": "loobos_initial_communities_tif"
+        },
+        "to": {
+          "nodeId": "f46027f2-5fad-4453-9d80-92e9a0907638",
+          "portId": "loobos_initial_communities_tif"
+        }
+      },
+      "1b2bc4c6-3d86-4790-8f52-69233a1e79f0": {
+        "id": "1b2bc4c6-3d86-4790-8f52-69233a1e79f0",
+        "from": {
+          "nodeId": "d402bece-2879-498c-9011-2b5cfed8f97c",
+          "portId": "KNMI_monthly_datafile"
+        },
+        "to": {
+          "nodeId": "f7467f8b-b43c-46f9-bdc8-d7a5ac7b4d86",
+          "portId": "KNMI_monthly_datafile"
+        }
+      },
+      "82906dd2-4bed-499d-976f-2e109ab17791": {
+        "id": "82906dd2-4bed-499d-976f-2e109ab17791",
+        "from": {
+          "nodeId": "d402bece-2879-498c-9011-2b5cfed8f97c",
+          "portId": "KNMI_monthly_spinup_datafile"
+        },
+        "to": {
+          "nodeId": "f7467f8b-b43c-46f9-bdc8-d7a5ac7b4d86",
+          "portId": "KNMI_monthly_spinup_datafile"
+        }
+      },
+      "57f51855-157d-4d16-bd12-72c5aaaead04": {
+        "id": "57f51855-157d-4d16-bd12-72c5aaaead04",
+        "from": {
+          "nodeId": "f7467f8b-b43c-46f9-bdc8-d7a5ac7b4d86",
+          "portId": "climategenerator_datafile"
+        },
+        "to": {
+          "nodeId": "de02d87d-35b2-43c0-9dcc-d8901bb146b2",
+          "portId": "climategenerator_datafile"
+        }
+      },
+      "c6420261-bad7-426b-8056-1aeeaea7661a": {
+        "id": "c6420261-bad7-426b-8056-1aeeaea7661a",
+        "from": {
+          "nodeId": "f7467f8b-b43c-46f9-bdc8-d7a5ac7b4d86",
+          "portId": "loobos_ecoregions_datafile"
+        },
+        "to": {
+          "nodeId": "ca73efd5-7f71-4d5a-9836-a7776146444d",
+          "portId": "loobos_ecoregions_datafile"
+        }
+      },
+      "200e7b23-fcdb-460e-a4fb-0f11f0e33e36": {
+        "id": "200e7b23-fcdb-460e-a4fb-0f11f0e33e36",
+        "from": {
+          "nodeId": "5af578ea-c6e4-461a-86b3-347dc970bbe5",
+          "portId": "loobos_core_species_datafile"
+        },
+        "to": {
+          "nodeId": "ca73efd5-7f71-4d5a-9836-a7776146444d",
+          "portId": "loobos_core_species_datafile"
+        }
+      },
+      "317e98d0-1d59-4083-a359-9aded199e5bd": {
+        "id": "317e98d0-1d59-4083-a359-9aded199e5bd",
+        "from": {
+          "nodeId": "5af578ea-c6e4-461a-86b3-347dc970bbe5",
+          "portId": "loobos_species_datafile"
+        },
+        "to": {
+          "nodeId": "de02d87d-35b2-43c0-9dcc-d8901bb146b2",
+          "portId": "loobos_species_datafile"
+        }
+      },
+      "50812bbc-b982-43c3-af7c-f06775dc1fb0": {
+        "id": "50812bbc-b982-43c3-af7c-f06775dc1fb0",
+        "from": {
+          "nodeId": "5af578ea-c6e4-461a-86b3-347dc970bbe5",
+          "portId": "loobos_spp_ecoregion_datafile"
+        },
+        "to": {
+          "nodeId": "de02d87d-35b2-43c0-9dcc-d8901bb146b2",
+          "portId": "loobos_spp_ecoregion_datafile"
+        }
+      },
+      "5044d2df-1e6a-499d-beca-ea408303bfca": {
+        "id": "5044d2df-1e6a-499d-beca-ea408303bfca",
+        "from": {
+          "nodeId": "05aa41ac-1fdd-402c-b4ad-dc5b4abfcb1f",
+          "portId": "loobos_initial_communities_datafile"
+        },
+        "to": {
+          "nodeId": "de02d87d-35b2-43c0-9dcc-d8901bb146b2",
+          "portId": "loobos_initial_communities_datafile"
+        }
+      },
+      "a04a9411-23e9-4e17-b853-744c83326d38": {
+        "id": "a04a9411-23e9-4e17-b853-744c83326d38",
+        "from": {
+          "nodeId": "05aa41ac-1fdd-402c-b4ad-dc5b4abfcb1f",
+          "portId": "loobos_initial_communities_datafile"
+        },
+        "to": {
+          "nodeId": "de02d87d-35b2-43c0-9dcc-d8901bb146b2",
+          "portId": "loobos_initial_communities_tif"
+        }
+      },
+      "85612c88-6826-4a6e-9d4e-012ab1fc9acd": {
+        "id": "85612c88-6826-4a6e-9d4e-012ab1fc9acd",
+        "from": {
+          "nodeId": "f46027f2-5fad-4453-9d80-92e9a0907638",
+          "portId": "loobos_ecoregions_tif"
+        },
+        "to": {
+          "nodeId": "ca73efd5-7f71-4d5a-9836-a7776146444d",
+          "portId": "loobos_ecoregions_tif"
+        }
+      },
+      "2d47710d-6da0-48cd-bc78-30d2b3ca037d": {
+        "id": "2d47710d-6da0-48cd-bc78-30d2b3ca037d",
+        "from": {
+          "nodeId": "de02d87d-35b2-43c0-9dcc-d8901bb146b2",
+          "portId": "loobos_biomass_succession_datafile"
+        },
+        "to": {
+          "nodeId": "ca73efd5-7f71-4d5a-9836-a7776146444d",
+          "portId": "loobos_biomass_succession_datafile"
+        }
+      },
+      "93a6fcbe-46b5-4507-933e-73d6b8d4cd6c": {
+        "id": "93a6fcbe-46b5-4507-933e-73d6b8d4cd6c",
+        "from": {
+          "nodeId": "ca73efd5-7f71-4d5a-9836-a7776146444d",
+          "portId": "loobos_scenario_datafile"
+        },
+        "to": {
+          "nodeId": "b0745236-0d6c-4832-b25e-3df944193426",
+          "portId": "loobos_scenario_datafile"
+        }
+      },
+      "b634c202-f6cf-46dd-9512-f3b26e4d64e4": {
+        "id": "b634c202-f6cf-46dd-9512-f3b26e4d64e4",
+        "from": {
+          "nodeId": "b0745236-0d6c-4832-b25e-3df944193426",
           "portId": "parameter_set_numbers"
         },
         "to": {
-          "nodeId": "327fdd8c-f7f7-4971-b673-b25e537d962a",
+          "nodeId": "8cc10e73-0c75-4746-97ee-b252e6abb588",
           "portId": "splitter_source"
         }
       },
-      "11dc8b58-237f-4140-8d86-8f35586a923b": {
-        "id": "11dc8b58-237f-4140-8d86-8f35586a923b",
+      "a43d2ca0-9500-4099-896f-02eec7573174": {
+        "id": "a43d2ca0-9500-4099-896f-02eec7573174",
         "from": {
-          "nodeId": "23272fb5-f81b-416b-8b2a-bcd26d55730b",
-          "portId": "KNMI_daily_datafile"
-        },
-        "to": {
-          "nodeId": "3965c4c6-0676-4716-860d-2d623f071d9d",
-          "portId": "KNMI_daily_datafile"
-        }
-      },
-      "e2ca8c6f-317c-4594-927f-9a52c5e683e1": {
-        "id": "e2ca8c6f-317c-4594-927f-9a52c5e683e1",
-        "from": {
-          "nodeId": "23272fb5-f81b-416b-8b2a-bcd26d55730b",
-          "portId": "KNMI_spinup_datafile"
-        },
-        "to": {
-          "nodeId": "3965c4c6-0676-4716-860d-2d623f071d9d",
-          "portId": "KNMI_spinup_datafile"
-        }
-      },
-      "0582b8da-b522-4664-afbc-15c7b08ea082": {
-        "id": "0582b8da-b522-4664-afbc-15c7b08ea082",
-        "from": {
-          "nodeId": "7ca51a0b-6781-4110-bbd1-8fa386aed315",
-          "portId": "parameter_set_numbers"
-        },
-        "to": {
-          "nodeId": "7b830b86-1866-4a0b-a6a2-e28da228be2f",
-          "portId": "parameter_set_numbers"
-        }
-      },
-      "7c0a8adc-7ed3-4f33-9517-27d5e996266d": {
-        "id": "7c0a8adc-7ed3-4f33-9517-27d5e996266d",
-        "from": {
-          "nodeId": "3965c4c6-0676-4716-860d-2d623f071d9d",
-          "portId": "KNMI_monthly_datafile"
-        },
-        "to": {
-          "nodeId": "7055078d-a4e5-4a8f-b8d9-d0970bc01916",
-          "portId": "KNMI_monthly_datafile"
-        }
-      },
-      "2a8a302f-254b-4d00-aac1-ff9343fb46ff": {
-        "id": "2a8a302f-254b-4d00-aac1-ff9343fb46ff",
-        "from": {
-          "nodeId": "3965c4c6-0676-4716-860d-2d623f071d9d",
-          "portId": "KNMI_monthly_spinup_datafile"
-        },
-        "to": {
-          "nodeId": "7055078d-a4e5-4a8f-b8d9-d0970bc01916",
-          "portId": "KNMI_monthly_spinup_datafile"
-        }
-      },
-      "92fd25ae-a836-490d-9516-706445d17c77": {
-        "id": "92fd25ae-a836-490d-9516-706445d17c77",
-        "from": {
-          "nodeId": "7055078d-a4e5-4a8f-b8d9-d0970bc01916",
-          "portId": "climategenerator_datafile"
-        },
-        "to": {
-          "nodeId": "d05459f0-866b-49bc-adea-c5d02d930cda",
-          "portId": "climategenerator_datafile"
-        }
-      },
-      "99dcc8e4-cd80-49c9-967a-3b67cdc97aba": {
-        "id": "99dcc8e4-cd80-49c9-967a-3b67cdc97aba",
-        "from": {
-          "nodeId": "7055078d-a4e5-4a8f-b8d9-d0970bc01916",
-          "portId": "loobos_ecoregions_datafile"
-        },
-        "to": {
-          "nodeId": "a40df086-77cf-4661-8133-0f25f11c2657",
-          "portId": "loobos_ecoregions_datafile"
-        }
-      },
-      "934eef3a-b527-4e8d-988b-80d73c4e0e75": {
-        "id": "934eef3a-b527-4e8d-988b-80d73c4e0e75",
-        "from": {
-          "nodeId": "885be6f4-4e78-4e96-9753-10bf14718656",
-          "portId": "loobos_core_species_datafile"
-        },
-        "to": {
-          "nodeId": "a40df086-77cf-4661-8133-0f25f11c2657",
-          "portId": "loobos_core_species_datafile"
-        }
-      },
-      "f5e4aa59-6923-40b1-89df-d27f1579d652": {
-        "id": "f5e4aa59-6923-40b1-89df-d27f1579d652",
-        "from": {
-          "nodeId": "885be6f4-4e78-4e96-9753-10bf14718656",
-          "portId": "loobos_species_datafile"
-        },
-        "to": {
-          "nodeId": "d05459f0-866b-49bc-adea-c5d02d930cda",
-          "portId": "loobos_species_datafile"
-        }
-      },
-      "f12981fc-fda3-4c85-a9fe-ef237a6b9b5e": {
-        "id": "f12981fc-fda3-4c85-a9fe-ef237a6b9b5e",
-        "from": {
-          "nodeId": "885be6f4-4e78-4e96-9753-10bf14718656",
-          "portId": "loobos_spp_ecoregion_datafile"
-        },
-        "to": {
-          "nodeId": "d05459f0-866b-49bc-adea-c5d02d930cda",
-          "portId": "loobos_spp_ecoregion_datafile"
-        }
-      },
-      "374ad699-2d4b-4a4a-95a3-ea373facc647": {
-        "id": "374ad699-2d4b-4a4a-95a3-ea373facc647",
-        "from": {
-          "nodeId": "7b830b86-1866-4a0b-a6a2-e28da228be2f",
-          "portId": "loobos_initial_communities_datafile"
-        },
-        "to": {
-          "nodeId": "d05459f0-866b-49bc-adea-c5d02d930cda",
-          "portId": "loobos_initial_communities_datafile"
-        }
-      },
-      "419130ec-c996-4dfd-8ab5-d789cbb196ce": {
-        "id": "419130ec-c996-4dfd-8ab5-d789cbb196ce",
-        "from": {
-          "nodeId": "7b830b86-1866-4a0b-a6a2-e28da228be2f",
-          "portId": "loobos_initial_communities_tif"
-        },
-        "to": {
-          "nodeId": "d05459f0-866b-49bc-adea-c5d02d930cda",
-          "portId": "loobos_initial_communities_tif"
-        }
-      },
-      "ce0efe2a-eba1-4261-bf79-cff67c9157c2": {
-        "id": "ce0efe2a-eba1-4261-bf79-cff67c9157c2",
-        "from": {
-          "nodeId": "d05459f0-866b-49bc-adea-c5d02d930cda",
-          "portId": "loobos_biomass_succession_datafile"
-        },
-        "to": {
-          "nodeId": "a40df086-77cf-4661-8133-0f25f11c2657",
-          "portId": "loobos_biomass_succession_datafile"
-        }
-      },
-      "086dfbda-6fa3-4ceb-b737-b220cd6a9970": {
-        "id": "086dfbda-6fa3-4ceb-b737-b220cd6a9970",
-        "from": {
-          "nodeId": "7b830b86-1866-4a0b-a6a2-e28da228be2f",
-          "portId": "loobos_initial_communities_tif"
-        },
-        "to": {
-          "nodeId": "2590067b-8150-4cd3-9071-64791c0894cc",
-          "portId": "loobos_initial_communities_tif"
-        }
-      },
-      "cf62b265-c1f1-4503-a876-0298a2190b39": {
-        "id": "cf62b265-c1f1-4503-a876-0298a2190b39",
-        "from": {
-          "nodeId": "2590067b-8150-4cd3-9071-64791c0894cc",
-          "portId": "loobos_ecoregions_tif"
-        },
-        "to": {
-          "nodeId": "a40df086-77cf-4661-8133-0f25f11c2657",
-          "portId": "loobos_ecoregions_tif"
-        }
-      },
-      "a1a41d1e-1c43-4269-bbcf-228089af9767": {
-        "id": "a1a41d1e-1c43-4269-bbcf-228089af9767",
-        "from": {
-          "nodeId": "a40df086-77cf-4661-8133-0f25f11c2657",
-          "portId": "loobos_scenario_datafile"
-        },
-        "to": {
-          "nodeId": "422bafc2-dcd7-475c-8f64-876a12db1247",
-          "portId": "loobos_scenario_datafile"
-        }
-      },
-      "24e0f098-f525-461b-9772-0245436d3653": {
-        "id": "24e0f098-f525-461b-9772-0245436d3653",
-        "from": {
-          "nodeId": "327fdd8c-f7f7-4971-b673-b25e537d962a",
+          "nodeId": "8cc10e73-0c75-4746-97ee-b252e6abb588",
           "portId": "splitter_target"
         },
         "to": {
-          "nodeId": "422bafc2-dcd7-475c-8f64-876a12db1247",
+          "nodeId": "a38c6464-c177-4157-8049-04e5574262d5",
           "portId": "parameter_set_numbers"
+        }
+      },
+      "a610836c-f733-43bd-b5ac-ab617ea54cd9": {
+        "id": "a610836c-f733-43bd-b5ac-ab617ea54cd9",
+        "from": {
+          "nodeId": "ca73efd5-7f71-4d5a-9836-a7776146444d",
+          "portId": "loobos_scenario_datafile"
+        },
+        "to": {
+          "nodeId": "a38c6464-c177-4157-8049-04e5574262d5",
+          "portId": "loobos_scenario_datafile"
         }
       }
     },
     "selected": {},
-    "hovered": {}
+    "hovered": {},
+    "metadata": {
+      "version": "1.1"
+    },
+    "properties": {
+      "params": []
+    }
   }
 }
