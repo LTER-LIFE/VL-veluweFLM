@@ -1,0 +1,1892 @@
+{
+  "chart": {
+    "offset": {
+      "x": 18.57,
+      "y": 363.11
+    },
+    "scale": 0.47,
+    "nodes": {
+      "07e1f018-cb0c-42d0-ab8c-755dad55f40c": {
+        "id": "07e1f018-cb0c-42d0-ab8c-755dad55f40c",
+        "position": {
+          "x": 578.3333320617676,
+          "y": 308
+        },
+        "orientation": 0,
+        "type": "workflow-cell",
+        "ports": {
+          "forest_datafile": {
+            "id": "forest_datafile",
+            "type": "right",
+            "properties": {
+              "color": "#453a78",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 252,
+              "y": 17
+            }
+          },
+          "forest_vect_datafile": {
+            "id": "forest_vect_datafile",
+            "type": "right",
+            "properties": {
+              "color": "#e06c75",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 252,
+              "y": 43
+            }
+          }
+        },
+        "properties": {
+          "cell": {
+            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/eec28037-4b82-4a36-bd9b-1a137cbf1b31/",
+            "owner": "mariagfuentesal",
+            "virtual_lab": "veluwe-forest-model",
+            "shared_with_scopes": [],
+            "shared_with_users": [],
+            "versions": [
+              {
+                "version": 1,
+                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/1fb4652b-1d11-4b62-b10d-bd9dff4aae17/"
+              },
+              {
+                "version": 2,
+                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/eec28037-4b82-4a36-bd9b-1a137cbf1b31/"
+              }
+            ],
+            "base_container_image": {
+              "build": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-build:v0.3.24",
+              "runtime": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-runtime:v0.3.24"
+            },
+            "containerization_job": {
+              "html_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/actions/runs/40320542214/job/121564108410",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            "dependencies": [
+              {
+                "name": "sf",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "terra",
+                "module": "",
+                "asname": null
+              }
+            ],
+            "inputs": [],
+            "outputs": [
+              {
+                "name": "forest_datafile",
+                "type": "str"
+              },
+              {
+                "name": "forest_vect_datafile",
+                "type": "str"
+              }
+            ],
+            "confs": [
+              {
+                "name": "conf_tmp_data",
+                "assignation": "conf_tmp_data<-\"/home/jovyan/Cloud Storage/naa-vre-user-data/tmp/data\""
+              }
+            ],
+            "params": [],
+            "secrets": [],
+            "title": "map-retriver-mariagfuentesal",
+            "description": "map-retriver-mariagfuentesal",
+            "created": "2026-10-26T12:10:48.638177Z",
+            "modified": "2026-10-26T12:16:34.092081Z",
+            "version": 2,
+            "template_format": "v1",
+            "container_image": "ghcr.io/naavre/cells-vl-veluwe-forest-model/map-retriver-mariagfuentesal:4222639",
+            "containerization_workflow_id": "27a1f755-20f7-4b3b-a459-f1455d7b90d3",
+            "kernel": "IRkernel",
+            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/tree/dd7ff6a6cbd632d80d53494ed1db323a122ada49/map-retriver-mariagfuentesal",
+            "is_draft": false
+          }
+        },
+        "size": {
+          "width": 251,
+          "height": 61
+        }
+      },
+      "f3fe082b-48ed-47a3-add8-52d36c2de93b": {
+        "id": "f3fe082b-48ed-47a3-add8-52d36c2de93b",
+        "position": {
+          "x": 665.3333320617676,
+          "y": 144
+        },
+        "orientation": 0,
+        "type": "workflow-cell",
+        "ports": {
+          "ecoregions_datafile": {
+            "id": "ecoregions_datafile",
+            "type": "right",
+            "properties": {
+              "color": "#75ac53",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 252,
+              "y": 30
+            }
+          }
+        },
+        "properties": {
+          "cell": {
+            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/b6c62fc9-5f07-4f99-b523-8a70b675a8b2/",
+            "owner": "mariagfuentesal",
+            "virtual_lab": "veluwe-forest-model",
+            "shared_with_scopes": [],
+            "shared_with_users": [],
+            "versions": [
+              {
+                "version": 1,
+                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/93538e78-52e1-4537-b8f2-fae5af813eea/"
+              },
+              {
+                "version": 2,
+                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/b6c62fc9-5f07-4f99-b523-8a70b675a8b2/"
+              }
+            ],
+            "base_container_image": {
+              "build": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-build:v0.3.26",
+              "runtime": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-runtime:v0.3.26"
+            },
+            "containerization_job": {
+              "html_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/actions/runs/41451707584/job/125298312653",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            "dependencies": [],
+            "inputs": [],
+            "outputs": [
+              {
+                "name": "ecoregions_datafile",
+                "type": "str"
+              }
+            ],
+            "confs": [],
+            "params": [],
+            "secrets": [],
+            "title": "ecoregion-raster-loader-mariagfuentesal",
+            "description": "ecoregion-raster-loader-mariagfuentesal",
+            "created": "2026-11-02T13:17:32.038802Z",
+            "modified": "2026-11-02T13:19:33.421555Z",
+            "version": 2,
+            "template_format": "v1",
+            "container_image": "ghcr.io/naavre/cells-vl-veluwe-forest-model/ecoregion-raster-loader-mariagfuentesal:5d11ba1",
+            "containerization_workflow_id": "7704eae1-95af-430d-ad04-7e41b8eb23f0",
+            "kernel": "IRkernel",
+            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/tree/fb0a0ea7318f23a7d0c92fe60f0c21eb7bd28ba1/ecoregion-raster-loader-mariagfuentesal",
+            "is_draft": false
+          }
+        },
+        "size": {
+          "width": 251,
+          "height": 61
+        }
+      },
+      "28a8e6b2-e7f0-4707-8a34-c93d2e24f120": {
+        "id": "28a8e6b2-e7f0-4707-8a34-c93d2e24f120",
+        "position": {
+          "x": 1577.3333320617676,
+          "y": 274
+        },
+        "orientation": 0,
+        "type": "workflow-cell",
+        "ports": {
+          "ecoregion_ids_datafile": {
+            "id": "ecoregion_ids_datafile",
+            "type": "left",
+            "properties": {
+              "color": "#a979d2",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 39
+            }
+          },
+          "core_species_datafile": {
+            "id": "core_species_datafile",
+            "type": "right",
+            "properties": {
+              "color": "#741f93",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 252,
+              "y": 13
+            }
+          },
+          "species_datafile": {
+            "id": "species_datafile",
+            "type": "right",
+            "properties": {
+              "color": "#40bfbf",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 252,
+              "y": 39
+            }
+          },
+          "spp_ecoregion_datafile": {
+            "id": "spp_ecoregion_datafile",
+            "type": "right",
+            "properties": {
+              "color": "#d27d2d",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 252,
+              "y": 65
+            }
+          }
+        },
+        "properties": {
+          "cell": {
+            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/c47524c3-caa4-40ca-8881-dca8990be696/",
+            "owner": "mariagfuentesal",
+            "virtual_lab": "veluwe-forest-model",
+            "shared_with_scopes": [],
+            "shared_with_users": [],
+            "versions": [
+              {
+                "version": 1,
+                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/c47524c3-caa4-40ca-8881-dca8990be696/"
+              }
+            ],
+            "base_container_image": {
+              "build": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-build:v0.3.24",
+              "runtime": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-runtime:v0.3.24"
+            },
+            "containerization_job": {
+              "html_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/actions/runs/40326908866/job/121585920442",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            "dependencies": [
+              {
+                "name": "dplyr",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "readr",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "tibble",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "tidyr",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "stringr",
+                "module": "",
+                "asname": null
+              }
+            ],
+            "inputs": [
+              {
+                "name": "ecoregion_ids_datafile",
+                "type": "str"
+              }
+            ],
+            "outputs": [
+              {
+                "name": "core_species_datafile",
+                "type": "str"
+              },
+              {
+                "name": "species_datafile",
+                "type": "str"
+              },
+              {
+                "name": "spp_ecoregion_datafile",
+                "type": "str"
+              }
+            ],
+            "confs": [
+              {
+                "name": "conf_tmp_data",
+                "assignation": "conf_tmp_data<-\"/home/jovyan/Cloud Storage/naa-vre-user-data/tmp/data\""
+              },
+              {
+                "name": "conf_input_location",
+                "assignation": "conf_input_location<-\"/home/jovyan/Cloud Storage/naa-vre-public/vl-veluwe-forest-model\""
+              }
+            ],
+            "params": [],
+            "secrets": [],
+            "title": "species-trait-data-retriever-preprocessor-mariagfuentesal",
+            "description": "species-trait-data-retriever-preprocessor-mariagfuentesal",
+            "created": "2026-10-26T13:00:14.889846Z",
+            "modified": "2026-10-26T13:06:39.734357Z",
+            "version": 1,
+            "template_format": "v1",
+            "container_image": "ghcr.io/naavre/cells-vl-veluwe-forest-model/species-trait-data-retriever-preprocessor-mariagfuentesal:5cd15bb",
+            "containerization_workflow_id": "49366a23-09cd-4e8b-a29f-82f8afffc5b0",
+            "kernel": "IRkernel",
+            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/tree/6af600c1b479d20b9272f6de733334be8fc31022/species-trait-data-retriever-preprocessor-mariagfuentesal",
+            "is_draft": false
+          }
+        },
+        "size": {
+          "width": 251,
+          "height": 79
+        }
+      },
+      "4cf56664-fee8-4429-8029-51ab5a4885ae": {
+        "id": "4cf56664-fee8-4429-8029-51ab5a4885ae",
+        "position": {
+          "x": 1522.3333320617676,
+          "y": 43
+        },
+        "orientation": 0,
+        "type": "workflow-cell",
+        "ports": {
+          "KNMI_sim_datafile": {
+            "id": "KNMI_sim_datafile",
+            "type": "right",
+            "properties": {
+              "color": "#c58a87",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 252,
+              "y": 17
+            }
+          },
+          "KNMI_spinup_datafile": {
+            "id": "KNMI_spinup_datafile",
+            "type": "right",
+            "properties": {
+              "color": "#c587bc",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 252,
+              "y": 43
+            }
+          }
+        },
+        "properties": {
+          "cell": {
+            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/cd426163-a561-470e-b90c-9a084d89e4f0/",
+            "owner": "mariagfuentesal",
+            "virtual_lab": "veluwe-forest-model",
+            "shared_with_scopes": [],
+            "shared_with_users": [],
+            "versions": [
+              {
+                "version": 1,
+                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/b3c879e3-6408-4723-9e3d-a8e49ef3ea81/"
+              },
+              {
+                "version": 2,
+                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/ab91c410-bf6b-4944-8c3c-c45c667f04c7/"
+              },
+              {
+                "version": 3,
+                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/cd426163-a561-470e-b90c-9a084d89e4f0/"
+              }
+            ],
+            "base_container_image": {
+              "build": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-build:v0.3.24",
+              "runtime": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-runtime:v0.3.24"
+            },
+            "containerization_job": {
+              "html_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/actions/runs/40324277235/job/121576891083",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            "dependencies": [
+              {
+                "name": "stringr",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "dplyr",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "readr",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "lubridate",
+                "module": "",
+                "asname": null
+              }
+            ],
+            "inputs": [],
+            "outputs": [
+              {
+                "name": "KNMI_sim_datafile",
+                "type": "str"
+              },
+              {
+                "name": "KNMI_spinup_datafile",
+                "type": "str"
+              }
+            ],
+            "confs": [
+              {
+                "name": "conf_tmp_data",
+                "assignation": "conf_tmp_data<-\"/home/jovyan/Cloud Storage/naa-vre-user-data/tmp/data\""
+              }
+            ],
+            "params": [
+              {
+                "name": "param_from_date",
+                "type": "str",
+                "default_value": "2005"
+              },
+              {
+                "name": "param_from_date_spinup",
+                "type": "str",
+                "default_value": "1905"
+              },
+              {
+                "name": "param_stationID",
+                "type": "str",
+                "default_value": "260"
+              },
+              {
+                "name": "param_to_date",
+                "type": "str",
+                "default_value": "2025"
+              },
+              {
+                "name": "param_to_date_spinup",
+                "type": "str",
+                "default_value": "2005"
+              },
+              {
+                "name": "param_vars",
+                "type": "list",
+                "default_value": "[\"average_temperature\", \"minimum_temperature\", \"maximum_temperature\", \"total_precipitation\", \"average_windspeed\", \"average_winddirection\", \"relative_humidity\", \"minimum_humidity\", \"maximum_humidity\"]"
+              }
+            ],
+            "secrets": [],
+            "title": "knmi-data-retriever-mariagfuentesal",
+            "description": "knmi-data-retriever-mariagfuentesal",
+            "created": "2026-10-26T12:40:00.926203Z",
+            "modified": "2026-10-26T12:40:55.676730Z",
+            "version": 3,
+            "template_format": "v1",
+            "container_image": "ghcr.io/naavre/cells-vl-veluwe-forest-model/knmi-data-retriever-mariagfuentesal:7423f16",
+            "containerization_workflow_id": "013306c6-e8d6-439f-8762-36e272b36d26",
+            "kernel": "IRkernel",
+            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/tree/9498b9c25b392039d2cf32cf32de4b5feae20d6e/knmi-data-retriever-mariagfuentesal",
+            "is_draft": false
+          }
+        },
+        "size": {
+          "width": 251,
+          "height": 61
+        }
+      },
+      "3975d117-5403-47cc-916a-0bcd2196d25c": {
+        "id": "3975d117-5403-47cc-916a-0bcd2196d25c",
+        "position": {
+          "x": 1885.3333320617676,
+          "y": 42
+        },
+        "orientation": 0,
+        "type": "workflow-cell",
+        "ports": {
+          "KNMI_sim_datafile": {
+            "id": "KNMI_sim_datafile",
+            "type": "left",
+            "properties": {
+              "color": "#c58a87",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 13
+            }
+          },
+          "KNMI_spinup_datafile": {
+            "id": "KNMI_spinup_datafile",
+            "type": "left",
+            "properties": {
+              "color": "#c587bc",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 39
+            }
+          },
+          "ecoregion_ids_datafile": {
+            "id": "ecoregion_ids_datafile",
+            "type": "left",
+            "properties": {
+              "color": "#a979d2",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 65
+            }
+          },
+          "preprocessed_KNMI_sim_datafile": {
+            "id": "preprocessed_KNMI_sim_datafile",
+            "type": "right",
+            "properties": {
+              "color": "#87c591",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 252,
+              "y": 26
+            }
+          },
+          "preprocessed_KNMI_spinup_datafile": {
+            "id": "preprocessed_KNMI_spinup_datafile",
+            "type": "right",
+            "properties": {
+              "color": "#1f2d93",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 252,
+              "y": 52
+            }
+          }
+        },
+        "properties": {
+          "cell": {
+            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/62175a60-6443-4f2f-a187-4bac82974b8a/",
+            "owner": "mariagfuentesal",
+            "virtual_lab": "veluwe-forest-model",
+            "shared_with_scopes": [],
+            "shared_with_users": [],
+            "versions": [
+              {
+                "version": 1,
+                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/62175a60-6443-4f2f-a187-4bac82974b8a/"
+              }
+            ],
+            "base_container_image": {
+              "build": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-build:v0.3.24",
+              "runtime": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-runtime:v0.3.24"
+            },
+            "containerization_job": {
+              "html_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/actions/runs/40325072771/job/121579588957",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            "dependencies": [
+              {
+                "name": "dplyr",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "readr",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "lubridate",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "tidyr",
+                "module": "",
+                "asname": null
+              }
+            ],
+            "inputs": [
+              {
+                "name": "KNMI_sim_datafile",
+                "type": "str"
+              },
+              {
+                "name": "KNMI_spinup_datafile",
+                "type": "str"
+              },
+              {
+                "name": "ecoregion_ids_datafile",
+                "type": "str"
+              }
+            ],
+            "outputs": [
+              {
+                "name": "preprocessed_KNMI_sim_datafile",
+                "type": "str"
+              },
+              {
+                "name": "preprocessed_KNMI_spinup_datafile",
+                "type": "str"
+              }
+            ],
+            "confs": [
+              {
+                "name": "conf_tmp_data",
+                "assignation": "conf_tmp_data<-\"/home/jovyan/Cloud Storage/naa-vre-user-data/tmp/data\""
+              }
+            ],
+            "params": [
+              {
+                "name": "param_sim_climate_time_series",
+                "type": "str",
+                "default_value": "Monthly_SequencedYears"
+              },
+              {
+                "name": "param_spinup_climate_time_series",
+                "type": "str",
+                "default_value": "Monthly_SequencedYears"
+              }
+            ],
+            "secrets": [],
+            "title": "knmi-data-preprocessor-mariagfuentesal",
+            "description": "knmi-data-preprocessor-mariagfuentesal",
+            "created": "2026-10-26T12:46:09.768461Z",
+            "modified": "2026-10-26T12:53:31.985936Z",
+            "version": 1,
+            "template_format": "v1",
+            "container_image": "ghcr.io/naavre/cells-vl-veluwe-forest-model/knmi-data-preprocessor-mariagfuentesal:f756873",
+            "containerization_workflow_id": "bc55cb4a-dfb0-4ef6-a858-cff2c95a9d14",
+            "kernel": "IRkernel",
+            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/tree/9d3f3ee6f77def69c12486fcaef370a5e0721d52/knmi-data-preprocessor-mariagfuentesal",
+            "is_draft": false
+          }
+        },
+        "size": {
+          "width": 251,
+          "height": 79
+        }
+      },
+      "c80f41c5-10a2-4c47-af42-99c96774c821": {
+        "id": "c80f41c5-10a2-4c47-af42-99c96774c821",
+        "position": {
+          "x": 2243.3382262287328,
+          "y": 47.38619676945636
+        },
+        "orientation": 0,
+        "type": "workflow-cell",
+        "ports": {
+          "ecoregion_ids_datafile": {
+            "id": "ecoregion_ids_datafile",
+            "type": "left",
+            "properties": {
+              "color": "#a979d2",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 13
+            }
+          },
+          "preprocessed_KNMI_sim_datafile": {
+            "id": "preprocessed_KNMI_sim_datafile",
+            "type": "left",
+            "properties": {
+              "color": "#87c591",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 39
+            }
+          },
+          "preprocessed_KNMI_spinup_datafile": {
+            "id": "preprocessed_KNMI_spinup_datafile",
+            "type": "left",
+            "properties": {
+              "color": "#1f2d93",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 65
+            }
+          },
+          "climategenerator_datafile": {
+            "id": "climategenerator_datafile",
+            "type": "right",
+            "properties": {
+              "color": "#c5e06c",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 252,
+              "y": 26
+            }
+          },
+          "ecoregions_txt_datafile": {
+            "id": "ecoregions_txt_datafile",
+            "type": "right",
+            "properties": {
+              "color": "#e06cbd",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 252,
+              "y": 52
+            }
+          }
+        },
+        "properties": {
+          "cell": {
+            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/a4aee155-d7d6-44ac-bd2f-aefac8d26a74/",
+            "owner": "mariagfuentesal",
+            "virtual_lab": "veluwe-forest-model",
+            "shared_with_scopes": [],
+            "shared_with_users": [],
+            "versions": [
+              {
+                "version": 1,
+                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/a4aee155-d7d6-44ac-bd2f-aefac8d26a74/"
+              }
+            ],
+            "base_container_image": {
+              "build": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-build:v0.3.26",
+              "runtime": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-runtime:v0.3.26"
+            },
+            "containerization_job": {
+              "html_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/actions/runs/40482340624/job/122115553194",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            "dependencies": [
+              {
+                "name": "readr",
+                "module": "",
+                "asname": null
+              }
+            ],
+            "inputs": [
+              {
+                "name": "ecoregion_ids_datafile",
+                "type": "str"
+              },
+              {
+                "name": "preprocessed_KNMI_sim_datafile",
+                "type": "str"
+              },
+              {
+                "name": "preprocessed_KNMI_spinup_datafile",
+                "type": "str"
+              }
+            ],
+            "outputs": [
+              {
+                "name": "climategenerator_datafile",
+                "type": "str"
+              },
+              {
+                "name": "ecoregions_txt_datafile",
+                "type": "str"
+              }
+            ],
+            "confs": [
+              {
+                "name": "conf_tmp_data",
+                "assignation": "conf_tmp_data<-\"/home/jovyan/Cloud Storage/naa-vre-user-data/tmp/data\""
+              }
+            ],
+            "params": [
+              {
+                "name": "param_sim_climate_time_series",
+                "type": "str",
+                "default_value": "Monthly_SequencedYears"
+              },
+              {
+                "name": "param_spinup_climate_time_series",
+                "type": "str",
+                "default_value": "Monthly_SequencedYears"
+              }
+            ],
+            "secrets": [],
+            "title": "configuration-files-creator-mariagfuentesal",
+            "description": "configuration-files-creator-mariagfuentesal",
+            "created": "2026-10-27T09:38:42.573849Z",
+            "modified": "2026-10-27T09:44:05.014206Z",
+            "version": 1,
+            "template_format": "v1",
+            "container_image": "ghcr.io/naavre/cells-vl-veluwe-forest-model/configuration-files-creator-mariagfuentesal:7f828b6",
+            "containerization_workflow_id": "841bc995-50bd-4431-8d6a-d1cf351c8992",
+            "kernel": "IRkernel",
+            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/tree/8ef0247f6f41950c5acf5727663199a6c5da57f8/configuration-files-creator-mariagfuentesal",
+            "is_draft": false
+          }
+        },
+        "size": {
+          "width": 251,
+          "height": 79
+        }
+      },
+      "c8776b74-6adf-421e-b6bc-4883c254589b": {
+        "id": "c8776b74-6adf-421e-b6bc-4883c254589b",
+        "position": {
+          "x": 2594.2927049365167,
+          "y": 286.74008810572616
+        },
+        "orientation": 0,
+        "type": "workflow-cell",
+        "ports": {
+          "climategenerator_datafile": {
+            "id": "climategenerator_datafile",
+            "type": "left",
+            "properties": {
+              "color": "#c5e06c",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 13
+            }
+          },
+          "ecoregion_ids_datafile": {
+            "id": "ecoregion_ids_datafile",
+            "type": "left",
+            "properties": {
+              "color": "#a979d2",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 39
+            }
+          },
+          "initial_communities_datafile": {
+            "id": "initial_communities_datafile",
+            "type": "left",
+            "properties": {
+              "color": "#86772d",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 65
+            }
+          },
+          "initial_communities_tif": {
+            "id": "initial_communities_tif",
+            "type": "left",
+            "properties": {
+              "color": "#4093bf",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 91
+            }
+          },
+          "species_datafile": {
+            "id": "species_datafile",
+            "type": "left",
+            "properties": {
+              "color": "#40bfbf",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 117
+            }
+          },
+          "spp_ecoregion_datafile": {
+            "id": "spp_ecoregion_datafile",
+            "type": "left",
+            "properties": {
+              "color": "#d27d2d",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 143
+            }
+          },
+          "biomass_succession_datafile": {
+            "id": "biomass_succession_datafile",
+            "type": "right",
+            "properties": {
+              "color": "#1f5293",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 252,
+              "y": 78
+            }
+          }
+        },
+        "properties": {
+          "cell": {
+            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/bcd145a6-6957-4197-a35b-291bce076be8/",
+            "owner": "mariagfuentesal",
+            "virtual_lab": "veluwe-forest-model",
+            "shared_with_scopes": [],
+            "shared_with_users": [],
+            "versions": [
+              {
+                "version": 1,
+                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/bcd145a6-6957-4197-a35b-291bce076be8/"
+              }
+            ],
+            "base_container_image": {
+              "build": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-build:v0.3.26",
+              "runtime": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-runtime:v0.3.26"
+            },
+            "containerization_job": {
+              "html_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/actions/runs/40484060036/job/122121354389",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            "dependencies": [
+              {
+                "name": "readr",
+                "module": "",
+                "asname": null
+              }
+            ],
+            "inputs": [
+              {
+                "name": "climategenerator_datafile",
+                "type": "str"
+              },
+              {
+                "name": "ecoregion_ids_datafile",
+                "type": "str"
+              },
+              {
+                "name": "initial_communities_datafile",
+                "type": "str"
+              },
+              {
+                "name": "initial_communities_tif",
+                "type": "str"
+              },
+              {
+                "name": "species_datafile",
+                "type": "str"
+              },
+              {
+                "name": "spp_ecoregion_datafile",
+                "type": "str"
+              }
+            ],
+            "outputs": [
+              {
+                "name": "biomass_succession_datafile",
+                "type": "str"
+              }
+            ],
+            "confs": [
+              {
+                "name": "conf_tmp_data",
+                "assignation": "conf_tmp_data<-\"/home/jovyan/Cloud Storage/naa-vre-user-data/tmp/data\""
+              }
+            ],
+            "params": [
+              {
+                "name": "param_timestep",
+                "type": "int",
+                "default_value": "10"
+              }
+            ],
+            "secrets": [],
+            "title": "biomass-succession-initialization-file-creator-mariagfuentesal",
+            "description": "biomass-succession-initialization-file-creator-mariagfuentesal",
+            "created": "2026-10-27T09:52:08.279596Z",
+            "modified": "2026-10-27T09:54:38.598880Z",
+            "version": 1,
+            "template_format": "v1",
+            "container_image": "ghcr.io/naavre/cells-vl-veluwe-forest-model/biomass-succession-initialization-file-creator-mariagfuentesal:0d7e885",
+            "containerization_workflow_id": "b2b75b30-b998-4979-bc3c-c89ee0d7958c",
+            "kernel": "IRkernel",
+            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/tree/eb8bf3d25d7eaa5564a5b2fc712ab8f28ca74571/biomass-succession-initialization-file-creator-mariagfuentesal",
+            "is_draft": false
+          }
+        },
+        "size": {
+          "width": 251,
+          "height": 157
+        }
+      },
+      "fde2d476-b2a2-4557-ad1a-3418d0f569e2": {
+        "id": "fde2d476-b2a2-4557-ad1a-3418d0f569e2",
+        "position": {
+          "x": 2962.8683290187455,
+          "y": 25.359765051394927
+        },
+        "orientation": 0,
+        "type": "workflow-cell",
+        "ports": {
+          "biomass_succession_datafile": {
+            "id": "biomass_succession_datafile",
+            "type": "left",
+            "properties": {
+              "color": "#1f5293",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 13
+            }
+          },
+          "core_species_datafile": {
+            "id": "core_species_datafile",
+            "type": "left",
+            "properties": {
+              "color": "#741f93",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 39
+            }
+          },
+          "ecoregions_rast_datafile": {
+            "id": "ecoregions_rast_datafile",
+            "type": "left",
+            "properties": {
+              "color": "#9bbf40",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 65
+            }
+          },
+          "ecoregions_txt_datafile": {
+            "id": "ecoregions_txt_datafile",
+            "type": "left",
+            "properties": {
+              "color": "#e06cbd",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 91
+            }
+          },
+          "scenario_datafile": {
+            "id": "scenario_datafile",
+            "type": "right",
+            "properties": {
+              "color": "#4e1f93",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 252,
+              "y": 52
+            }
+          }
+        },
+        "properties": {
+          "cell": {
+            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/85c10557-6264-4b66-a1b3-67ee63fe306e/",
+            "owner": "mariagfuentesal",
+            "virtual_lab": "veluwe-forest-model",
+            "shared_with_scopes": [],
+            "shared_with_users": [],
+            "versions": [
+              {
+                "version": 1,
+                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/b3170eac-b02e-4fa3-b808-1c21f7758460/"
+              },
+              {
+                "version": 2,
+                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/85c10557-6264-4b66-a1b3-67ee63fe306e/"
+              }
+            ],
+            "base_container_image": {
+              "build": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-build:v0.3.26",
+              "runtime": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-runtime:v0.3.26"
+            },
+            "containerization_job": {
+              "html_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/actions/runs/40485268830/job/122125403537",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            "dependencies": [],
+            "inputs": [
+              {
+                "name": "biomass_succession_datafile",
+                "type": "str"
+              },
+              {
+                "name": "core_species_datafile",
+                "type": "str"
+              },
+              {
+                "name": "ecoregions_rast_datafile",
+                "type": "str"
+              },
+              {
+                "name": "ecoregions_txt_datafile",
+                "type": "str"
+              }
+            ],
+            "outputs": [
+              {
+                "name": "scenario_datafile",
+                "type": "str"
+              }
+            ],
+            "confs": [
+              {
+                "name": "conf_tmp_data",
+                "assignation": "conf_tmp_data<-\"/home/jovyan/Cloud Storage/naa-vre-user-data/tmp/data\""
+              }
+            ],
+            "params": [
+              {
+                "name": "param_cell_length",
+                "type": "str",
+                "default_value": "100"
+              },
+              {
+                "name": "param_duration",
+                "type": "str",
+                "default_value": "100"
+              }
+            ],
+            "secrets": [],
+            "title": "scenario-file-creator-mariagfuentesal",
+            "description": "scenario-file-creator-mariagfuentesal",
+            "created": "2026-10-27T10:01:34.800872Z",
+            "modified": "2026-10-27T10:09:54.655501Z",
+            "version": 2,
+            "template_format": "v1",
+            "container_image": "ghcr.io/naavre/cells-vl-veluwe-forest-model/scenario-file-creator-mariagfuentesal:04aeb61",
+            "containerization_workflow_id": "4be88207-a277-4361-a0ee-6cfd9b18adf8",
+            "kernel": "IRkernel",
+            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/tree/c438f52ac0be26ddd44b15356ca1d0b503cb7559/scenario-file-creator-mariagfuentesal",
+            "is_draft": false
+          }
+        },
+        "size": {
+          "width": 251,
+          "height": 105
+        }
+      },
+      "ad58b8dd-ff4e-4ea5-8b39-ba61c6fac4ef": {
+        "id": "ad58b8dd-ff4e-4ea5-8b39-ba61c6fac4ef",
+        "position": {
+          "x": 3420.2409909870917,
+          "y": 75.46281410533513
+        },
+        "orientation": 0,
+        "type": "workflow-cell",
+        "ports": {
+          "scenario_datafile": {
+            "id": "scenario_datafile",
+            "type": "left",
+            "properties": {
+              "color": "#4e1f93",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 30
+            }
+          }
+        },
+        "properties": {
+          "cell": {
+            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/41b580e9-4903-4a5e-8bcf-8cebe63446a1/",
+            "owner": "mariagfuentesal",
+            "virtual_lab": "veluwe-forest-model",
+            "shared_with_scopes": [],
+            "shared_with_users": [],
+            "versions": [
+              {
+                "version": 1,
+                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/41b580e9-4903-4a5e-8bcf-8cebe63446a1/"
+              }
+            ],
+            "base_container_image": {
+              "build": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-build:v0.3.26",
+              "runtime": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-runtime:v0.3.26"
+            },
+            "containerization_job": {
+              "html_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/actions/runs/40486810330/job/122130571221",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            "dependencies": [
+              {
+                "name": "processx",
+                "module": "",
+                "asname": null
+              }
+            ],
+            "inputs": [
+              {
+                "name": "scenario_datafile",
+                "type": "str"
+              }
+            ],
+            "outputs": [],
+            "confs": [
+              {
+                "name": "conf_tmp_data",
+                "assignation": "conf_tmp_data<-\"/home/jovyan/Cloud Storage/naa-vre-user-data/tmp/data\""
+              }
+            ],
+            "params": [],
+            "secrets": [],
+            "title": "landis-ii-runner-mariagfuentesal",
+            "description": "landis-ii-runner-mariagfuentesal",
+            "created": "2026-10-27T10:13:27.937064Z",
+            "modified": "2026-10-27T10:19:39.742821Z",
+            "version": 1,
+            "template_format": "v1",
+            "container_image": "ghcr.io/naavre/cells-vl-veluwe-forest-model/landis-ii-runner-mariagfuentesal:e268380",
+            "containerization_workflow_id": "d968f9a4-d01f-440c-a8ce-d3c7b04bddaf",
+            "kernel": "IRkernel",
+            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/tree/8f991a11344fa619f478808effb8e09b550df5a9/landis-ii-runner-mariagfuentesal",
+            "is_draft": false
+          }
+        },
+        "size": {
+          "width": 251,
+          "height": 61
+        }
+      },
+      "a6d0ab8f-7908-4696-9462-44873910ba1a": {
+        "id": "a6d0ab8f-7908-4696-9462-44873910ba1a",
+        "position": {
+          "x": 1606.1657063011985,
+          "y": 597.2815533980581
+        },
+        "orientation": 0,
+        "type": "workflow-cell",
+        "ports": {
+          "ecoregions_rast_datafile": {
+            "id": "ecoregions_rast_datafile",
+            "type": "left",
+            "properties": {
+              "color": "#9bbf40",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 17
+            }
+          },
+          "forest_vect_datafile": {
+            "id": "forest_vect_datafile",
+            "type": "left",
+            "properties": {
+              "color": "#e06c75",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 43
+            }
+          },
+          "initial_communities_datafile": {
+            "id": "initial_communities_datafile",
+            "type": "right",
+            "properties": {
+              "color": "#86772d",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 252,
+              "y": 17
+            }
+          },
+          "initial_communities_tif": {
+            "id": "initial_communities_tif",
+            "type": "right",
+            "properties": {
+              "color": "#4093bf",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 252,
+              "y": 43
+            }
+          }
+        },
+        "properties": {
+          "cell": {
+            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/0d9b247b-d909-4f74-a870-19ada8baf16b/",
+            "owner": "mariagfuentesal",
+            "virtual_lab": "veluwe-forest-model",
+            "shared_with_scopes": [],
+            "shared_with_users": [],
+            "versions": [
+              {
+                "version": 1,
+                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/f4c2eb56-c1e2-4976-a872-b8b8b1436d58/"
+              },
+              {
+                "version": 2,
+                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/e7e3d8de-02bc-4eb9-bba0-5ccb38b590e3/"
+              },
+              {
+                "version": 3,
+                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/0d9b247b-d909-4f74-a870-19ada8baf16b/"
+              }
+            ],
+            "base_container_image": {
+              "build": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-build:v0.3.26",
+              "runtime": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-runtime:v0.3.26"
+            },
+            "containerization_job": {
+              "html_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/actions/runs/41627033145/job/125886913381",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            "dependencies": [
+              {
+                "name": "Hmisc",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "dplyr",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "sf",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "terra",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "tibble",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "stringr",
+                "module": "",
+                "asname": null
+              }
+            ],
+            "inputs": [
+              {
+                "name": "ecoregions_rast_datafile",
+                "type": "str"
+              },
+              {
+                "name": "forest_vect_datafile",
+                "type": "str"
+              }
+            ],
+            "outputs": [
+              {
+                "name": "initial_communities_datafile",
+                "type": "str"
+              },
+              {
+                "name": "initial_communities_tif",
+                "type": "str"
+              }
+            ],
+            "confs": [
+              {
+                "name": "conf_tmp_data",
+                "assignation": "conf_tmp_data<-\"/home/jovyan/Cloud Storage/naa-vre-user-data/tmp/data\""
+              },
+              {
+                "name": "conf_output_location",
+                "assignation": "conf_output_location<-\"/home/jovyan/Cloud Storage/naa-vre-user-data\""
+              }
+            ],
+            "params": [
+              {
+                "name": "param_timestep",
+                "type": "int",
+                "default_value": "10"
+              }
+            ],
+            "secrets": [],
+            "title": "initial-communities-data-retriever-preprocessor-mariagfuentesal",
+            "description": "initial-communities-data-retriever-preprocessor-mariagfuentesal",
+            "created": "2026-11-03T11:22:47.779335Z",
+            "modified": "2026-11-03T11:24:48.523127Z",
+            "version": 3,
+            "template_format": "v1",
+            "container_image": "ghcr.io/naavre/cells-vl-veluwe-forest-model/initial-communities-data-retriever-preprocessor-mariagfuentesal:4de8a3a",
+            "containerization_workflow_id": "d8b0f931-fa00-48bc-ba83-0a30bca87c08",
+            "kernel": "IRkernel",
+            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/tree/bda352dc5e90f202a39309906365318ed9c56473/initial-communities-data-retriever-preprocessor-mariagfuentesal",
+            "is_draft": false
+          }
+        },
+        "size": {
+          "width": 251,
+          "height": 61
+        }
+      },
+      "33b6ce3b-53b0-4fba-8ce0-15279b6131c1": {
+        "id": "33b6ce3b-53b0-4fba-8ce0-15279b6131c1",
+        "position": {
+          "x": 1161.9975708752145,
+          "y": 225.77743902439042
+        },
+        "orientation": 0,
+        "type": "workflow-cell",
+        "ports": {
+          "ecoregions_datafile": {
+            "id": "ecoregions_datafile",
+            "type": "left",
+            "properties": {
+              "color": "#75ac53",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 13
+            }
+          },
+          "forest_datafile": {
+            "id": "forest_datafile",
+            "type": "left",
+            "properties": {
+              "color": "#453a78",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 39
+            }
+          },
+          "forest_vect_datafile": {
+            "id": "forest_vect_datafile",
+            "type": "left",
+            "properties": {
+              "color": "#e06c75",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 65
+            }
+          },
+          "ecoregion_ids_datafile": {
+            "id": "ecoregion_ids_datafile",
+            "type": "right",
+            "properties": {
+              "color": "#a979d2",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 252,
+              "y": 26
+            }
+          },
+          "ecoregions_rast_datafile": {
+            "id": "ecoregions_rast_datafile",
+            "type": "right",
+            "properties": {
+              "color": "#9bbf40",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 252,
+              "y": 52
+            }
+          }
+        },
+        "properties": {
+          "cell": {
+            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/71906953-9cc8-4ed5-b737-5f6924e3a334/",
+            "owner": "mariagfuentesal",
+            "virtual_lab": "veluwe-forest-model",
+            "shared_with_scopes": [],
+            "shared_with_users": [],
+            "versions": [
+              {
+                "version": 1,
+                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/15b60197-d175-4c82-b9fc-93d5d2f78756/"
+              },
+              {
+                "version": 2,
+                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/56d96bc2-19ce-4b43-ac1b-f849d191c5b2/"
+              },
+              {
+                "version": 3,
+                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/e67e197e-3720-4949-81fa-549b5c3295ee/"
+              },
+              {
+                "version": 4,
+                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/0c105290-c1fd-4825-bf8b-e9945fe9a0e6/"
+              },
+              {
+                "version": 5,
+                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/71906953-9cc8-4ed5-b737-5f6924e3a334/"
+              }
+            ],
+            "base_container_image": {
+              "build": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-build:v0.3.26",
+              "runtime": "ghcr.io/naavre/flavors/naavre-fl-veluwe-forest-model-cell-runtime:v0.3.26"
+            },
+            "containerization_job": {
+              "html_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/actions/runs/41805960339/job/126492979404",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            "dependencies": [
+              {
+                "name": "terra",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "dplyr",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "readr",
+                "module": "",
+                "asname": null
+              }
+            ],
+            "inputs": [
+              {
+                "name": "ecoregions_datafile",
+                "type": "str"
+              },
+              {
+                "name": "forest_datafile",
+                "type": "str"
+              },
+              {
+                "name": "forest_vect_datafile",
+                "type": "str"
+              }
+            ],
+            "outputs": [
+              {
+                "name": "ecoregion_ids_datafile",
+                "type": "str"
+              },
+              {
+                "name": "ecoregions_rast_datafile",
+                "type": "str"
+              }
+            ],
+            "confs": [
+              {
+                "name": "conf_tmp_data",
+                "assignation": "conf_tmp_data<-\"/home/jovyan/Cloud Storage/naa-vre-user-data/tmp/data\""
+              }
+            ],
+            "params": [
+              {
+                "name": "param_use_ecoregions",
+                "type": "str",
+                "default_value": "yes"
+              }
+            ],
+            "secrets": [],
+            "title": "ecoregions-processor-mariagfuentesal",
+            "description": "ecoregions-processor-mariagfuentesal",
+            "created": "2026-11-04T09:15:25.200491Z",
+            "modified": "2026-11-04T09:20:33.700987Z",
+            "version": 5,
+            "template_format": "v1",
+            "container_image": "ghcr.io/naavre/cells-vl-veluwe-forest-model/ecoregions-processor-mariagfuentesal:81af7d8",
+            "containerization_workflow_id": "b0e256e3-8fa8-4193-98fa-6b5fde5abe2a",
+            "kernel": "IRkernel",
+            "source_url": "https://github.com/NaaVRE/cells-vl-veluwe-forest-model/tree/c25652932d1221622e94da405429570176ba47a0/ecoregions-processor-mariagfuentesal",
+            "is_draft": false
+          }
+        },
+        "size": {
+          "width": 251,
+          "height": 79
+        }
+      }
+    },
+    "links": {
+      "83d2a87c-3b5e-4838-b96c-bbc76d427785": {
+        "id": "83d2a87c-3b5e-4838-b96c-bbc76d427785",
+        "from": {
+          "nodeId": "4cf56664-fee8-4429-8029-51ab5a4885ae",
+          "portId": "KNMI_sim_datafile"
+        },
+        "to": {
+          "nodeId": "3975d117-5403-47cc-916a-0bcd2196d25c",
+          "portId": "KNMI_sim_datafile"
+        }
+      },
+      "d652d088-ed72-4092-8738-764cceb1bc14": {
+        "id": "d652d088-ed72-4092-8738-764cceb1bc14",
+        "from": {
+          "nodeId": "4cf56664-fee8-4429-8029-51ab5a4885ae",
+          "portId": "KNMI_spinup_datafile"
+        },
+        "to": {
+          "nodeId": "3975d117-5403-47cc-916a-0bcd2196d25c",
+          "portId": "KNMI_spinup_datafile"
+        }
+      },
+      "8bc084b5-1270-4076-8ddf-b5a107d4aa9b": {
+        "id": "8bc084b5-1270-4076-8ddf-b5a107d4aa9b",
+        "from": {
+          "nodeId": "3975d117-5403-47cc-916a-0bcd2196d25c",
+          "portId": "preprocessed_KNMI_sim_datafile"
+        },
+        "to": {
+          "nodeId": "c80f41c5-10a2-4c47-af42-99c96774c821",
+          "portId": "preprocessed_KNMI_sim_datafile"
+        }
+      },
+      "beff8e8f-771b-4b17-a531-8e6421c301b5": {
+        "id": "beff8e8f-771b-4b17-a531-8e6421c301b5",
+        "from": {
+          "nodeId": "3975d117-5403-47cc-916a-0bcd2196d25c",
+          "portId": "preprocessed_KNMI_spinup_datafile"
+        },
+        "to": {
+          "nodeId": "c80f41c5-10a2-4c47-af42-99c96774c821",
+          "portId": "preprocessed_KNMI_spinup_datafile"
+        }
+      },
+      "cbf87073-937a-4085-b1d8-78f91af07020": {
+        "id": "cbf87073-937a-4085-b1d8-78f91af07020",
+        "from": {
+          "nodeId": "c80f41c5-10a2-4c47-af42-99c96774c821",
+          "portId": "climategenerator_datafile"
+        },
+        "to": {
+          "nodeId": "c8776b74-6adf-421e-b6bc-4883c254589b",
+          "portId": "climategenerator_datafile"
+        }
+      },
+      "e322cf79-2018-46db-a0a1-5e06fc5f21e0": {
+        "id": "e322cf79-2018-46db-a0a1-5e06fc5f21e0",
+        "from": {
+          "nodeId": "28a8e6b2-e7f0-4707-8a34-c93d2e24f120",
+          "portId": "species_datafile"
+        },
+        "to": {
+          "nodeId": "c8776b74-6adf-421e-b6bc-4883c254589b",
+          "portId": "species_datafile"
+        }
+      },
+      "df10022c-f2ba-4c87-84e6-27c5c3a2cd3a": {
+        "id": "df10022c-f2ba-4c87-84e6-27c5c3a2cd3a",
+        "from": {
+          "nodeId": "28a8e6b2-e7f0-4707-8a34-c93d2e24f120",
+          "portId": "spp_ecoregion_datafile"
+        },
+        "to": {
+          "nodeId": "c8776b74-6adf-421e-b6bc-4883c254589b",
+          "portId": "spp_ecoregion_datafile"
+        }
+      },
+      "c002d970-15eb-43c2-b58f-da61b6a8e1ad": {
+        "id": "c002d970-15eb-43c2-b58f-da61b6a8e1ad",
+        "from": {
+          "nodeId": "c8776b74-6adf-421e-b6bc-4883c254589b",
+          "portId": "biomass_succession_datafile"
+        },
+        "to": {
+          "nodeId": "fde2d476-b2a2-4557-ad1a-3418d0f569e2",
+          "portId": "biomass_succession_datafile"
+        }
+      },
+      "4e8c4d6f-a461-4815-bb56-5a21a2e8c6a4": {
+        "id": "4e8c4d6f-a461-4815-bb56-5a21a2e8c6a4",
+        "from": {
+          "nodeId": "c80f41c5-10a2-4c47-af42-99c96774c821",
+          "portId": "ecoregions_txt_datafile"
+        },
+        "to": {
+          "nodeId": "fde2d476-b2a2-4557-ad1a-3418d0f569e2",
+          "portId": "ecoregions_txt_datafile"
+        }
+      },
+      "37ffb96e-815a-48f3-bec5-cc6e1ad64637": {
+        "id": "37ffb96e-815a-48f3-bec5-cc6e1ad64637",
+        "from": {
+          "nodeId": "28a8e6b2-e7f0-4707-8a34-c93d2e24f120",
+          "portId": "core_species_datafile"
+        },
+        "to": {
+          "nodeId": "fde2d476-b2a2-4557-ad1a-3418d0f569e2",
+          "portId": "core_species_datafile"
+        }
+      },
+      "e6cbb43c-0147-4c33-842c-ad860c3c3c77": {
+        "id": "e6cbb43c-0147-4c33-842c-ad860c3c3c77",
+        "from": {
+          "nodeId": "fde2d476-b2a2-4557-ad1a-3418d0f569e2",
+          "portId": "scenario_datafile"
+        },
+        "to": {
+          "nodeId": "ad58b8dd-ff4e-4ea5-8b39-ba61c6fac4ef",
+          "portId": "scenario_datafile"
+        }
+      },
+      "d523af80-a9ba-41cc-921c-a3ba704dcee4": {
+        "id": "d523af80-a9ba-41cc-921c-a3ba704dcee4",
+        "from": {
+          "nodeId": "07e1f018-cb0c-42d0-ab8c-755dad55f40c",
+          "portId": "forest_vect_datafile"
+        },
+        "to": {
+          "nodeId": "a6d0ab8f-7908-4696-9462-44873910ba1a",
+          "portId": "forest_vect_datafile"
+        }
+      },
+      "5e5f57bb-861c-46fb-bae5-72403de4b402": {
+        "id": "5e5f57bb-861c-46fb-bae5-72403de4b402",
+        "from": {
+          "nodeId": "a6d0ab8f-7908-4696-9462-44873910ba1a",
+          "portId": "initial_communities_datafile"
+        },
+        "to": {
+          "nodeId": "c8776b74-6adf-421e-b6bc-4883c254589b",
+          "portId": "initial_communities_datafile"
+        }
+      },
+      "edeac9c8-f502-4310-b8b2-0d75484f231b": {
+        "id": "edeac9c8-f502-4310-b8b2-0d75484f231b",
+        "from": {
+          "nodeId": "a6d0ab8f-7908-4696-9462-44873910ba1a",
+          "portId": "initial_communities_tif"
+        },
+        "to": {
+          "nodeId": "c8776b74-6adf-421e-b6bc-4883c254589b",
+          "portId": "initial_communities_tif"
+        }
+      },
+      "47dd310b-ce94-4df5-9e38-f1acda87e905": {
+        "id": "47dd310b-ce94-4df5-9e38-f1acda87e905",
+        "from": {
+          "nodeId": "f3fe082b-48ed-47a3-add8-52d36c2de93b",
+          "portId": "ecoregions_datafile"
+        },
+        "to": {
+          "nodeId": "33b6ce3b-53b0-4fba-8ce0-15279b6131c1",
+          "portId": "ecoregions_datafile"
+        }
+      },
+      "1635b1bd-61bb-4d5e-a5e8-3be342c37095": {
+        "id": "1635b1bd-61bb-4d5e-a5e8-3be342c37095",
+        "from": {
+          "nodeId": "07e1f018-cb0c-42d0-ab8c-755dad55f40c",
+          "portId": "forest_datafile"
+        },
+        "to": {
+          "nodeId": "33b6ce3b-53b0-4fba-8ce0-15279b6131c1",
+          "portId": "forest_datafile"
+        }
+      },
+      "ddccd472-3d75-4a86-b14c-f2980d6c21af": {
+        "id": "ddccd472-3d75-4a86-b14c-f2980d6c21af",
+        "from": {
+          "nodeId": "07e1f018-cb0c-42d0-ab8c-755dad55f40c",
+          "portId": "forest_vect_datafile"
+        },
+        "to": {
+          "nodeId": "33b6ce3b-53b0-4fba-8ce0-15279b6131c1",
+          "portId": "forest_vect_datafile"
+        }
+      },
+      "03031c4b-d1e0-46ae-894d-726d024cbb94": {
+        "id": "03031c4b-d1e0-46ae-894d-726d024cbb94",
+        "from": {
+          "nodeId": "33b6ce3b-53b0-4fba-8ce0-15279b6131c1",
+          "portId": "ecoregion_ids_datafile"
+        },
+        "to": {
+          "nodeId": "28a8e6b2-e7f0-4707-8a34-c93d2e24f120",
+          "portId": "ecoregion_ids_datafile"
+        }
+      },
+      "3f358075-47a2-4c15-917e-2dd0fa6733f6": {
+        "id": "3f358075-47a2-4c15-917e-2dd0fa6733f6",
+        "from": {
+          "nodeId": "33b6ce3b-53b0-4fba-8ce0-15279b6131c1",
+          "portId": "ecoregion_ids_datafile"
+        },
+        "to": {
+          "nodeId": "3975d117-5403-47cc-916a-0bcd2196d25c",
+          "portId": "ecoregion_ids_datafile"
+        }
+      },
+      "dd68fe4e-2216-4c67-96cb-c152adb33079": {
+        "id": "dd68fe4e-2216-4c67-96cb-c152adb33079",
+        "from": {
+          "nodeId": "33b6ce3b-53b0-4fba-8ce0-15279b6131c1",
+          "portId": "ecoregion_ids_datafile"
+        },
+        "to": {
+          "nodeId": "c80f41c5-10a2-4c47-af42-99c96774c821",
+          "portId": "ecoregion_ids_datafile"
+        }
+      },
+      "d0f92d5f-f508-4dd4-8173-607bdccf12ef": {
+        "id": "d0f92d5f-f508-4dd4-8173-607bdccf12ef",
+        "from": {
+          "nodeId": "33b6ce3b-53b0-4fba-8ce0-15279b6131c1",
+          "portId": "ecoregion_ids_datafile"
+        },
+        "to": {
+          "nodeId": "c8776b74-6adf-421e-b6bc-4883c254589b",
+          "portId": "ecoregion_ids_datafile"
+        }
+      },
+      "aa5cfc25-1146-45f6-aa59-6ecdf17f3caa": {
+        "id": "aa5cfc25-1146-45f6-aa59-6ecdf17f3caa",
+        "from": {
+          "nodeId": "33b6ce3b-53b0-4fba-8ce0-15279b6131c1",
+          "portId": "ecoregions_rast_datafile"
+        },
+        "to": {
+          "nodeId": "a6d0ab8f-7908-4696-9462-44873910ba1a",
+          "portId": "ecoregions_rast_datafile"
+        }
+      },
+      "4f948268-bee7-435c-b272-13372c96d21e": {
+        "id": "4f948268-bee7-435c-b272-13372c96d21e",
+        "from": {
+          "nodeId": "33b6ce3b-53b0-4fba-8ce0-15279b6131c1",
+          "portId": "ecoregions_rast_datafile"
+        },
+        "to": {
+          "nodeId": "fde2d476-b2a2-4557-ad1a-3418d0f569e2",
+          "portId": "ecoregions_rast_datafile"
+        }
+      }
+    },
+    "properties": {
+      "params": []
+    },
+    "selected": {},
+    "hovered": {},
+    "metadata": {
+      "version": "1.1"
+    }
+  }
+}
